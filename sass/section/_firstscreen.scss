@@ -13,21 +13,8 @@
         width: 100%;
         left: 0;
         min-height: 96px;
-    }
-        
+    }  
 }
-
-// .first-screen__bg{
-//     img{
-//         position: absolute;
-//         left: 0;
-//         top: 0;
-//         max-width: none;
-//         min-height: 100%;
-//         z-index: -1;
-//     }
-        
-// }
     
 .first-screen__title {
     position: absolute;
@@ -52,7 +39,7 @@
         display: flex;
         gap: 0 145px;
 
-        svg {
+        .circle-animetion {
             position: absolute;
             margin-bottom: 2vw;
             left: -51.9px;
@@ -61,7 +48,7 @@
             -webkit-animation: 18s linear 0s normal none infinite running rot;
         }
         
-        img {
+        object {
             position: absolute;
             bottom: -50px;
             right: -50px;
@@ -165,11 +152,6 @@
         top: 4px;
     }
         
-}
-    
-.first-screen__hero{
-    position: relative;
-    text-align: center;
 }
    
 .first-screen__hero-picture{

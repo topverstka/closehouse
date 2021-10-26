@@ -98,10 +98,6 @@ var swiper = new Swiper('.home-swiper-container', {
 });
 
 
-// 7) Галлерея с модальным окном (Используется библиотека LightGallary: https://www.lightgalleryjs.com/) 
-lightGallery(document.querySelector('.lightgallery'));
-
-
 // 8) Скрипт для раздела FAQ - "Частозадаваемые вопросы"
 function findFaq(){
 	let faqBoxes = document.querySelectorAll('.faq-box')

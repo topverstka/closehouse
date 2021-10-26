@@ -16,19 +16,6 @@ input, textarea, button{
 .order-form {
     padding: 23px 19px;
 
-    &__title {
-        font-size: 15px;
-        color: #fff;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #fff;
-        width: 80%;
-    }
-
-    &__subtitle {
-        font-size: 12px;
-        color: #fff;
-    }
-
     label {
         p {
             color: #fff;
@@ -42,4 +29,17 @@ input, textarea, button{
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
     }
+}
+
+.order-form__title {
+    font-size: 15px;
+    color: #fff;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    width: 80%;
+}
+
+.order-form__subtitle {
+    font-size: 12px;
+    color: #fff;
 }

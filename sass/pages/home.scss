@@ -1,0 +1,18 @@
+@import '../interface';
+@import '../grid';
+@import '../header';
+@import '../footer';
+
+// Элементы
+@import '../elements/titles';
+@import '../elements/swiper';
+@import '../elements/inverted-text';
+@import '../elements/buttons';
+
+// Стили главной страницы
+@import '../section/about';
+@import '../section/catalog';
+@import '../section/contact';
+@import '../section/firstscreen';
+@import '../section/new';
+@import '../section/season';

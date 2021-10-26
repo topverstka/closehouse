@@ -1285,13 +1285,16 @@ h2 {
 }
 
 .catalog-elemetn {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  gap: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 18px;
   margin-top: 50px;
 }
 
@@ -1300,7 +1303,26 @@ h2 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: 100%;
+}
+
+.catalog-elemetn__item-one div:first-child {
+  margin-bottom: 18px;
+}
+
+.catalog-elemetn__item-two {
+  margin-bottom: 75px;
+}
+
+.catalog-elemetn__item-two div:first-child {
+  margin-bottom: 18px;
+}
+
+.catalog-elemetn__item-three {
+  margin-top: 110px;
+}
+
+.catalog-elemetn__item-three div:first-child {
+  margin-bottom: 18px;
 }
 
 .invertet-text__position {

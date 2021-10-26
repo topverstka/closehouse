@@ -1,0 +1,108 @@
+// USER VARIABLES SECTION
+
+$accent: #FFFFFF; // Accent Color
+$fontsize: 20px; // Body Font Size
+
+$textcolor: #FFFFFF; // Text Color
+// Bootstrap compatible gutter variable => $gutter
+$default_font: 'Gilroy';
+$titles_font: 'Kharkiv-Tone';
+
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl){
+    @font-face{
+        font-family: $fname;
+        font-style: $fstyle;
+        font-weight: $fweight;
+        // font-display: swap // Uncomment to initially display system fonts
+        src: local($fname), url($furl) format('woff2');
+    }
+}
+
+@include font('Gilroy', normal, 400, '../fonts/Gilroy/Gilroy-UltraLight.ttf');
+@include font('Kharkiv-Tone', normal, 300, '../fonts/Kharkiv_Tone/Kharkiv-Tone.ttf');
+
+
+
+
+// GENERAL DOCUMENT STYLES
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+    
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: $textcolor;
+    font-family: $default_font;
+    font-size: $fontsize;
+    position: relative;
+    color: $textcolor;
+    overflow-x: hidden;
+    background-color: #111111;
+    &._lock{
+        overflow: hidden;
+    }
+}
+    
+
+
+
+a{
+    text-decoration: none;
+}
+    
+img{
+    max-width: 100%;
+}
+
+// Для ленивой загрузки изображений
+img[data-src]{
+    opacity: 0;
+    transition: all 0.2s;
+}
+  
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 670px){     
+    section{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}  
+    
+
+@media (min-width: 992px){
+    section{
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+    .section-desr{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+    
+            
+
+@media (min-width: 1300px){      
+    section{
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+}
+    
+    
+
+   

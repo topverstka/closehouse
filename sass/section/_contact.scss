@@ -6,12 +6,17 @@
     margin-bottom: 60px;
 }
 
+section.contact{
+    padding-bottom: 0px;
+}
+
 .contact-info{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
+    margin-right: 75px;
 }
 
 .contact-info__working{

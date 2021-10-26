@@ -41,7 +41,7 @@
     position: absolute;
     z-index: 10000;
     top: 0;
-    left: 30px;
+    left: 35px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -53,7 +53,8 @@
     display: flex;
     height: 100vh;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
+    margin-top: 31px;
 }
    
 .swiper-pagination-bullet{
@@ -135,9 +136,6 @@
 
 
 @media (min-width: 670px){
-    .swiper{
-        margin-bottom: 35px;
-    }
     .swiper-pagination{
         bottom: -45px;
     }
@@ -145,10 +143,6 @@
 
 
 @media (min-width: 992px){
-    .swiper{
-        margin-bottom: 45px;
-    }
-
     .swiper-btn{
         transition: all 0.2s;
         &:hover{

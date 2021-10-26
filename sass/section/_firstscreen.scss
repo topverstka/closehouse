@@ -4,7 +4,6 @@
     position: relative;
     overflow: hidden;
     color: #fff;
-    height: 100vh;
     &::after{
         content: '';
         background: linear-gradient(0deg, #000 15%, rgba(0,0,0,0) 99.9%);
@@ -29,29 +28,20 @@
     width: fit-content;
 
     h1{
-        font-size: 9vw;
+        font-size: 109.53px;
         margin-bottom: 25px;
-        word-spacing: 10vw;
+        // word-spacing: 10vw;
         line-height: normal;
         text-transform: none;
         margin-bottom: 0px;
-        letter-spacing: 10px;
+        letter-spacing: 6px;
         display: flex;
-        gap: 0 145px;
-
-        .circle-animetion {
-            position: absolute;
-            margin-bottom: 2vw;
-            left: -51.9px;
-
-            animation: 18s linear 0s normal none infinite running rot;
-            -webkit-animation: 18s linear 0s normal none infinite running rot;
-        }
+        gap: 0 176px;
         
         object {
             position: absolute;
-            bottom: -50px;
-            right: -50px;
+            bottom: -46px;
+            right: -95px;
         }
 
         span{
@@ -64,7 +54,16 @@
     p{
         font-size: 15px;
         line-height: 20px;
+        margin-left: 13px;
     }
+}
+
+.circle-animetion {
+    position: absolute;
+    left: -69px;
+
+    animation: 18s linear 0s normal none infinite running rot;
+    -webkit-animation: 18s linear 0s normal none infinite running rot;
 }
 
 .first-screen__social{
@@ -108,15 +107,15 @@
     z-index: 1;
     right: 30px;
     text-align: center;
-    width: 10px;
+    width: 7px;
 
     p {
         font-size: 14px;
         transform: rotateZ(-90deg);
     }
 
-    img {
-        margin-top: 10px;
+    object {
+        margin-top: 15px;
     }
 }
     
@@ -195,7 +194,7 @@
 @media (min-width: 670px){
     .first-screen{
         padding-top: 0;
-        padding-bottom: 80px;
+        margin-bottom: 35px;
         .wrap{
             position: relative;
         }
@@ -207,7 +206,7 @@
 
     .first-screen__title{
         font-size: 30px;
-        margin-bottom: 150px;
+        margin-bottom: 130px;
     }
         
     .first-screen__list{
@@ -250,8 +249,8 @@
 
 @media (min-width: 992px){
     .first-screen{
-        padding-bottom: 100px;
         padding-top: 0;
+        margin-bottom: 35px;
     }
 
 }

@@ -10,10 +10,9 @@ h1{
 }
 
 h2{
-    font-size: 20px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 30px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
 }
 
 @media (min-width: 670px){
@@ -22,7 +21,7 @@ h2{
     }
         
     h2{
-        font-size: 32px;
+        font-size: 50px;
     }
 }
 

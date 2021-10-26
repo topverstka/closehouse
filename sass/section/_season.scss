@@ -1,0 +1,59 @@
+.season-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.season-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.season-content__descr{
+    width: 100%;
+}
+
+.season-content__img{
+    width: 72%;
+    margin-left: 52px;
+    img{
+        width: 100%;
+    }
+
+    margin-top: 122px;
+}
+
+.invertet-text__season-position{
+    left: -93px;
+    position: absolute;
+    top: 90px;
+}
+
+.season-content__descr-text{
+    margin-left: 90px;
+    text-align: end;
+
+    p{
+        max-width: 283px;
+        font-size: 15px;
+        margin-top: 64px;
+        margin-bottom: 50px;
+        margin-left: auto;
+
+        span{
+            margin-right: 42px;
+        }
+    }
+
+    a{
+        font-size: 15px;
+        font-style: italic;
+        text-decoration: underline;
+        color: #FFFFFF;
+        margin-right: 148px;
+    }
+
+    img{
+        width: 100%;
+    }
+}

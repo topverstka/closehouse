@@ -17,6 +17,7 @@
 .header__buttons {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 .header__button{
@@ -178,7 +179,13 @@
 		width: 44px;
 		height: 1px;
 		background-color: $accent;
-		margin-bottom: -6px;
+		
+		&:nth-child(1){
+			margin-bottom: 3px;
+		}
+		&:nth-child(2){
+			margin-bottom: -9px;
+		}
 		&:last-child{
 			margin-bottom: 0;
 		}

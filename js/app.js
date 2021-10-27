@@ -118,6 +118,15 @@ function findFaq(){
 }
 findFaq();
 
+// Открыть поисковое меню
+btnHeaderSearch.addEventListener('click', () => {
+	find('.search-panel').classList.add('open')
+})
+
+find('.search-panel__close').addEventListener('click', () => {
+	find('.search-panel').classList.remove('open')
+})
+
 // Добавить в избранное
 let allFavorite = document.querySelectorAll('.product-button__like')
 Array.from(allFavorite).forEach(el => {
@@ -147,6 +156,5 @@ Array.from(allProduct).forEach((el, id) => {
 		});
     });
 });
-
 // 9) AOS анимации инициализация (https://michalsnik.github.io/aos/)
 AOS.init();

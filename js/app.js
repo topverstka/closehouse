@@ -171,7 +171,7 @@ let lastScrollTop = 0;
 
 window.addEventListener("scroll", function(){  
    	let st = window.pageYOffset || document.documentElement.scrollTop;  
-   	if (st > lastScrollTop){
+   	if (st >= lastScrollTop){
        	document.querySelector(".header").style.top = "-100%";
 	   	document.querySelector(".header").style.transition = "2s";
    	} else {

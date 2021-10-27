@@ -45,7 +45,8 @@
 .scale img {
     filter: brightness(1);
     transition: 0.8s; 
-    display: block; 
+    display: block;
+    width: inherit; 
 }
 
 .scale img:hover {

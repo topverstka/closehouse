@@ -50,6 +50,32 @@ section.contact{
 
 
 .contact-people__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover{
+        picture{
+            filter: brightness(0.6);
+        }
+        
+        object{
+            display: block;
+            z-index: 1;
+        }
+    }
+
+    object{
+        position: absolute;
+        display: none;
+    }
+
+    picture{
+        width: 100%;
+    }
+
     img{
         width: -webkit-fill-available;
     }

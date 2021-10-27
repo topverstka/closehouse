@@ -1333,6 +1333,39 @@ section.contact {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.contact-people__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.contact-people__item:hover picture {
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+.contact-people__item:hover object {
+  display: block;
+  z-index: 1;
+}
+
+.contact-people__item object {
+  position: absolute;
+  display: none;
+}
+
+.contact-people__item picture {
+  width: 100%;
+}
+
 .contact-people__item img {
   width: -webkit-fill-available;
 }

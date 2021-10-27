@@ -118,6 +118,29 @@ function findFaq(){
 }
 findFaq();
 
+// Добавить в избранное
+let allFavorite = document.querySelectorAll('.product-button__like')
+Array.from(allFavorite).forEach(el => {
+    el.addEventListener('click', function(event) {
+        if(el.classList.contains('active-favorite')){
+			el.classList.remove('active-favorite')
+		} else {
+			el.classList.add('active-favorite')
+		}
+    });
+});
+
+// Открыть размерный ряд
+let allProduct = document.querySelectorAll('.product-button__size')
+Array.from(allProduct).forEach(el => {
+    el.addEventListener('click', function(event) {
+        if(el.classList.contains('activator-list')){
+			el.classList.remove('activator-list')
+		} else {
+			el.classList.add('activator-list')
+		}
+    });
+});
 
 // 9) AOS анимации инициализация (https://michalsnik.github.io/aos/)
 AOS.init();

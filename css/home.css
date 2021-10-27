@@ -1099,10 +1099,12 @@ h2 {
 }
 
 .search-panel__input {
-  width: 100%;
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .search-panel__input input {

@@ -171,13 +171,21 @@ let lastScrollTop = 0;
 window.addEventListener("scroll", function(){  
    	let st = window.pageYOffset || document.documentElement.scrollTop;  
 
-   	if (st >= 1000){
-       	document.querySelector(".header").style.top = "-100%";
-	   	document.querySelector(".header").style.transition = "2s";
+	console.log(st)
+
+   	if (st <= 1000){
+		document.querySelector(".header").style.position = "absolute";
+		document.querySelector(".header").style.top = "0";
+		document.querySelector(".header").style.transition = "0s";
+   	} else if(st >= lastScrollTop) {	
+		document.querySelector(".header").style.position = "fixed";
+		document.querySelector(".header").style.top = "-100%";
+		document.querySelector(".header").style.transition = "0s";
    	} else {
-      	document.querySelector(".header").style.top = "0";
-	  	document.querySelector(".header").style.transition = "0.4s";
-   	}
+		document.querySelector(".header").style.position = "fixed";
+		document.querySelector(".header").style.top = "0";
+		document.querySelector(".header").style.transition = "0.4s";
+	}
    	lastScrollTop = st;
 }, false);
 

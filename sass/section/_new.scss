@@ -96,11 +96,25 @@
     }
 }
 
+.product-button__like.active-favorite {
+    background-image: url(../../img/like-productActive.svg);
+}
+
+.product-button__like{
+    width: 18px;
+    height: 18px;
+    background-image: url(../../img/like-product.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-bottom: 5px;
+}
+
 section.new{
     padding-top: 38px;
 }
 
-.activator-list .size-list{
+.size-list.activator-list{
     display: block;
     position: absolute;
     top: 45px;

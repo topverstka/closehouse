@@ -132,13 +132,19 @@ Array.from(allFavorite).forEach(el => {
 
 // Открыть размерный ряд
 let allProduct = document.querySelectorAll('.product-button__size')
-Array.from(allProduct).forEach(el => {
+let allLinesize = document.querySelectorAll('.size-list')
+
+Array.from(allProduct).forEach((el, id) => {
     el.addEventListener('click', function(event) {
-        if(el.classList.contains('activator-list')){
-			el.classList.remove('activator-list')
-		} else {
-			el.classList.add('activator-list')
-		}
+		Array.from(allLinesize).some((lineSize, number, allLinesizes) => {
+			if(allLinesizes[id].classList.contains('activator-list')){
+				allLinesizes[id].classList.remove('activator-list')
+			} else {
+				allLinesizes[id].classList.add('activator-list')
+			}
+
+			return allLinesizes[id]
+		});
     });
 });
 

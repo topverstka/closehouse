@@ -59,21 +59,27 @@ section.contact{
     &:hover{
         img{
             filter: brightness(0.6);
+            transition: 0.8s;
         }
         
         object{
             display: block;
             z-index: 1;
+            opacity: 1;
+            transition: 0.8s;
         }
     }
 
     object{
         position: absolute;
-        display: none;
+        opacity: 0;
+        transition: 0.8s;
     }
 
     img{
         width: 100%;
+        filter: brightness(1);
+        transition: 0.8s;
     }
 
     img{

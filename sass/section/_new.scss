@@ -39,9 +39,11 @@
     overflow: hidden; 
     margin-bottom: 15px;
     width: 100%;
+    transition: 0.8s; 
 }
 
 .scale img {
+    filter: brightness(1);
     transition: 0.8s; 
     display: block; 
 }

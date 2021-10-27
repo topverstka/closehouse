@@ -48,22 +48,21 @@
     }
 
     &:hover .bg-catalog__home{
-        display: block;
         transition: 0.8s;
+        background: rgba(4, 4, 4, 0.4);
     }
 
     &:hover .btn-catalog__home{
-        display: block;
+        opacity: 1;
         transition: 0.8s;
     }
 }
 
 .bg-catalog__home {
-    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(4, 4, 4, 0.5);
+    background: rgba(4, 4, 4, 0);
     transition: 0.8s;
 }
 
@@ -72,7 +71,7 @@
     text-transform: uppercase;
     font-size: 12px;
     position: absolute;
-    display: none;
+    opacity: 0;
     transition: 0.8s;
 }
 

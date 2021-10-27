@@ -181,6 +181,14 @@
 		color: #fff
 	}	
 }
+
+.burger__container{
+	margin-left: 100px;
+	height: 17px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
 	
 .header__burger{
 	cursor: pointer;
@@ -189,7 +197,6 @@
 	position: relative;
 	width: 44px;
 	flex-wrap: wrap;
-	margin-left: 100px;
 	span{
 		display: block;
 		width: 44px;

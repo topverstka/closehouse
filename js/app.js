@@ -30,7 +30,7 @@ function bodyLock() {
 //<------Основные функции---------->
 
 // 1) Мобильное меню
-var menuBurger = d.querySelector('.header__burger');
+var menuBurger = d.querySelector('.burger__container');
 menuBurger.addEventListener('click', function(e){
 	e.preventDefault();
 	bodyLock();

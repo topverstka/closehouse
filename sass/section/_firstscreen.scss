@@ -94,9 +94,12 @@
 }
     
 .first-screen__social-img{
+    img{
+        width: 23px;
+        height: 23px;
+    }
     margin-top: 0px;
-    width: 23px;
-    height: 23px;
+    
 }
 
 .first-screen__descr{

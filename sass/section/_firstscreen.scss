@@ -71,7 +71,7 @@
     z-index: 10;
     bottom: 34px;
     left: 30px;
-    display: flex;
+    display: block;
     flex-direction: column;
 
     object {
@@ -90,6 +90,8 @@
         font-size: 14px;
         color: #fff;
         text-decoration: none;
+        display: block;
+        width: max-content;
     }
 }
     

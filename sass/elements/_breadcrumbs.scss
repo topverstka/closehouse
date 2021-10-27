@@ -1,0 +1,36 @@
+.breadcrumbs{
+    padding: 123px 0 50px 0;
+}
+
+.breadcrumbs-content{
+    display: flex;
+    align-items: center;
+
+    p{
+        font-size: 18px;
+        color: #fff;
+        opacity: 0.5;
+        margin: 0 3px;
+        cursor: default;
+    }
+
+    a {
+        font-size: 12px;
+        color: #fff;
+        opacity: 0.5;
+        transition: 0.2s;
+
+        &:hover{
+            cursor: pointer;
+            opacity: 1;
+            transition: 0.2s;
+        }
+    }
+}
+
+.breadcrumbs-content a{
+    &:last-child{
+        cursor: default;
+        pointer-events: none;
+    }
+}

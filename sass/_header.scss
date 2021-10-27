@@ -30,6 +30,11 @@
 		height: 17px;
 	}
 
+	object{
+		width: 17px;
+		height: 17px;
+	}
+
 	cursor: pointer;
 }
 
@@ -58,7 +63,7 @@
 .logo-signed{
 	width: 144px;
 	position: absolute;
-	bottom: -50px;
+	bottom: -40px;
 	left: 100px;
 	pointer-events: none;
 }

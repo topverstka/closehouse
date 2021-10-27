@@ -123,6 +123,11 @@ btnHeaderSearch.addEventListener('click', () => {
 	find('.search-panel').classList.add('open')
 })
 
+btnMenuSearch.addEventListener('click', () => {
+	find('.search-panel').classList.add('open')
+})
+
+// Закрыть поисковое меню
 find('.search-panel__close').addEventListener('click', () => {
 	find('.search-panel').classList.remove('open')
 })

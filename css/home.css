@@ -1500,7 +1500,7 @@ section.contact {
   transition: 0.8s;
 }
 
-.contact-people__item:hover object {
+.contact-people__item:hover .inst-img {
   display: block;
   z-index: 1;
   opacity: 1;
@@ -1508,7 +1508,8 @@ section.contact {
   transition: 0.8s;
 }
 
-.contact-people__item object {
+.contact-people__item .inst-img {
+  width: 22px;
   position: absolute;
   opacity: 0;
   -webkit-transition: 0.8s;

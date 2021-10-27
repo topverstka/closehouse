@@ -67,7 +67,7 @@ section.contact{
             transition: 0.8s;
         }
         
-        object{
+        .inst-img{
             display: block;
             z-index: 1;
             opacity: 1;
@@ -75,7 +75,8 @@ section.contact{
         }
     }
 
-    object{
+    .inst-img{
+        width: 22px;
         position: absolute;
         opacity: 0;
         transition: 0.8s;

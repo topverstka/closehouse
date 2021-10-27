@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+	<meta charset="utf-8">
+	<title>Close House</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Сайт для клиник">
+	<link rel="icon" href="./img/favicon.ico">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/aos.css">
+
+	<!-- Кастомые анимации -->
+	<link rel="stylesheet" href="./css/animation.css">
+	<!-- / Кастомые анимации -->
+
+    <link rel="stylesheet" href="./css/home.css"> 
+</head> 
+
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="wrap">
+				<!-- Логотип -->
+				<div class="header__logo header__logo--pc">
+					<a class="header__logo-img" href="#">
+						<object type="image/svg+xml" data="./img/logo.svg">
+							<img src="./img/logo.svg" alt="Logo">
+						</object>
+					</a>
+				</div>
+				
+				<!-- Кнопки в шапке -->
+				<div class="header__buttons">
+					<button class="header__button header__button-search" id="btnHeaderSearch">
+						<img src="./img/search.svg" alt="Поиск">
+					</button>
+					<button class="header__button header__button-like">
+						<img src="./img/like.svg" alt="Избранное">
+					</button>
+					<button class="header__button header__button-basket">
+						<img src="./img/basket.svg" alt="Корзина">
+					</button>
+				<!-- Бургер для меню -->
+					<a class="header__burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- всплывающий поиск -->
+	<div class="search-panel">
+		<div class="container">
+			<div class="wrap">
+
+				<div class="search-panel__close">
+					<span></span>
+					<span></span>
+				</div>
+
+				<div class="header__logo header__logo--nav">
+					<a class="header__logo-img" href="#">
+						<object type="image/svg+xml" data="./img/logo.svg">
+							<img src="./img/logo.svg" alt="Logo">
+						</object>
+						<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
+							<img src="./img/pages/home/Elegant-clothes.svg" alt="">
+						</object>
+					</a>
+				</div>
+
+				<div class="search-panel__input">
+					<input type="text">
+					<button class="btn btn-search">ПОИСК</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Всплывающее меню -->
+	<div class="header__nav">
+		<div class="header__nav-bg">
+			<div class="container">
+				<div class="wrap">
+					<!-- Закрывающий элемент -->
+					<div class="close">
+						<span></span>
+						<span></span>
+					</div>
+
+					<!-- Логотип -->
+					<div class="header__logo header__logo--nav">
+						<a class="header__logo-img" href="#">
+							<object type="image/svg+xml" data="./img/logo.svg">
+								<img src="./img/logo.svg" alt="Logo">
+							</object>
+							<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
+								<img src="./img/pages/home/Elegant-clothes.svg" alt="">
+							</object>
+						</a>
+
+						
+					</div>
+
+					<!-- Навигация -->
+					<nav class="nav-burger">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<!-- Элемент контактов -->
+					<div class="header__contacts">
+						<object type="image/svg+xml" data="./img/instagram.svg">
+							<img src="./img/instagram.svg" alt="instagram">
+						</object>
+						<p>Instargam</p>
+					</div>
+
+					<!-- Элементы магазина -->
+					<div class="header__shop">
+						<button class="header__button header__button-search" id="btn-menu__search">
+							<object type="image/svg+xml" data="./img/search.svg">
+								<img src="./img/search.svg" alt="Поиск">
+							</object>
+						</button>
+						<button class="header__button header__button-like">
+							<object type="image/svg+xml" data="./img/like.svg">
+								<img src="./img/like.svg" alt="Избранное">
+							</object>
+						</button>
+						<button class="header__button header__button-basket">
+							<object type="image/svg+xml" data="./img/basket.svg">
+								<img src="./img/basket.svg" alt="Корзина">
+							</object>
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<!-- Подключение скриптов -->
+	<script src="./js/swiper-bundle.min.js" defer></script>
+	<script src="./js/aos.js" defer></script>
+
+	<script src="./js/app.js" defer></script>
+	
+</body>
+</html>

@@ -1611,9 +1611,8 @@ section.contact {
 }
 
 .first-screen__social object {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 23px;
+  height: 23px;
 }
 
 .first-screen__social img {
@@ -1627,13 +1626,12 @@ section.contact {
   font-size: 14px;
   color: #fff;
   text-decoration: none;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .first-screen__social-img {
   margin-top: 0px;
+  width: 23px;
+  height: 23px;
 }
 
 .first-screen__descr {

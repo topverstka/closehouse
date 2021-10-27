@@ -75,7 +75,8 @@
     flex-direction: column;
 
     object {
-        width: max-content;
+        width: 23px;
+        height: 23px;
     }
 
     img{
@@ -89,12 +90,13 @@
         font-size: 14px;
         color: #fff;
         text-decoration: none;
-        width: max-content;
     }
 }
     
 .first-screen__social-img{
     margin-top: 0px;
+    width: 23px;
+    height: 23px;
 }
 
 .first-screen__descr{

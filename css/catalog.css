@@ -943,6 +943,7 @@ h2 {
 
 .swiper-slide__content img {
   position: relative;
+  width: 100%;
 }
 
 @media (min-width: 670px) {

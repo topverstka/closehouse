@@ -1600,7 +1600,7 @@ section.contact {
 
 .first-screen__social {
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   bottom: 34px;
   left: 30px;
   display: -webkit-box;
@@ -1629,6 +1629,9 @@ section.contact {
   font-size: 14px;
   color: #fff;
   text-decoration: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .first-screen__social-img {

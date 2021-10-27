@@ -79,7 +79,8 @@
     }
 
     img{
-        width: 22px;
+        width: 9px;
+        height: 10px;
         margin-right: auto;
     }
 
@@ -261,3 +262,8 @@
     }
 }
     
+@media (min-width: 1650px) {
+    .catalog-title h2{
+        margin-bottom: 100px;
+    }
+}

@@ -1601,7 +1601,8 @@ section.contact {
 }
 
 .first-screen__social img {
-  width: 22px;
+  width: 9px;
+  height: 10px;
   margin-right: auto;
 }
 
@@ -1770,6 +1771,12 @@ section.contact {
 @media (min-width: 1420px) {
   .first-screen__title {
     font-size: 45px;
+  }
+}
+
+@media (min-width: 1650px) {
+  .catalog-title h2 {
+    margin-bottom: 100px;
   }
 }
 

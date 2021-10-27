@@ -2,9 +2,11 @@
     z-index: 25;
     opacity: 1;
 
-    .search-panel__close{
-        display: block;
-    }
+    
+}
+
+.search-panel.open .search-panel__close{
+    display: block;
 }
 .search-panel{
     -webkit-transition: all .5s;

@@ -1185,9 +1185,14 @@ h2 {
   background-color: rgba(4, 4, 4, 0.6);
 }
 
-.catalog-elemetn__item-card picture {
+.catalog-elemetn__item-card .picture {
   display: -ms-inline-grid;
   display: inline-grid;
+  width: 100%;
+}
+
+.catalog-elemetn__item-card .picture img {
+  width: 100%;
 }
 
 .catalog-elemetn__item-card:hover .bg-catalog__home {
@@ -1245,6 +1250,7 @@ h2 {
 
 .catalog-elemetn__item-one {
   margin-top: -14px;
+  width: 134%;
 }
 
 .catalog-elemetn__item-one div:last-child {
@@ -1252,6 +1258,7 @@ h2 {
 }
 
 .catalog-elemetn__item-two {
+  width: 100%;
   margin-bottom: 64px;
 }
 
@@ -1260,6 +1267,7 @@ h2 {
 }
 
 .catalog-elemetn__item-three {
+  width: 100%;
   margin-top: 132px;
 }
 

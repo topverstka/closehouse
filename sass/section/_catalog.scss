@@ -39,8 +39,12 @@
         background-color: rgba(4, 4, 4, 0.6);
     }
 
-    picture{
+    .picture{
         display: inline-grid;
+        width: 100%;
+        img{
+            width: 100%;
+        }
     }
 
     &:hover .bg-catalog__home{
@@ -90,6 +94,7 @@
 }
 .catalog-elemetn__item-one{
     margin-top: -14px;
+    width: 134%;
     div{
         &:last-child {
             margin-top: 16px;
@@ -98,6 +103,7 @@
 }
 
 .catalog-elemetn__item-two{
+    width: 100%;
    div{
         &:last-child {
             margin-top: 14px;
@@ -108,6 +114,7 @@
 }
 
 .catalog-elemetn__item-three{
+    width: 100%;
     div{
         &:last-child {
             margin-top: 14px;

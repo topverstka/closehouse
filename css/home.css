@@ -1448,7 +1448,7 @@ section.contact {
   cursor: pointer;
 }
 
-.contact-people__item:hover picture {
+.contact-people__item:hover img {
   -webkit-filter: brightness(0.6);
           filter: brightness(0.6);
 }
@@ -1463,7 +1463,7 @@ section.contact {
   display: none;
 }
 
-.contact-people__item picture {
+.contact-people__item img {
   width: 100%;
 }
 

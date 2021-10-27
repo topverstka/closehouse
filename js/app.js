@@ -125,6 +125,7 @@ btnHeaderSearch.addEventListener('click', () => {
 
 btnMenuSearch.addEventListener('click', () => {
 	find('.search-panel').classList.add('open')
+	find('.header__nav').classList.remove('header__nav--active')
 })
 
 // Закрыть поисковое меню

@@ -934,6 +934,17 @@ h2 {
   opacity: 0.4;
 }
 
+.swiper-slide__content {
+  position: absolute;
+  height: 100vw;
+  width: 100%;
+  display: contents;
+}
+
+.swiper-slide__content img {
+  position: relative;
+}
+
 @media (min-width: 670px) {
   .swiper-pagination {
     bottom: -45px;

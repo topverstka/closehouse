@@ -135,6 +135,17 @@
     opacity: 0.4;
 }
 
+.swiper-slide__content{
+    position: absolute;
+    height: 100vw;
+    width: 100%;
+    display: contents;
+
+
+    img{
+        position: relative;
+    }
+}
 
 @media (min-width: 670px){
     .swiper-pagination{

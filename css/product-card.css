@@ -1414,4 +1414,200 @@ h2 {
   cursor: default;
   pointer-events: none;
 }
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+.burger__container {
+  margin-left: 0;
+  margin-right: 23px;
+}
+
+.header {
+  width: 60%;
+}
+
+.header__buttons {
+  margin-right: 149px;
+}
+
+.swiper-slide img {
+  max-height: 100vh;
+}
+
+.product-description {
+  margin-bottom: 52px;
+}
+
+.product-description h2 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.product-description p {
+  font-size: 15px;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.product-description p:nth-child(2) {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.product-setting__controlls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-setting__size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.product-setting__size label {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-setting__size label:last-child {
+  margin-right: 0;
+}
+
+.product-setting__size label input {
+  display: none;
+}
+
+.product-setting__size label input:checked ~ p {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 13px;
+}
+
+.product-setting__size label input:not(:checked) ~ p {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.product-setting__size label p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.product-setting__color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3px 0;
+}
+
+.product-setting__color label {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-setting__color label:last-child {
+  margin-right: 0;
+}
+
+.product-setting__color label input {
+  display: none;
+}
+
+.product-setting__color label input:checked ~ p {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 11px;
+}
+
+.product-setting__color label input:not(:checked) ~ p {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 13px;
+}
+
+.product-setting__color label p span {
+  width: 23px;
+  height: 23px;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.product-setting__color label p span.gray {
+  background-color: #808080;
+}
+
+.product-setting__color label p span.black {
+  background-color: #000;
+}
+
+.product-setting__color label p span.red {
+  background-color: #962B2B;
+}
+
+.product-setting__color label p span.green {
+  background-color: #75BE48;
+}
+
+.product-setting__color label p span.yellow {
+  background-color: #D7BC2E;
+}
+
+.product-setting__color label p span.skay {
+  background-color: #3897CD;
+}
+
+.product-setting__color label p span.blue {
+  background-color: #162A92;
+}
+
+.product-setting__color label p span.purple {
+  background-color: #6F2C80;
+}
+
+.product-setting__color label p span.orange {
+  background-color: #DF6812;
+}
+
+.product-setting__color label p span.beige {
+  background-color: #E3E1A4;
+}
+
+.product-setting__color label p span.beryl {
+  background-color: #1BCDCD;
+}
+
+.product-setting__color label p span.brown {
+  background-color: #8D5A5A;
+}
+
+.product-setting__color label p span.violet {
+  background-color: #78617E;
+}
+
+.product-setting__color label p span.white {
+  background-color: #fff;
+}
 /*# sourceMappingURL=product-card.css.map */

@@ -14,152 +14,236 @@
 	<link rel="stylesheet" href="./css/animation.css">
 	<!-- / Кастомые анимации -->
 
-    <link rel="stylesheet" href="./css/catalog.css"> 
+    <link rel="stylesheet" href="./css/product-card.css"> 
 </head> 
 
 
 <body>
-	<header class="header" data-aos="fade-up">
-		<div class="container">
-			<div class="wrap">
-				<!-- Логотип -->
-				<div class="header__logo header__logo--pc">
-					<object type="image/svg+xml" data="./img/logo.svg">
-						<img src="./img/logo.svg" alt="Logo">
-					</object>
-				</div>
-				
-				<!-- Кнопки в шапке -->
-				<div class="header__buttons">
-					<button class="header__button header__button-search" id="btnHeaderSearch">
-						<img src="./img/search.svg" alt="Поиск">
-					</button>
-					<button class="header__button header__button-like">
-						<img src="./img/like.svg" alt="Избранное">
-					</button>
-					<button class="header__button header__button-basket">
-						<img src="./img/basket.svg" alt="Корзина">
-					</button>
-				<!-- Бургер для меню -->
-					<div class="burger__container">
-						<a class="header__burger">
-							<span></span>
-							<span></span>
-							<span></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+	<div class="card">
+		<div class="card-detail">
+			<header class="header" data-aos="fade-up">
+				<div class="container">
+					<div class="wrap">
+						<!-- Логотип -->
+						<div class="header__logo header__logo--pc">
+							<!-- Бургер для меню -->
+							<div class="burger__container">
+								<a class="header__burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</a>
+							</div>
 
-	<!-- всплывающий поиск -->
-	<div class="search-panel">
-		<div class="container">
-			<div class="wrap">
-
-				<div class="search-panel__close">
-					<span></span>
-					<span></span>
-				</div>
-
-				<div class="header__logo header__logo--nav">
-					<a class="header__logo-img" href="#">
-						<object type="image/svg+xml" data="./img/logo.svg">
-							<img src="./img/logo.svg" alt="Logo">
-						</object>
-						<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
-							<img src="./img/pages/home/Elegant-clothes.svg" alt="">
-						</object>
-					</a>
-				</div>
-
-				<div class="search-panel__input">
-					<input type="text">
-					<button class="btn btn-search">ПОИСК</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<!-- Всплывающее меню -->
-	<div class="header__nav">
-		<div class="header__nav-bg">
-			<div class="container">
-				<div class="wrap">
-					<!-- Закрывающий элемент -->
-					<div class="close">
-						<span></span>
-						<span></span>
-					</div>
-
-					<!-- Логотип -->
-					<div class="header__logo header__logo--nav">
-						<a class="header__logo-img" href="#">
 							<object type="image/svg+xml" data="./img/logo.svg">
 								<img src="./img/logo.svg" alt="Logo">
 							</object>
-							<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
-								<img src="./img/pages/home/Elegant-clothes.svg" alt="">
-							</object>
-						</a>
-
+						</div>
 						
+						<!-- Кнопки в шапке -->
+						<div class="header__buttons">
+							<button class="header__button header__button-search" id="btnHeaderSearch">
+								<img src="./img/search.svg" alt="Поиск">
+							</button>
+							<button class="header__button header__button-like">
+								<img src="./img/like.svg" alt="Избранное">
+							</button>
+							<button class="header__button header__button-basket">
+								<img src="./img/basket.svg" alt="Корзина">
+							</button>
+						</div>
 					</div>
+				</div>
+			</header>
 
-					<!-- Навигация -->
-					<nav class="nav-burger">
-						<ul>
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">Каталог</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</nav>
+			<!-- всплывающий поиск -->
+			<div class="search-panel">
+				<div class="container">
+					<div class="wrap">
 
-					<!-- Элемент контактов -->
-					<div class="header__contacts">
-						<a href="#">
-							<img src="./img/instagram.svg" alt="instagram">
-						</a>
+						<div class="search-panel__close">
+							<span></span>
+							<span></span>
+						</div>
 
-						<a href="#">Instargam</a>
+						<div class="header__logo header__logo--nav">
+							<a class="header__logo-img" href="#">
+								<object type="image/svg+xml" data="./img/logo.svg">
+									<img src="./img/logo.svg" alt="Logo">
+								</object>
+								<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
+									<img src="./img/pages/home/Elegant-clothes.svg" alt="">
+								</object>
+							</a>
+						</div>
+
+						<div class="search-panel__input">
+							<input type="text">
+							<button class="btn btn-search">ПОИСК</button>
+						</div>
 					</div>
+				</div>
+			</div>
+			
+			<!-- Всплывающее меню -->
+			<div class="header__nav">
+				<div class="header__nav-bg">
+					<div class="container">
+						<div class="wrap">
+							<!-- Закрывающий элемент -->
+							<div class="close">
+								<span></span>
+								<span></span>
+							</div>
 
-					<!-- Элементы магазина -->
-					<div class="header__shop">
-						<button class="header__button header__button-search" id="btnMenuSearch">
-							<img src="./img/search.svg" alt="Поиск">
-						</button>
-						<button class="header__button header__button-like">
-							<img src="./img/like.svg" alt="Избранное">
-						</button>
-						<button class="header__button header__button-basket">
-							<img src="./img/basket.svg" alt="Корзина">
-						</button>
+							<!-- Логотип -->
+							<div class="header__logo header__logo--nav">
+								<a class="header__logo-img" href="#">
+									<object type="image/svg+xml" data="./img/logo.svg">
+										<img src="./img/logo.svg" alt="Logo">
+									</object>
+									<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
+										<img src="./img/pages/home/Elegant-clothes.svg" alt="">
+									</object>
+								</a>
+
+								
+							</div>
+
+							<!-- Навигация -->
+							<nav class="nav-burger">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Каталог</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</nav>
+
+							<!-- Элемент контактов -->
+							<div class="header__contacts">
+								<a href="#">
+									<img src="./img/instagram.svg" alt="instagram">
+								</a>
+
+								<a href="#">Instargam</a>
+							</div>
+
+							<!-- Элементы магазина -->
+							<div class="header__shop">
+								<button class="header__button header__button-search" id="btnMenuSearch">
+									<img src="./img/search.svg" alt="Поиск">
+								</button>
+								<button class="header__button header__button-like">
+									<img src="./img/like.svg" alt="Избранное">
+								</button>
+								<button class="header__button header__button-basket">
+									<img src="./img/basket.svg" alt="Корзина">
+								</button>
+							</div>
+
+						</div>
 					</div>
+				</div>
+			</div>
 
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="wrap">
+						<div class="breadcrumbs-content">
+							<a href="#">Главная</a>
+							<p>•</p>
+							<a href="#">Каталог</a>
+							<p>•</p>
+							<a href="#">Верхняя одежда</a>
+							<p>•</p>
+							<a href="#">Модель А5004</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="product-description">
+				<div class="container">
+					<div class="wrap">
+						<h2>
+							<span>Пальто женское</span> - <span>7 200 RUB</span>
+						</h2>
+			
+						<p>Пальто женское на подкладке. V-образный вырез<br> горловины. Крупный воротник с остроугольными<br> лацканами. Рукав втачной. Застежка центральная<br> на пуговицы. По линии талии нашиты шлевки. В<br> комплекте пояс из ткани основного изделия.</p>
+			
+						<p>70% пэ / 30% шерсть</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="product-setting">
+				<div class="container">
+					<div class="wrap">
+						<div class="product-setting__controlls">
+							<div class="product-setting__size">
+								<label>
+									<input type="checkbox">
+									<p>42</p>
+								</label>
+								<label>
+									<input type="checkbox">
+									<p>44</p>
+								</label>
+								<label>
+									<input type="checkbox">
+									<p>46</p>
+								</label>
+								<label>
+									<input type="checkbox">
+									<p>48</p>
+								</label>
+							</div>
+
+							<div class="product-setting__color">
+								<label>
+									<input type="checkbox">
+									<p><span class="brown"></span></p>
+								</label>
+								<label>
+									<input type="checkbox">
+									<p><span class="white"></span></p>
+								</label>
+								<label>
+									<input type="checkbox">
+									<p><span class="yellow"></span></p>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="card-swiper">
+			<div class="catalog-swiper-container swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+					</div>
+					<div class="swiper-slide">
+						<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+					</div>
+					<div class="swiper-slide">
+						<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+					</div>
+				</div>
+
+				<div class="swiper-button-prev">
+					<img src="./img/prev.svg" alt="">
+				</div>
+				  <div class="swiper-button-next">
+					<img src="./img/next.svg" alt="">
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="breadcrumbs">
-		<div class="container">
-			<div class="wrap">
-				<div class="breadcrumbs-content">
-					<a href="#">Главная</a>
-					<p>•</p>
-					<a href="#">Каталог</a>
-                    <p>•</p>
-					<a href="#">Верхняя одежда</a>
-                    <p>•</p>
-					<a href="#">Модель А5004</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	
 
 

@@ -323,115 +323,137 @@ button.active{
     }
 }
 
+.filter-form__price-content{
+    input{
+        width: 100%;
+    }
+}
+
 .clear-filter{
     text-align: center;
     vertical-align: middle;
 }
-// Стили для слайдера
-[slider] {
+
+.catalog-button__setting-sort{
     position: relative;
-    height: 5px;
-  }
-  
-  [slider] > div {
-    position: absolute;
-    left: 13px;
-    right: 15px;
-    height: 5px;
-    width: 93%;
-  }
-  [slider] > div > [inverse-left] {
-    position: absolute;
-    left: 0;
-    height: 1px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.4);;
-    margin: 0 7px;
-  }
-  
-  [slider] > div > [inverse-right] {
-    position: absolute;
-    right: 0;
-    height: 1px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
-    margin: 0 7px;
-  }
-  
-  
-  [slider] > div > [range] {
-    position: absolute;
-    left: 0;
-    height: 1px;
-    border-radius: 14px;
-    background-color: #fff;
-  }
-  
-  [slider] > div > [thumb] {
-    position: absolute;
-    top: -5px;
-    z-index: 2;
-    height: 11px;
+
+    div{
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 120px;
+        min-width: 220px;
+        padding: 18px 15px;
+        transition: 0.4s;
+        background-color: rgba(255, 255, 255, 0.4);
+        pointer-events: none;
+        
+        &.active{
+            opacity: 1;
+            transition: 0.4s;
+            pointer-events: auto;
+        }
+
+        ul{
+            list-style: none;
+
+            li{
+                margin-bottom: 13px;
+
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                p{
+                    font-size: 12px;
+                    color: #fff;
+                    opacity: 0.6;
+                    width: max-content;
+                    margin-right: auto;
+                }
+
+                &.active{
+                    p{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.irs-max{
+    display: none;
+}
+
+.irs-min{
+    display: none;
+}
+
+.irs-from{
+    display: none;
+}
+
+.irs-to{
+    display: none;
+}
+
+.extra-controls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    position: relative;
+    align-items: center;
+
+    input{
+        width: 59px;
+        height: 25px;
+        font-size: 12px;
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
+        text-align: center;
+        border: 1px solid #fff;
+    }
+
+    div {
+        position: absolute;
+        height: 1px;
+        width: 33%;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+    }
+}
+
+.irs--round .irs-handle{
+    top: 31px;
     width: 11px;
-    text-align: left;
-    margin-left: -11px;
-    cursor: pointer;
-    border-radius: 50%;
-    outline: none;
+    height: 11px;
     border: 1px solid #fff;
     background-color: #707070;
-  }
-  
-  [slider] > input[type=range] {
-    position: absolute;
-    pointer-events: none;
-    -webkit-appearance: none;
-    z-index: 3;
-    height: 14px;
-    top: -2px;
-    width: 100%;
-    opacity: 0;
-  }
-  
-  div[slider] > input[type=range]:focus::-webkit-slider-runnable-track {
-    background: transparent;
-    border: transparent;
-  }
-  
-  div[slider] > input[type=range]:focus {
-    outline: none;
-  }
-  
-  div[slider] > input[type=range]::-webkit-slider-thumb {
-    pointer-events: all;
-    width: 28px;
-    height: 28px;
-    border-radius: 0px;
-    border: 0 none;
-    background: red;
-    -webkit-appearance: none;
-  }
-  
-  div[slider] > input[type=range]::-ms-fill-lower {
-    background: transparent;
-    border: 0 none;
-  }
-  
-  div[slider] > input[type=range]::-ms-fill-upper {
-    background: transparent;
-    border: 0 none;
-  }
-  
-  div[slider] > input[type=range]::-ms-tooltip {
+}
+
+.irs-single{
     display: none;
-  }  
+}
 
-  .min-value{
-      width: 59px;
-      font-size: 12px;
-  }
+.irs--round .irs-handle:hover {
+    background-color: #707070;
+}
 
-  .max-value{
-      width: 59px;
-      font-size: 12px;
-  }
+.irs--round .irs-line{
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.irs--round .irs-bar{
+    height: 1px;
+    background-color: #fff;
+}
+
+.irs--round {
+    height: 37px;
+    margin-top: -25px;
+}

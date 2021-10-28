@@ -207,5 +207,99 @@ find('.catalog-button__setting-filter p').addEventListener('click', () => {
 	}
 })
 
+// Отрыть соритровку
+find('.catalog-button__setting-sort p').addEventListener('click', () => {
+	if(find('.catalog-button__setting-sort div').classList.contains('active')){
+		find('.catalog-button__setting-sort div').classList.remove('active')
+	} else {
+		find('.catalog-button__setting-sort div').classList.add('active')
+	}
+})
+
+
+// Перключение отображения
+let vizualButton = document.querySelectorAll('.catalog-visualization__button button')
+Array.from(vizualButton).forEach((el, id, lems) => {
+    lems[0].addEventListener('click', function(event) {
+        if(lems[1].classList.contains('active')){
+			lems[1].classList.remove('active')
+		} else {
+			lems[0].classList.add('active')
+		}
+    });
+
+	lems[1].addEventListener('click', function(event) {
+        if(lems[0].classList.contains('active')){
+			lems[0].classList.remove('active')
+		} else {
+			lems[1].classList.add('active')
+		}
+    });
+});
+
+var $range = $(".js-range-slider"),
+	$inputFrom = $(".js-input-from"),
+	$inputTo = $(".js-input-to"),
+	instance,
+	min = 0,
+	max = 12600,
+	from = 0,
+	to = 0;
+
+$range.ionRangeSlider({
+	skin: "round",
+	type: "double",
+	min: min,
+	max: max,
+	from: 0,
+	to: max,
+	onStart: updateInputs,
+	onChange: updateInputs
+});
+instance = $range.data("ionRangeSlider");
+
+function updateInputs (data) {
+	from = data.from;
+	to = data.to;
+			
+	$inputFrom.prop("value", from);
+	$inputTo.prop("value", to);	
+}
+
+$inputFrom.on("input", function () {
+	var val = $(this).prop("value");
+			
+	// validate
+	if (val < min) {
+		val = min;
+	} else if (val > to) {
+		val = to;
+	}
+			
+	instance.update({
+		from: val
+	});
+});
+
+$inputTo.on("input", function () {
+	var val = $(this).prop("value");
+			
+	// validate
+	if (val < from) {
+		val = from;
+	} else if (val > max) {
+		val = max;
+	}
+			
+	instance.update({
+		to: val
+	});
+});
+let div = document.createElement("div")
+document.querySelector('.extra-controls').appendChild(div)
+
+
+
+
 // 9) AOS анимации инициализация (https://michalsnik.github.io/aos/)
 AOS.init();

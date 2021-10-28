@@ -40,6 +40,10 @@
     }
 }
 
+.product-setting{
+    margin-bottom: 80px;
+}
+
 .product-setting__controlls{
     display: flex;
     width: 60%;
@@ -175,5 +179,130 @@
                 background-color: #fff;
             }
         }
+    }
+}
+
+.product-buttons .wrap{
+    display: flex;
+    gap: 0 13px;
+}
+
+.product-buttons__buy{
+    padding: 18px 60px;
+    font-size: 15px;
+}
+
+.product-buttons__other{
+    button{
+        width: 60px;
+        height: 100%;
+        border: 1px solid #fff;
+        background-color: rgba(255, 255, 255, 0);
+
+        &:last-child{
+            margin-left: 3px;
+        }
+    }
+}
+
+.product-buttons__other-like.active{
+    background-image: url(../../img/like-productActive.svg);
+}
+
+.product-buttons__other-like{
+    cursor: pointer;
+    background-image: url(../../img/like.svg);
+    background-size: 19px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.product-buttons__other-basket{
+    cursor: pointer;
+    background-image: url(../../img/basket.svg);
+    background-size: 19px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.table-size__button{
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    width: max-content;
+    z-index: 15;
+    position: absolute;
+}
+
+.product-buttons{
+    margin-bottom: 68px;
+}
+
+.table-size{
+    position: relative;
+}
+
+.table-size__table{
+    opacity: 0;
+    width: max-content;
+    position: absolute;
+    z-index: -1;
+    bottom: -15px;
+    left: 190px;
+    transition: 0.4s;
+
+    &.active{
+        opacity: 1;
+        transition: 0.4s;
+        z-index: 15;
+    }
+
+    table{
+        text-align: center;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    thead{
+        tr{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 4px;
+            margin-bottom: 4px;
+
+            font-size: 12px;
+        }
+    }
+
+    tbody{
+        tr{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            font-size: 12px;
+            margin-bottom: 10px;
+
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.bg-table{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.8);
+    transition: 0.4s;
+    opacity: 0;
+    z-index: -2;
+
+    &.active{
+        transition: 0.4s;
+        z-index: 15;
+        opacity: 1;
     }
 }

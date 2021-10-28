@@ -298,8 +298,25 @@ $inputTo.on("input", function () {
 let div = document.createElement("div")
 document.querySelector('.extra-controls').appendChild(div)
 
+// очистить выбор фильтра
+let checkedColor = document.querySelectorAll('.filter-form__color-button label input')
+let checkedSize = document.querySelectorAll('.filter-form__size-button label input')
 
+find('.clear-filter').addEventListener('click', () => {
+	document.querySelector('.js-input-from').value = 0
+	document.querySelector('.js-input-to').value = 12600
+	document.querySelector('.irs-handle.from').style.left="0%"
+	document.querySelector('.irs-handle.to').style.left="94.6078%"
+	document.querySelector('.irs-bar').setAttribute('style', 'width:100%; left:0%;')
 
+	Array.from(checkedColor).forEach(el => {
+		el.checked = false;
+	});
+
+	Array.from(checkedSize).forEach(el => {
+		el.checked = false;
+	});
+})
 
 // 9) AOS анимации инициализация (https://michalsnik.github.io/aos/)
 AOS.init();

@@ -1273,6 +1273,12 @@ h2 {
   padding-bottom: 23px;
 }
 
+.clear-filter {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px !important;
+}
+
 .catalog-title {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -1623,11 +1629,6 @@ button.active {
 
 .filter-form__price-content input {
   width: 100%;
-}
-
-.clear-filter {
-  text-align: center;
-  vertical-align: middle;
 }
 
 .catalog-button__setting-sort {

@@ -3,6 +3,12 @@
     padding-bottom: 23px;
 }
 
+.clear-filter{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px!important;
+}
+
 .catalog-title{
     width: max-content;
     margin: 0 auto;
@@ -329,10 +335,6 @@ button.active{
     }
 }
 
-.clear-filter{
-    text-align: center;
-    vertical-align: middle;
-}
 
 .catalog-button__setting-sort{
     position: relative;
@@ -457,3 +459,4 @@ button.active{
     height: 37px;
     margin-top: -25px;
 }
+

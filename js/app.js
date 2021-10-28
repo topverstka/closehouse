@@ -189,5 +189,23 @@ window.addEventListener("scroll", function(){
    	lastScrollTop = st;
 }, false);
 
+// Открыть фильтр по категориям
+find('.catalog-button__setting-category p').addEventListener('click', () => {
+	if(find('.catalog-button__setting-category div').classList.contains('active')){
+		find('.catalog-button__setting-category div').classList.remove('active')
+	} else {
+		find('.catalog-button__setting-category div').classList.add('active')
+	}
+})
+
+// Открыть фильтры
+find('.catalog-button__setting-filter p').addEventListener('click', () => {
+	if(find('.catalog-button__setting-filter div').classList.contains('active')){
+		find('.catalog-button__setting-filter div').classList.remove('active')
+	} else {
+		find('.catalog-button__setting-filter div').classList.add('active')
+	}
+})
+
 // 9) AOS анимации инициализация (https://michalsnik.github.io/aos/)
 AOS.init();

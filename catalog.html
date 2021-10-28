@@ -23,11 +23,9 @@
 			<div class="wrap">
 				<!-- Логотип -->
 				<div class="header__logo header__logo--pc">
-					<a class="header__logo-img" href="#">
-						<object type="image/svg+xml" data="./img/logo.svg">
-							<img src="./img/logo.svg" alt="Logo">
-						</object>
-					</a>
+					<object type="image/svg+xml" data="./img/logo.svg">
+						<img src="./img/logo.svg" alt="Logo">
+					</object>
 				</div>
 				
 				<!-- Кнопки в шапке -->
@@ -42,11 +40,13 @@
 						<img src="./img/basket.svg" alt="Корзина">
 					</button>
 				<!-- Бургер для меню -->
-					<a class="header__burger">
-						<span></span>
-						<span></span>
-						<span></span>
-					</a>
+					<div class="burger__container">
+						<a class="header__burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -118,28 +118,23 @@
 
 					<!-- Элемент контактов -->
 					<div class="header__contacts">
-						<object type="image/svg+xml" data="./img/instagram.svg">
+						<a href="#">
 							<img src="./img/instagram.svg" alt="instagram">
-						</object>
-						<p>Instargam</p>
+						</a>
+
+						<a href="#">Instargam</a>
 					</div>
 
 					<!-- Элементы магазина -->
 					<div class="header__shop">
-						<button class="header__button header__button-search" id="btn-menu__search">
-							<object type="image/svg+xml" data="./img/search.svg">
-								<img src="./img/search.svg" alt="Поиск">
-							</object>
+						<button class="header__button header__button-search" id="btnMenuSearch">
+							<img src="./img/search.svg" alt="Поиск">
 						</button>
 						<button class="header__button header__button-like">
-							<object type="image/svg+xml" data="./img/like.svg">
-								<img src="./img/like.svg" alt="Избранное">
-							</object>
+							<img src="./img/like.svg" alt="Избранное">
 						</button>
 						<button class="header__button header__button-basket">
-							<object type="image/svg+xml" data="./img/basket.svg">
-								<img src="./img/basket.svg" alt="Корзина">
-							</object>
+							<img src="./img/basket.svg" alt="Корзина">
 						</button>
 					</div>
 
@@ -172,9 +167,170 @@
 				<div class="catalog-button__setting">
 					<div class="catalog-button__setting-category">
 						<p>Категория</p>
+
+						<div>
+							<ul>
+								<li class="active">
+									<p>Все категории</p>
+								</li>
+								<li>
+									<p>Платья</p>
+								</li>
+								<li>
+									<p>Костюмы</p>
+								</li>
+								<li>
+									<p>Верхняя одежда</p>
+								</li>
+								<li>
+									<p>Рубашки</p>
+								</li>
+								<li>
+									<p>Кофты</p>
+								</li>
+								<li>
+									<p>Юбки</p>
+								</li>
+								<li>
+									<p>Блузки</p>
+								</li>
+								<li>
+									<p>Комбинезоны</p>
+								</li>
+								<li>
+									<p>Брюки</p>
+								</li>
+								<li>
+									<p>Спортивная одежда</p>
+								</li>
+								<li>
+									<p>Спортивная одежда</p>
+								</li>
+								<li>
+									<p>Спортивная одежда</p>
+								</li>
+								<li>
+									<p>Спортивная одежда</p>
+								</li>
+								<li>
+									<p>Спортивная одежда</p>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div class="catalog-button__setting-filter">
 						<p>Фильтры</p>
+
+						<div class="filter-form">
+							<div class="filter-form__size">
+								<p>Размер</p>
+
+								<div class="filter-form__size-button">
+									<label>
+										<input type="checkbox">
+										<p>38</p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p>40</p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p>42</p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p>44</p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p>46</p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p>48</p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p>50</p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p>52</p>
+									</label>
+								</div>
+							</div>
+							<div class="filter-form__color">
+								<p>Цвет</p>
+								<div class="filter-form__color-button">
+									<label>
+										<input type="checkbox">
+										<p><span class="gray"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="black"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="red"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="green"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="yellow"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="skay"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="blue"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="purple"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="orange"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="beige"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="beryl"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="brown"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="violet"></span></p>
+									</label>
+									<label>
+										<input type="checkbox">
+										<p><span class="white"></span></p>
+									</label>
+								</div>
+							</div>
+							<div class="filter-form__price">
+								<p>Ценовой диапазон</p>
+
+								<div class="filter-form__price-content">
+									
+								</div>
+							</div>
+
+							<p class="clear-filter">Сбросить фильтры ×</p>
+						</div>
 					</div>
 					<div class="catalog-button__setting-sort">
 						<p>Сортировка</p>
@@ -196,6 +352,14 @@
 			</div>
 		</div>
 	</section>
+
+	<div class="catalog-descr">
+		<div class="container">
+			<div class="wrap">
+				<p>Если вы ищете потрясающее вечернее платье<br> или прекрасное дневное платье, мы поможем Вам</p>
+			</div>
+		</div>
+	</div>
 
 
 

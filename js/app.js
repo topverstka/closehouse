@@ -97,6 +97,16 @@ var swiper = new Swiper('.home-swiper-container', {
 	},
 });
 
+var swiperCatalog = new Swiper('.catalog-swiper-container', {
+	loop: true,
+	// init: false,
+	navigation: {
+		nextEl: '.swiper-button-prev',
+		prevEl: '.swiper-button-next',
+	  },
+	
+});
+
 
 // 8) Скрипт для раздела FAQ - "Частозадаваемые вопросы"
 function findFaq(){
@@ -316,6 +326,26 @@ find('.clear-filter').addEventListener('click', () => {
 	Array.from(checkedSize).forEach(el => {
 		el.checked = false;
 	});
+})
+
+visualizationThree.addEventListener('click', () => {
+	// let allSwiperSlide = findAll('.swiper-slide')
+	// let widthContainer = find('.catalog-swiper-container').offsetWidth
+	find('.product-cards').style.gridTemplateColumns = '32% 32% 32%'
+
+	// Array.from(allSwiperSlide).forEach(el => {
+	// 	el.style.width = `${widthContainer}px`
+	// });
+})
+
+visualizationTwo.addEventListener('click', () => {
+	// let allSwiperSlide = findAll('.swiper-slide')
+	// let widthContainer = find('.catalog-swiper-container').offsetWidth
+	find('.product-cards').style.gridTemplateColumns = '49.5% 49.5%'
+
+	// Array.from(allSwiperSlide).forEach(el => {
+	// 	el.style.width = `${widthContainer}px`
+	// });
 })
 
 // 9) AOS анимации инициализация (https://michalsnik.github.io/aos/)

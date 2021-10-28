@@ -1172,15 +1172,112 @@ h2 {
   top: 8px;
 }
 
+.product-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 32% 32% 32%;
+      grid-template-columns: 32% 32% 32%;
+  gap: 30px;
+}
+
 .product-card {
   position: relative;
   margin-bottom: 29px;
 }
 
-.product-card__button {
+.catalog-swiper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.catalog-swiper-container:hover .swiper-button-next {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+.catalog-swiper-container:hover .swiper-button-prev {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+.swiper-button-next {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
   position: absolute;
-  top: 24px;
-  left: 345px;
+  opacity: 0;
+  z-index: 1;
+  border: 1px solid #fff;
+  left: -31px;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-button-prev {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  border: 1px solid #fff;
+  right: -31px;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-button {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  z-index: 10;
+}
+
+.product-button button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.product-button button img {
+  width: 18px;
+}
+
+.size-list.activator-list {
+  display: block;
+  position: absolute;
+  top: 55px;
+}
+
+.product-button__contain {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1188,17 +1285,70 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.product-card__button:first-child {
-  margin-bottom: 15px;
+.size-list {
+  margin-top: 15%;
+  background-color: rgba(255, 255, 255, 0.4);
+  max-width: 30px;
+  display: none;
 }
 
-.product-card__price {
+.size-list ul {
+  list-style: none;
+}
+
+.size-list ul li button {
+  padding: 7px 7px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.product-button__like.active-favorite {
+  background-image: url(../img/like-productActive.svg);
+}
+
+.product-button__like {
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/like-product.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-bottom: 13px;
+}
+
+.product-card__button {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-card__button button {
+  font-size: 15px;
+  padding: 15px 60px;
+  opacity: 0.6;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.product-card__button button:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  opacity: 1;
+}
+
+.product-card__content-price {
   position: absolute;
   bottom: 0;
-  height: 80px;
-  width: 100%;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1212,19 +1362,17 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.product-card__price p {
-  color: #fff;
+.product-card__content-price p {
+  font-size: 15px;
 }
 
-.product-card__price p:first-child {
+.product-card__content-price p:first-child {
   margin-bottom: 5px;
-}
-
-.btn-product {
-  padding: 15px 60px;
 }
 
 .breadcrumbs {

@@ -17,8 +17,10 @@ document.querySelector('.table-size__button').addEventListener('click', ()=> {
 document.querySelector('.table-size__button').addEventListener('click', ()=> {
     if(document.querySelector('.bg-table').classList.contains('active')){
         document.querySelector('.bg-table').classList.remove('active')
+        document.querySelector('body').style.overflowY = 'inherit'
     } else {
         document.querySelector('.bg-table').classList.add('active')
+        document.querySelector('body').style.overflowY = 'hidden'
     }
 })
 

@@ -1,0 +1,28 @@
+.basket{
+    padding-top: 0px;
+}
+
+.breadcrumbs{
+    padding-bottom: 34px;
+}
+
+.basket-titl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 86px;
+
+    h2{
+        position: relative;
+        margin-bottom: 0px;
+        img{
+            position: absolute;
+            top: 40px;
+            right: -60px;
+        }
+    }
+
+    p{
+        font-size: 15px;
+    }
+}

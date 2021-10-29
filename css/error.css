@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gilroy"), url("../fonts/Gilroy/Gilroy-UltraLight.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Kharkiv-Tone";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Kharkiv-Tone"), url("../fonts/Kharkiv_Tone/Kharkiv-Tone.ttf") format("woff2");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #FFFFFF;
+  font-family: "Gilroy";
+  font-size: 20px;
+  position: relative;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  background-color: #111111;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+img[data-src] {
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 670px) {
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .section-desr {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 1300px) {
+  section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+.container {
+  margin: 0 30px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    position: relative;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: "Kharkiv-Tone";
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+@media (min-width: 670px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1300px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+.error {
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error-titl {
+  text-align: center;
+}
+
+.error-titl h2 {
+  font-size: 140px;
+  margin-bottom: 0;
+}
+
+.error-titl__subtitle a {
+  color: #fff;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=error.css.map */

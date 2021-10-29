@@ -331,3 +331,82 @@
 .basket-content__item-close img{
     cursor: pointer;
 }
+
+.modal{
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.6);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+
+    &.active{
+        transition: 0.4s;
+        z-index: 13;
+        opacity: 1;
+    }
+}
+
+.modal-content{
+    padding: 24px 20px;
+    max-width: 400px;
+    background-color: #524F4F;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content__title{
+    font-size: 18px;
+}
+
+.modal-close{
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.modal-content__subtitle{
+    font-size: 11px;
+    margin-top: 16px;
+    margin-bottom: 43px;
+}
+
+.modal-content__form{
+    display: flex;
+    flex-direction: column;
+
+    label{
+
+        input {
+            background-color: rgba(255, 255, 255, 0);
+            border: 0;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            width: 100%;
+            margin-top: 3px;
+        }
+
+        p{
+            font-size: 12px;
+            text-align: start;
+        }
+
+        margin-bottom: 20px;
+    }
+
+    button{
+        cursor: pointer;
+        margin-top: 15px;
+        padding: 15px 0;
+        font-size: 15px;
+        font-weight: 600;
+        border: 0;
+        background-color: #fff;
+    }
+}

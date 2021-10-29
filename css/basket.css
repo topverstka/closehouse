@@ -1440,4 +1440,8 @@ h2 {
   z-index: 1;
   opacity: 1;
 }
+
+.basket-content__item-close img {
+  cursor: pointer;
+}
 /*# sourceMappingURL=basket.css.map */

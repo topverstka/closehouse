@@ -1,42 +1,88 @@
 // Активация/деактивация меню размеров
-document.querySelector('.button-size').addEventListener('click', () => {
-    if(document.querySelector('.line-size').classList.contains('active')){
-        document.querySelector('.line-size').classList.remove('active')
-        document.querySelector('.basket-content__item-bg').classList.remove('active')
-        document.querySelector('.setting-size').style.zIndex = '0'
-    } else {
-        document.querySelector('.line-size').classList.add('active')
-        document.querySelector('.basket-content__item-bg').classList.add('active')
-        document.querySelector('.setting-size').style.zIndex = '2'
-    }
-})
+let allButtonSize = document.querySelectorAll('.button-size')
+let allLineSize = document.querySelectorAll('.line-size')
+let allBg = document.querySelectorAll('.basket-content__item-bg')
+let allSettingSize = document.querySelectorAll('.setting-size')
+
+Array.from(allButtonSize).forEach((el, id) => {
+    el.addEventListener('click', function(event) {
+		Array.from(allLineSize).some((lineSize, number, allLinesizes) => {
+			if(allLinesizes[id].classList.contains('active')){
+				allLinesizes[id].classList.remove('active')
+                Array.from(allBg).forEach((lineSize, number, allBg) => {
+                    allBg[id].classList.remove('active')
+                });
+                Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
+                    allSettingSize[id].style.zIndex = '0'
+                });
+			} else {
+				allLinesizes[id].classList.add('active')
+                Array.from(allBg).forEach((lineSize, number, allBg) => {
+                    allBg[id].classList.add('active')
+                });
+                Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
+                    allSettingSize[id].style.zIndex = '2'
+                });
+			}
+
+			return allLinesizes[id]
+		});
+    });
+});
 
 // Активация/деактивация меню цвета
-document.querySelector('.button-color').addEventListener('click', () => {
-    if(document.querySelector('.line-color').classList.contains('active')){
-        document.querySelector('.line-color').classList.remove('active')
-        document.querySelector('.basket-content__item-bg').classList.remove('active')
-        document.querySelector('.setting-color').style.zIndex = '0'
-    } else {
-        document.querySelector('.line-color').classList.add('active')
-        document.querySelector('.basket-content__item-bg').classList.add('active')
-        document.querySelector('.setting-color').style.zIndex = '2'
-    }
-})
+let allButtonColor = document.querySelectorAll('.button-color')
+let allLineColor = document.querySelectorAll('.line-color')
+let allSettingColor = document.querySelectorAll('.setting-color')
+
+Array.from(allButtonColor).forEach((el, id) => {
+    el.addEventListener('click', function(event) {
+		Array.from(allLineColor).some((lineSize, number, allLineColor) => {
+			if(allLineColor[id].classList.contains('active')){
+				allLineColor[id].classList.remove('active')
+                Array.from(allBg).forEach((lineSize, number, allBg) => {
+                    allBg[id].classList.remove('active')
+                });
+                Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
+                    allSettingColor[id].style.zIndex = '0'
+                });
+			} else {
+				allLineColor[id].classList.add('active')
+                Array.from(allBg).forEach((lineSize, number, allBg) => {
+                    allBg[id].classList.add('active')
+                });
+                Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
+                    allSettingColor[id].style.zIndex = '2'
+                });
+			}
+
+			return allLineColor[id]
+		});
+    });
+});
 
 // Поставляем значения выбранные пользователем по размеру
-let sizeProduct = document.querySelectorAll('.button-size')
-let allRadioSize = document.querySelectorAll('.size-radio')
-Array.from(allRadioSize).forEach(radioSize => {
-    radioSize.addEventListener('click', function(event) {
-       document.querySelector('.button-size').innerHTML = radioSize.value
+let allBasketItem = document.querySelectorAll('.basket-content__item')
+Array.from(allBasketItem).forEach((basketItem) => {
+    let allRadioSize = basketItem.querySelectorAll('.size-radio')
+
+    Array.from(allRadioSize).forEach((radioSize) => {
+        radioSize.addEventListener('click', function(event) {
+            basketItem.childNodes[5].childNodes[1].childNodes[1].innerHTML = radioSize.value
+        })
+        
     });
 
-    Array.from(sizeProduct).forEach(el => {
-        if(radioSize.value == el.innerHTML){
-            radioSize.checked = true
-        }
-    });
+    basketItem.addEventListener('click', function(){
+        let selectRadioSize = this.querySelectorAll('.size-radio')
+        let selectButtonSize = this.querySelectorAll('.button-size')
+
+        Array.from(selectRadioSize).forEach((el) => {
+            if(el.value == selectButtonSize[0].innerHTML){
+                el.checked = true
+            }
+        })
+    })
 });
 
 // Преобразуем rgb в hex
@@ -53,16 +99,35 @@ function hex(x) {
 }
 
 // Поставляем значения выбранные пользователем по цвету
-let colorProduct = document.querySelectorAll('.color-prod')
-let allRadioColor = document.querySelectorAll('.color-radio')
-Array.from(allRadioColor).forEach(radioColor => {
-    radioColor.addEventListener('click', function(event) {
-       document.querySelector('.button-color span').style.background  = radioColor.value
+Array.from(allBasketItem).forEach((basketItem) => {
+    let allRadioColor = basketItem.querySelectorAll('.color-radio')
+
+    Array.from(allRadioColor).forEach((radioColor) => {
+        radioColor.addEventListener('click', function(event) {
+            basketItem.childNodes[5].childNodes[3].childNodes[1].childNodes[0].style.background = radioColor.value
+        })
     });
 
-    Array.from(colorProduct).forEach(el => {
-        if(radioColor.value == convertToHex(el.style.backgroundColor)){
-            radioColor.checked = true
-        }
-    });
+    basketItem.addEventListener('click', function(){
+        let selectRadioColor = this.querySelectorAll('.color-radio')
+        let selectColorProduct = this.querySelectorAll('.button-color span')
+
+        Array.from(selectRadioColor).forEach((el) => {
+            if(el.value == convertToHex(selectColorProduct[0].style.backgroundColor)){
+                el.checked = true
+            }
+        })
+    })
 });
+
+// Удаление элемента из корзины
+Array.from(allBasketItem).forEach((basketItem) => {
+    let allDeleteElement = basketItem.querySelectorAll('.basket-content__item-close img')
+
+    Array.from(allDeleteElement).forEach((deleteElement) => {
+        deleteElement.addEventListener('click', function(event) {
+            basketItem.style.display = 'none'
+        })
+    })
+});
+document.querySelector('.basket-content__item-close img').addEventListener()

@@ -3,6 +3,13 @@
     grid-template-columns: 55.6% 44.4%;
 }
 
+.new-title{
+    h2{
+        font-size: 31px;
+    }
+}
+
+
 .burger__container{
     margin-left: 0;
     margin-right: 23px;
@@ -87,13 +94,13 @@
             &:checked ~ p{
                 border: 3px solid #fff;
                 border-radius: 50%;
-                padding: 13px;
+                padding: 11px;
             }
 
             &:not(:checked) ~ p{
                 border: 1px solid rgba(255, 255, 255, 0.2);
                 border-radius: 50%;
-                padding: 15px;
+                padding: 13px;
             }
         }
 
@@ -124,13 +131,13 @@
             &:checked ~ p{
                 border: 3px solid #fff;
                 border-radius: 50%;
-                padding: 11px;
+                padding: 8px;
             }
 
             &:not(:checked) ~ p{
                 border: 1px solid rgba(255, 255, 255, 0.2);
                 border-radius: 50%;
-                padding: 13px;
+                padding: 10px;
             }
         }
 
@@ -207,7 +214,7 @@
 }
 
 .product-buttons__buy{
-    padding: 18px 60px;
+    padding: 16px 58px;
     font-size: 15px;
 }
 

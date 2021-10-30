@@ -1422,6 +1422,10 @@ h2 {
       grid-template-columns: 55.6% 44.4%;
 }
 
+.new-title h2 {
+  font-size: 31px;
+}
+
 .burger__container {
   margin-left: 0;
   margin-right: 23px;
@@ -1519,13 +1523,13 @@ h2 {
 .product-setting__size label input:checked ~ p {
   border: 3px solid #fff;
   border-radius: 50%;
-  padding: 13px;
+  padding: 11px;
 }
 
 .product-setting__size label input:not(:checked) ~ p {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  padding: 15px;
+  padding: 13px;
 }
 
 .product-setting__size label p {
@@ -1562,13 +1566,13 @@ h2 {
 .product-setting__color label input:checked ~ p {
   border: 3px solid #fff;
   border-radius: 50%;
-  padding: 11px;
+  padding: 8px;
 }
 
 .product-setting__color label input:not(:checked) ~ p {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  padding: 13px;
+  padding: 10px;
 }
 
 .product-setting__color label p span {
@@ -1643,7 +1647,7 @@ h2 {
 }
 
 .product-buttons__buy {
-  padding: 18px 60px;
+  padding: 16px 58px;
   font-size: 15px;
 }
 
@@ -1776,9 +1780,16 @@ h2 {
           justify-content: space-between;
 }
 
+.new-title h2 {
+  font-size: 31px;
+  margin-bottom: 31px;
+}
+
 .new-title h2 object {
   margin-left: -14px;
-  margin-bottom: -14px;
+  margin-bottom: -11px;
+  width: 52px;
+  height: 45px;
 }
 
 .new-title__desrc {
@@ -1894,7 +1905,7 @@ h2 {
 }
 
 .product-interes {
-  padding-top: 100px;
+  padding-top: 91px;
 }
 
 .size-list.activator-list {

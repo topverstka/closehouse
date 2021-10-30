@@ -82,7 +82,9 @@ section {
 }
 
 .container {
-  margin: 0 30px;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 2%;
 }
 
 @media (min-width: 992px) {
@@ -1622,8 +1624,6 @@ section.contact {
 .circle-animation {
   position: absolute;
   left: -69px;
-  animation: 18s linear 0s normal none infinite running rot;
-  -webkit-animation: 18s linear 0s normal none infinite running rot;
 }
 
 .first-screen__social {

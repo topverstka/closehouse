@@ -82,7 +82,9 @@ section {
 }
 
 .container {
-  margin: 0 30px;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 2%;
 }
 
 @media (min-width: 992px) {
@@ -1546,5 +1548,24 @@ h2 {
   font-weight: 600;
   border: 0;
   background-color: #fff;
+}
+
+.basket-content__alert {
+  text-align: center;
+  margin-top: 70px;
+  display: none;
+}
+
+.basket-content__alert p {
+  font-size: 15px;
+  color: #fff;
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+
+.basket-content__alert a {
+  font-size: 15px;
+  padding: 17px 60px;
+  color: #fff;
 }
 /*# sourceMappingURL=basket.css.map */

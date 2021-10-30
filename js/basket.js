@@ -129,6 +129,12 @@ Array.from(allBasketItem).forEach((basketItem, basketItemId, basketItemArray) =>
         deleteElement.addEventListener('click', function(event) {
             basketItem.style.display = 'none'
             countProduct.innerHTML = --basketItemArray.length
+
+            // Выводим сообщение об отсутствии товаров
+            if(countProduct.innerHTML == 0){
+                document.querySelector('.basket-content__alert').style.display = 'block'
+                document.querySelector('.basket-buttons').style.display = 'none'
+            }
         })
     })
 });
@@ -136,6 +142,13 @@ Array.from(allBasketItem).forEach((basketItem, basketItemId, basketItemArray) =>
 // Кол-во товаров в корзине
 Array.from(allBasketItem).forEach((basketItem, basketItemId, basketItemArray) => {
     countProduct.innerHTML = basketItemArray.length
+    console.log(countProduct.innerHTML)
+
+    // Выводим сообщение об отсутствии товаров
+    if(countProduct.innerHTML == 0){
+        document.querySelector('.basket-content__alert').style.display = 'block'
+        document.querySelector('.basket-buttons').style.display = 'none'
+    }
 });
 
 // открытие модального окна

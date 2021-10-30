@@ -1,7 +1,7 @@
 .catalog-title img {
     position: absolute;
-    bottom: -48px;
-    right: -74px;
+    bottom: -42px;
+    right: -93px;
 }
 
 .favorite-count{
@@ -10,4 +10,17 @@
 
 .catalog-title{
     margin: 0;
+}
+
+.catalog .wrap{
+    justify-content: start;
+}
+
+.catalog{
+    margin-top: -19px;
+}
+
+.catalog {
+    padding-top: 0;
+    padding-bottom: 79px;
 }

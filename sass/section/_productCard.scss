@@ -1,6 +1,6 @@
 .card{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55.6% 44.4%;
 }
 
 .burger__container{
@@ -12,12 +12,16 @@
     width: 60%;
 }
 
+.breadcrumbs {
+    padding: 120px 0 60px 0;
+}
+
 .header__buttons{
-    margin-right: 149px;
+    margin-right: 173px;
 }
 
 .swiper-slide img{
-    max-height: 100vh;
+    height: 750px;
 }
 
 .product-description{
@@ -26,6 +30,18 @@
     h2{
         font-size: 18px;
         margin-bottom: 30px;
+        text-transform: inherit;
+
+        span{
+            letter-spacing: -1px;
+            &:first-child{
+                margin-right: 29px;
+            }
+
+            &:last-child{
+                margin-left: 28px;
+            }
+        }
     }
 
     p{
@@ -34,8 +50,10 @@
         opacity: 0.6;
     
         &:nth-child(2){
-            margin-top: 30px;
-            margin-bottom: 60px;
+            margin-top: -2px;
+            margin-bottom: 54px;
+            letter-spacing: -0.1px;
+            line-height: 18.1px;
         }
     }
 }
@@ -46,8 +64,9 @@
 
 .product-setting__controlls{
     display: flex;
-    width: 60%;
+    max-width: 450px;
     justify-content: space-between;
+    width: 100%;
 }
 
 .product-setting__size{

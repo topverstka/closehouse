@@ -1418,8 +1418,8 @@ h2 {
 .card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
+  -ms-grid-columns: 55.6% 44.4%;
+      grid-template-columns: 55.6% 44.4%;
 }
 
 .burger__container {
@@ -1431,12 +1431,16 @@ h2 {
   width: 60%;
 }
 
+.breadcrumbs {
+  padding: 120px 0 60px 0;
+}
+
 .header__buttons {
-  margin-right: 149px;
+  margin-right: 173px;
 }
 
 .swiper-slide img {
-  max-height: 100vh;
+  height: 750px;
 }
 
 .product-description {
@@ -1446,6 +1450,19 @@ h2 {
 .product-description h2 {
   font-size: 18px;
   margin-bottom: 30px;
+  text-transform: inherit;
+}
+
+.product-description h2 span {
+  letter-spacing: -1px;
+}
+
+.product-description h2 span:first-child {
+  margin-right: 29px;
+}
+
+.product-description h2 span:last-child {
+  margin-left: 28px;
 }
 
 .product-description p {
@@ -1455,8 +1472,10 @@ h2 {
 }
 
 .product-description p:nth-child(2) {
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-top: -2px;
+  margin-bottom: 54px;
+  letter-spacing: -0.1px;
+  line-height: 18.1px;
 }
 
 .product-setting {
@@ -1467,10 +1486,11 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  max-width: 450px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .product-setting__size {

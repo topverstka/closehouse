@@ -975,17 +975,6 @@ h2 {
   }
 }
 
-.invertet-text {
-  position: absolute;
-  -webkit-transform: rotateZ(-90deg);
-          transform: rotateZ(-90deg);
-}
-
-.invertet-text p {
-  font-size: 15px;
-  color: #fff;
-}
-
 .btn {
   text-align: center;
   display: inline-block;

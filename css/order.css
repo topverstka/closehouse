@@ -209,30 +209,37 @@ h2 {
   }
 }
 
-.order-title {
-  position: relative;
+input, textarea {
+  border: none;
 }
 
-.order-title h2 {
-  line-height: 73px;
-  margin-bottom: 39px;
+input, textarea, button {
+  outline: none;
+  border: none;
 }
 
-.order-title h2 span {
-  margin-left: 345px;
+input:focus:required:invalid, textarea:focus:required:invalid, button:focus:required:invalid {
+  border-color: red;
 }
 
-.order-title h2 span img {
-  margin-bottom: -16px;
-  margin-left: 8px;
+input:required:valid, textarea:required:valid, button:required:valid {
+  border-color: green;
 }
 
-.order-title a {
-  position: absolute;
-  top: 30px;
-  right: 0;
+.order-form {
+  padding: 23px 19px;
+}
+
+.order-form label p {
   color: #fff;
-  font-size: 15px;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.order-form label input {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .order-form {
@@ -345,6 +352,32 @@ h2 {
 
 .comment {
   margin-bottom: 0px;
+}
+
+.order-title {
+  position: relative;
+}
+
+.order-title h2 {
+  line-height: 73px;
+  margin-bottom: 39px;
+}
+
+.order-title h2 span {
+  margin-left: 345px;
+}
+
+.order-title h2 span img {
+  margin-bottom: -16px;
+  margin-left: 8px;
+}
+
+.order-title a {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  color: #fff;
+  font-size: 15px;
 }
 
 .order-form__info {

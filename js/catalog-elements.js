@@ -4,6 +4,8 @@ find('.catalog-button__setting-category p').addEventListener('click', () => {
 		find('.catalog-button__setting-category div').classList.remove('active')
 	} else {
 		find('.catalog-button__setting-category div').classList.add('active')
+		find('.catalog-button__setting-filter div').classList.remove('active')
+		find('.catalog-button__setting-sort div').classList.remove('active')
 	}
 })
 
@@ -13,6 +15,8 @@ find('.catalog-button__setting-filter p').addEventListener('click', () => {
 		find('.catalog-button__setting-filter div').classList.remove('active')
 	} else {
 		find('.catalog-button__setting-filter div').classList.add('active')
+		find('.catalog-button__setting-category div').classList.remove('active')
+		find('.catalog-button__setting-sort div').classList.remove('active')
 	}
 })
 
@@ -22,6 +26,8 @@ find('.catalog-button__setting-sort p').addEventListener('click', () => {
 		find('.catalog-button__setting-sort div').classList.remove('active')
 	} else {
 		find('.catalog-button__setting-sort div').classList.add('active')
+		find('.catalog-button__setting-filter div').classList.remove('active')
+		find('.catalog-button__setting-category div').classList.remove('active')
 	}
 })
 

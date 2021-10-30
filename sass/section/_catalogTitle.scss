@@ -1,3 +1,8 @@
+.catalog .wrap{
+    display: flex;
+    justify-content: center;
+}
+
 .catalog{
     padding-top: 0;
     padding-bottom: 23px;
@@ -11,13 +16,19 @@
 
 .catalog-title{
     width: max-content;
-    margin: 0 auto;
     position: relative;
+    margin-right: 88px;
+    margin-bottom: 42px;
+    margin-top: -4px;
+
+    h2{
+        margin-bottom: 0px;
+    }
 
     img{
         position: absolute;
-        bottom: -32px;
-        right: -74px;
+        bottom: -22px;
+        right: -67px;
     }
 }
 
@@ -40,7 +51,7 @@
 .catalog-visualization{
     position: absolute;
     top: 0;
-    right: 0;
+    right: 6px;
     display: flex;
     width: 80px;
     height: 100px;
@@ -77,12 +88,17 @@ button.active{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    margin-right: 68px;
 
     p{
         font-size: 12px;
         opacity: 0.6;
-        line-height: 18px;
+        line-height: 15px;
     }
+}
+
+.catalog-content{
+    padding-top: 0px;
 }
 
 .catalog-button__setting-category{
@@ -105,6 +121,7 @@ button.active{
             opacity: 1;
             transition: 0.4s;
             pointer-events: auto;
+            z-index: 2;
         }
 
         ul{
@@ -355,6 +372,7 @@ button.active{
             opacity: 1;
             transition: 0.4s;
             pointer-events: auto;
+            z-index: 2;
         }
 
         ul{
@@ -465,3 +483,11 @@ button.active{
     margin-top: -25px;
 }
 
+.load-more{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 15px;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}

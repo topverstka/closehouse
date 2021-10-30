@@ -141,11 +141,11 @@ Array.from(allBasketItem).forEach((basketItem, basketItemId, basketItemArray) =>
 // открытие модального окна
 document.querySelector('.open-modal').addEventListener('click', function(){
     document.querySelector('.modal').classList.add('active')
-    document.querySelector('body').style.overflow = 'hidden'
+    document.querySelector('body').style.overflowY = 'hidden'
 })
 
 
 document.querySelector('.modal-close').addEventListener('click', function(){
     document.querySelector('.modal').classList.remove('active')
-    document.querySelector('body').style.overflow = 'inherit'
+    document.querySelector('body').style.overflowY = 'auto'
 })

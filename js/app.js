@@ -192,7 +192,7 @@ window.addEventListener("scroll", function(){
 
 // 9) AOS анимации инициализация (https://michalsnik.github.io/aos/)
 
-if(document.documentElement.clientWidth < 1080){
+if(document.documentElement.clientWidth > 1080){
 	AOS.init();
 }
 

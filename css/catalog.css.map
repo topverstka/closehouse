@@ -14,7 +14,7 @@
         "../sass/elements/_search-panel.scss",
         "../sass/elements/_product-card.scss",
         "../sass/elements/_breadcrumbs.scss",
-        "../sass/section/_catalogTitle.scss"
+        "../sass/section/_catalogContent.scss"
     ],
     "names": [],
     "file": "catalog.css"

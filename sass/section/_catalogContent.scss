@@ -491,3 +491,33 @@ button.active{
     font-style: italic;
     cursor: pointer;
 }
+
+.search-false__title{
+    text-align: center;
+    p{
+        font-size: 15px;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+}
+
+.search-false__descr{
+    text-align: center;
+    margin-bottom: 40px;
+    p{
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.6);
+
+        span{
+            color: rgba(255, 255, 255, 1);
+        }
+    }       
+}
+
+.search-false__button{
+    text-align: center;
+
+    a{
+        padding: 17px 58px;
+    }
+}

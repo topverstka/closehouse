@@ -113,6 +113,35 @@ section {
           align-items: center;
 }
 
+input.saearch-header {
+  background-color: rgba(28, 28, 28, 0);
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-right: 25px;
+  width: 100%;
+  max-width: 180px;
+  color: #fff;
+  font-size: 12px;
+  padding-bottom: 1px;
+  width: 180px;
+}
+
+input.saearch-header::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input.saearch-header:-ms-input-placeholder {
+  color: #fff;
+}
+
+input.saearch-header::-ms-input-placeholder {
+  color: #fff;
+}
+
+input.saearch-header::placeholder {
+  color: #fff;
+}
+
 .header__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +167,9 @@ section {
 .header__button img {
   width: 17px;
   height: 17px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .header__button object {

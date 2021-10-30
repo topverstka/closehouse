@@ -13,6 +13,24 @@
 	}
 }
 
+input.saearch-header{
+	background-color: rgba(28,28,28, 0);
+	border: none;
+	border-bottom: 1px solid #fff;
+	margin-right: 25px;
+	width: 100%;
+	max-width: 180px;
+	color: #fff;
+	font-size: 12px;
+	padding-bottom: 1px;
+	width: 180px;
+
+	&::placeholder{
+		// font-weight: 600;
+		color: #fff;
+	}
+}
+
 .header__buttons {
 	display: flex;
 	flex-direction: row;
@@ -27,6 +45,7 @@
 	img{
 		width: 17px;
 		height: 17px;
+		max-width: max-content;
 	}
 
 	object{

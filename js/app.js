@@ -133,13 +133,6 @@ btnHeaderSearch.addEventListener('click', () => {
 	find('.search-panel').classList.add('open')
 })
 
-btnMenuSearch.addEventListener('click', () => {
-	find('.search-panel').classList.add('open')
-	find('.header__nav').classList.remove('header__nav--active')
-	find('.burger__container').classList.remove('header__burger--active')
-	bodyLock()
-})
-
 // Закрыть поисковое меню
 find('.search-panel__close').addEventListener('click', () => {
 	find('.search-panel').classList.remove('open')

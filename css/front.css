@@ -370,34 +370,6 @@ section {
   overflow: hidden;
 }
 
-.header__shop {
-  height: 50%;
-  overflow: auto;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: auto 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.header__shop .header__button-like {
-  margin: 30px 0;
-}
-
 .header__nav-bg {
   background-color: #232323;
   position: relative;

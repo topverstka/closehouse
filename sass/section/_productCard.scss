@@ -232,12 +232,12 @@
 }
 
 .product-buttons__other-like.active{
-    background-image: url(../../img/like-productActive.svg);
+    background-image: url(../img/like-productActive.svg);
 }
 
 .product-buttons__other-like{
     cursor: pointer;
-    background-image: url(../../img/like.svg);
+    background-image: url(../img/like.svg);
     background-size: 19px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -245,7 +245,7 @@
 
 .product-buttons__other-basket{
     cursor: pointer;
-    background-image: url(../../img/basket.svg);
+    background-image: url(../img/basket.svg);
     background-size: 19px;
     background-position: center center;
     background-repeat: no-repeat;

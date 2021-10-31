@@ -55,14 +55,12 @@ img[data-src] {
 section {
   padding-top: 50px;
   padding-bottom: 50px;
-  margin: 0 30px;
 }
 
 @media (min-width: 670px) {
   section {
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 0 30px;
   }
 }
 
@@ -70,7 +68,6 @@ section {
   section {
     padding-top: 55px;
     padding-bottom: 55px;
-    margin: 0 30px;
   }
   .section-desr {
     font-size: 18px;
@@ -82,13 +79,16 @@ section {
   section {
     padding-top: 55px;
     padding-bottom: 55px;
-    margin: 0 30px;
   }
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1200px;
+}
+
+.wrap {
+  margin: 0 30px;
 }
 
 @media (min-width: 992px) {
@@ -130,6 +130,17 @@ input.saearch-header {
   font-size: 12px;
   padding-bottom: 1px;
   width: 180px;
+  z-index: -2;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input.saearch-header.open {
+  z-index: 2;
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input.saearch-header::-webkit-input-placeholder {
@@ -432,8 +443,8 @@ input.saearch-header::placeholder {
   position: fixed;
   top: 0;
   left: 0px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .8s;
+  transition: all .8s;
   z-index: 2;
   width: 100vw;
   height: 100vh;
@@ -740,6 +751,10 @@ footer h3 {
 .footer__content-shop ul li a {
   font-size: 12px;
   color: #fff;
+}
+
+.footer-wrap {
+  margin: 0 30px;
 }
 
 h1, h2, h3, h4 {

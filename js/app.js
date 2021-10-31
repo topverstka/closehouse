@@ -130,12 +130,11 @@ findFaq();
 
 // Открыть поисковое меню
 btnHeaderSearch.addEventListener('click', () => {
-	find('.search-panel').classList.add('open')
-})
-
-// Закрыть поисковое меню
-find('.search-panel__close').addEventListener('click', () => {
-	find('.search-panel').classList.remove('open')
+	if(find('.saearch-header').classList.contains('open')){
+		find('.saearch-header').classList.remove('open')
+	}else {
+		find('.saearch-header').classList.add('open')
+	}
 })
 
 // Добавить в избранное

@@ -54,14 +54,12 @@ img[data-src] {
 section {
   padding-top: 50px;
   padding-bottom: 50px;
-  margin: 0 30px;
 }
 
 @media (min-width: 670px) {
   section {
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 0 30px;
   }
 }
 
@@ -69,7 +67,6 @@ section {
   section {
     padding-top: 55px;
     padding-bottom: 55px;
-    margin: 0 30px;
   }
   .section-desr {
     font-size: 18px;
@@ -81,13 +78,16 @@ section {
   section {
     padding-top: 55px;
     padding-bottom: 55px;
-    margin: 0 30px;
   }
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1200px;
+}
+
+.wrap {
+  margin: 0 30px;
 }
 
 @media (min-width: 992px) {
@@ -129,6 +129,17 @@ input.saearch-header {
   font-size: 12px;
   padding-bottom: 1px;
   width: 180px;
+  z-index: -2;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input.saearch-header.open {
+  z-index: 2;
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input.saearch-header::-webkit-input-placeholder {
@@ -431,8 +442,8 @@ input.saearch-header::placeholder {
   position: fixed;
   top: 0;
   left: 0px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .8s;
+  transition: all .8s;
   z-index: 2;
   width: 100vw;
   height: 100vh;
@@ -739,6 +750,10 @@ footer h3 {
 .footer__content-shop ul li a {
   font-size: 12px;
   color: #fff;
+}
+
+.footer-wrap {
+  margin: 0 30px;
 }
 
 h1, h2, h3, h4 {
@@ -1813,32 +1828,6 @@ h2 {
   gap: 0 15px;
 }
 
-.scale {
-  display: inline-block;
-  overflow: hidden;
-  margin-bottom: 15px;
-  width: 100%;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  cursor: pointer;
-}
-
-.scale img {
-  -webkit-filter: brightness(1);
-          filter: brightness(1);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  display: block;
-  width: inherit;
-}
-
-.scale img:hover {
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .new-product__item {
   position: relative;
   width: 100%;
@@ -1856,13 +1845,6 @@ h2 {
 
 .new-product__item p:first-child {
   margin-bottom: 5px;
-}
-
-.new-product__item:hover .scale img {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-filter: brightness(0.6);
-          filter: brightness(0.6);
 }
 
 .new-product__item:nth-child(2n) {

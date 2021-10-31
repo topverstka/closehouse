@@ -24,6 +24,15 @@ input.saearch-header{
 	font-size: 12px;
 	padding-bottom: 1px;
 	width: 180px;
+	z-index: -2;
+	opacity: 0;
+	transition: 0.4s;
+
+	&.open {
+		z-index: 2;
+		opacity: 1;
+		transition: 0.4s;
+	}
 
 	&::placeholder{
 		// font-weight: 600;
@@ -265,7 +274,7 @@ input.saearch-header{
 	position: fixed;
 	top: 0;
 	left: 0px;
-	transition: all .5s;
+	transition: all .8s;
 	z-index: 2;
 	width: 100vw;
 	height: 100vh;

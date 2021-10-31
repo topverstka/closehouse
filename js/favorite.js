@@ -1,4 +1,4 @@
-let vizualButton = document.querySelectorAll('.catalog-visualization__button button')
+let vizualButton = document.querySelectorAll('.favorite-visualization__button button')
 Array.from(vizualButton).forEach((el, id, lems) => {
     lems[0].addEventListener('click', function(event) {
         if(lems[1].classList.contains('active')){
@@ -18,21 +18,30 @@ Array.from(vizualButton).forEach((el, id, lems) => {
 });
 
 visualizationThree.addEventListener('click', () => {
-	// let allSwiperSlide = findAll('.swiper-slide')
-	// let widthContainer = find('.catalog-swiper-container').offsetWidth
 	find('.product-cards').style.gridTemplateColumns = '32% 32% 32%'
-
-	// Array.from(allSwiperSlide).forEach(el => {
-	// 	el.style.width = `${widthContainer}px`
-	// });
+})
+visualizationTwo.addEventListener('click', () => {
+	find('.product-cards').style.gridTemplateColumns = '49.5% 49.5%'
 })
 
-visualizationTwo.addEventListener('click', () => {
-	// let allSwiperSlide = findAll('.swiper-slide')
-	// let widthContainer = find('.catalog-swiper-container').offsetWidth
-	find('.product-cards').style.gridTemplateColumns = '49.5% 49.5%'
+document.querySelector('.favorite-count span').innerHTML = document.querySelectorAll('.product-card').length
 
-	// Array.from(allSwiperSlide).forEach(el => {
-	// 	el.style.width = `${widthContainer}px`
-	// });
+
+
+document.querySelector('.product-cards').addEventListener('click', (event) => {
+	if (event.target.className != 'product-button__like') return;
+
+	if (event.target.className == 'product-button__like'){
+		document.querySelector('.favorite-count span').innerHTML--
+
+		if(document.querySelector('.favorite-count span').innerHTML == 0){
+			document.querySelector('.favorite-alert').style.display = 'block'
+			document.querySelector('.favorite-visualization').style.display = 'none'
+		} else {
+			document.querySelector('.favorite-visualization').style.display = 'flex'
+		}
+	}
+
+	let product = event.target.closest('.product-card');
+    product.remove();
 })

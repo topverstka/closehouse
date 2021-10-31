@@ -101,7 +101,7 @@ section {
   padding-top: 50px;
   padding-bottom: 11px;
   z-index: 4;
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   top: 0;
@@ -1482,7 +1482,7 @@ h2 {
 .catalog-button__setting {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 30px;
 }
 
 .catalog-button__setting p {
@@ -1498,7 +1498,7 @@ h2 {
 .catalog-visualization {
   position: absolute;
   top: 0;
-  right: 6px;
+  right: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

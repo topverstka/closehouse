@@ -3,6 +3,8 @@
     justify-content: center;
 }
 
+
+
 .favorite{
     padding-top: 0;
     padding-bottom: 23px;
@@ -51,7 +53,7 @@
 .favorite-visualization{
     position: absolute;
     top: 0;
-    right: 6px;
+    right: 31px;
     display: flex;
     width: 80px;
     height: 100px;
@@ -82,6 +84,14 @@
 
 button.active{
     opacity: 1;
+}
+
+.product-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 32% 32% 32%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
 }
 
 .favorite-descr{
@@ -518,4 +528,26 @@ button.active{
 .favorite {
     padding-top: 0;
     padding-bottom: 79px;
+}
+
+.favorite-alert{
+    text-align: center;
+    margin-top: 70px;
+    display: none;
+
+    p{
+        font-size: 17px;
+        color: #fff;
+
+        &:first-child{
+            opacity: 0.6;
+            margin-bottom: 25px;
+        }
+    }
+
+    a{
+        font-size: 15px;
+        margin-top: 40px;
+        padding: 17px 59px;
+    }
 }

@@ -100,7 +100,7 @@ section {
   padding-top: 50px;
   padding-bottom: 11px;
   z-index: 4;
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   top: 0;

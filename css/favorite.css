@@ -101,7 +101,7 @@ section {
   padding-top: 50px;
   padding-bottom: 11px;
   z-index: 4;
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   top: 0;
@@ -1316,6 +1316,200 @@ h2 {
   pointer-events: none;
 }
 
+.new-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.new-title h2 {
+  font-size: 31px;
+  margin-bottom: 31px;
+}
+
+.new-title h2 object {
+  margin-left: -14px;
+  margin-bottom: -11px;
+  width: 52px;
+  height: 45px;
+}
+
+.new-title__desrc {
+  margin-top: 13px;
+}
+
+.new-title__desrc p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.new-title__desrc p:first-child {
+  margin-bottom: 15px;
+}
+
+.new-title__desrc p:last-child {
+  opacity: 0.6;
+}
+
+.new-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 15px;
+}
+
+.scale {
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  height: 470px;
+}
+
+.scale-bg {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  background: rgba(4, 4, 4, 0.4);
+  opacity: 0;
+}
+
+.btn-new__home {
+  padding: 12px 27px;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.scale:hover .scale-bg {
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  opacity: 1;
+  background: rgba(4, 4, 4, 0.4);
+}
+
+.scale:hover .btn-new__home {
+  opacity: 1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.new-product__item {
+  position: relative;
+  width: 100%;
+}
+
+.new-product__item img {
+  width: -webkit-fill-available;
+  height: 100%;
+}
+
+.new-product__item p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.new-product__item p:first-child {
+  margin-bottom: 5px;
+}
+
+.new-product__item:nth-child(2n) {
+  width: 80%;
+}
+
+.new-product__item:nth-child(2n) .scale {
+  max-height: 356px;
+}
+
+.product-button {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  z-index: 1;
+}
+
+.product-button button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.product-button button img {
+  width: 18px;
+}
+
+.product-button__like.active-favorite {
+  background-image: url(../img/like-productActive.svg);
+}
+
+.product-button__like {
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/like-product.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-bottom: 5px;
+}
+
+.product-interes {
+  padding-top: 91px;
+}
+
+.size-list.activator-list {
+  display: block;
+  position: absolute;
+  top: 45px;
+}
+
+.product-button__contain {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.size-list {
+  margin-top: 15%;
+  background-color: rgba(255, 255, 255, 0.4);
+  max-width: 30px;
+  display: none;
+}
+
+.size-list ul {
+  list-style: none;
+}
+
+.size-list ul li button {
+  padding: 7px 7px;
+  color: #fff;
+  font-size: 12px;
+}
+
 .favorite .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1375,7 +1569,7 @@ h2 {
 .favorite-visualization {
   position: absolute;
   top: 0;
-  right: 6px;
+  right: 31px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1416,6 +1610,14 @@ h2 {
 
 button.active {
   opacity: 1;
+}
+
+.product-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 32% 32% 32%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
 .favorite-descr {
@@ -1876,5 +2078,27 @@ button.active {
 .favorite {
   padding-top: 0;
   padding-bottom: 79px;
+}
+
+.favorite-alert {
+  text-align: center;
+  margin-top: 70px;
+  display: none;
+}
+
+.favorite-alert p {
+  font-size: 17px;
+  color: #fff;
+}
+
+.favorite-alert p:first-child {
+  opacity: 0.6;
+  margin-bottom: 25px;
+}
+
+.favorite-alert a {
+  font-size: 15px;
+  margin-top: 40px;
+  padding: 17px 59px;
 }
 /*# sourceMappingURL=favorite.css.map */

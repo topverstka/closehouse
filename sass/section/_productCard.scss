@@ -299,6 +299,14 @@
 
             font-size: 12px;
         }
+
+        th{
+            margin-right: 15px;
+
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
     }
 
     tbody{
@@ -311,6 +319,14 @@
             &:last-child{
                 margin-bottom: 0px;
             }
+
+            td{
+                margin-right: 15px;
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
         }
     }
 }
@@ -318,7 +334,7 @@
 .bg-table{
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(17, 17, 17, 0.8);

@@ -173,3 +173,50 @@
 .mailrus-content{
     cursor: pointer;
 }
+
+.order-alert{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(28, 28, 28, 1);
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s;
+
+    &.active{
+        transition: 0.4s;
+        opacity: 1;
+        z-index: 2;
+    }
+}
+
+.link-home{
+    margin-top: 50px;
+    color: #fff;
+    opacity: 0.3;
+    font-size: 20px;
+}
+
+.order-alert__text{
+    text-align: center;
+    h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    p{
+        font-size: 15px;
+        color: #fff;
+        opacity: 0.8;
+        margin-bottom: 70px;
+    }
+
+    a{
+        color: #fff;
+        padding: 18px 46px;
+    }
+}

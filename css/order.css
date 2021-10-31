@@ -54,12 +54,14 @@ img[data-src] {
 section {
   padding-top: 50px;
   padding-bottom: 50px;
+  margin: 0 30px;
 }
 
 @media (min-width: 670px) {
   section {
     padding-top: 30px;
     padding-bottom: 30px;
+    margin: 0 30px;
   }
 }
 
@@ -67,6 +69,7 @@ section {
   section {
     padding-top: 55px;
     padding-bottom: 55px;
+    margin: 0 30px;
   }
   .section-desr {
     font-size: 18px;
@@ -78,13 +81,13 @@ section {
   section {
     padding-top: 55px;
     padding-bottom: 55px;
+    margin: 0 30px;
   }
 }
 
 .container {
   margin: 0 auto;
   max-width: 1140px;
-  padding: 0 2%;
 }
 
 @media (min-width: 992px) {
@@ -558,5 +561,65 @@ input:required:valid, textarea:required:valid, button:required:valid {
 
 .mailrus-content {
   cursor: pointer;
+}
+
+.order-alert {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1c1c1c;
+  z-index: -2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.order-alert.active {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 1;
+  z-index: 2;
+}
+
+.link-home {
+  margin-top: 50px;
+  color: #fff;
+  opacity: 0.3;
+  font-size: 20px;
+}
+
+.order-alert__text {
+  text-align: center;
+}
+
+.order-alert__text h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.order-alert__text p {
+  font-size: 15px;
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 70px;
+}
+
+.order-alert__text a {
+  color: #fff;
+  padding: 18px 46px;
 }
 /*# sourceMappingURL=order.css.map */

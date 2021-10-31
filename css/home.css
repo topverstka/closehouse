@@ -1558,6 +1558,12 @@ section.contact {
   color: #fff;
 }
 
+.circle-animation {
+  position: absolute;
+  bottom: -56px !important;
+  left: -66px !important;
+}
+
 .first-screen {
   padding-top: 0;
   padding-bottom: 0px;
@@ -1637,11 +1643,6 @@ section.contact {
   font-size: 15px;
   line-height: 20px;
   margin-left: 13px;
-}
-
-.circle-animation {
-  position: absolute;
-  left: -69px;
 }
 
 .first-screen__social {

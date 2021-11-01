@@ -550,6 +550,7 @@ button.active{
 .catalog-descr__result{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     p{
         font-size: 15px;

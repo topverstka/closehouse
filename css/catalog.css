@@ -667,6 +667,10 @@ input.saearch-header::placeholder {
       flex-wrap: wrap;
 }
 
+.header__burger--active .header__burger {
+  position: relative;
+}
+
 .header__burger--active span {
   display: block;
   width: 30px;
@@ -681,6 +685,8 @@ input.saearch-header::placeholder {
   margin-bottom: 0px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  position: absolute;
+  bottom: -1px;
 }
 
 .header__burger--active span:nth-child(2) {
@@ -689,6 +695,7 @@ input.saearch-header::placeholder {
   margin-bottom: 0px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  position: absolute;
 }
 
 .header__burger--active span:last-child {
@@ -2099,6 +2106,8 @@ button.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .catalog-descr__result p {

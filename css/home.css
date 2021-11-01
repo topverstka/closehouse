@@ -1054,6 +1054,13 @@ h2 {
   -webkit-transition: all .2s;
   transition: all .2s;
   border-radius: 0px;
+  opacity: 0.5;
+}
+
+.btn:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  opacity: 1;
 }
 
 .btn img {

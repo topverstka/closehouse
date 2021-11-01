@@ -1044,6 +1044,13 @@ h2 {
   -webkit-transition: all .2s;
   transition: all .2s;
   border-radius: 0px;
+  opacity: 0.5;
+}
+
+.btn:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  opacity: 1;
 }
 
 .btn img {
@@ -1228,7 +1235,7 @@ h2 {
   opacity: 0;
   z-index: 1;
   border: 1px solid #fff;
-  left: -31px;
+  left: -40px;
   border-radius: 100%;
   width: 80px;
   height: 80px;
@@ -1243,6 +1250,10 @@ h2 {
           align-items: center;
 }
 
+.swiper-button-next img {
+  margin-left: 20px;
+}
+
 .swiper-button-prev {
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -1251,7 +1262,7 @@ h2 {
   opacity: 0;
   z-index: 1;
   border: 1px solid #fff;
-  right: -31px;
+  right: -40px;
   border-radius: 100%;
   width: 80px;
   height: 80px;
@@ -1264,6 +1275,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.swiper-button-prev img {
+  margin-right: 20px;
 }
 
 .product-button {

@@ -132,23 +132,3 @@ find('.clear-filter').addEventListener('click', () => {
 		el.checked = false;
 	});
 })
-
-visualizationThree.addEventListener('click', () => {
-	// let allSwiperSlide = findAll('.swiper-slide')
-	// let widthContainer = find('.catalog-swiper-container').offsetWidth
-	find('.product-cards').style.gridTemplateColumns = '32% 32% 32%'
-
-	// Array.from(allSwiperSlide).forEach(el => {
-	// 	el.style.width = `${widthContainer}px`
-	// });
-})
-
-visualizationTwo.addEventListener('click', () => {
-	// let allSwiperSlide = findAll('.swiper-slide')
-	// let widthContainer = find('.catalog-swiper-container').offsetWidth
-	find('.product-cards').style.gridTemplateColumns = '49.5% 49.5%'
-
-	// Array.from(allSwiperSlide).forEach(el => {
-	// 	el.style.width = `${widthContainer}px`
-	// });
-})

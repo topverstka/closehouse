@@ -69,8 +69,9 @@ Array.from(allBasketItem).forEach((basketItem) => {
     Array.from(allRadioSize).forEach((radioSize) => {
         radioSize.addEventListener('click', function(event) {
             basketItem.childNodes[5].childNodes[1].childNodes[1].innerHTML = radioSize.value
+            basketItem.childNodes[1].classList.remove('active')
+            basketItem.childNodes[5].childNodes[1].childNodes[3].classList.remove('active')
         })
-        
     });
 
     basketItem.addEventListener('click', function(){
@@ -105,6 +106,8 @@ Array.from(allBasketItem).forEach((basketItem) => {
     Array.from(allRadioColor).forEach((radioColor) => {
         radioColor.addEventListener('click', function(event) {
             basketItem.childNodes[5].childNodes[3].childNodes[1].childNodes[0].style.background = radioColor.value
+            basketItem.childNodes[1].classList.remove('active')
+            basketItem.childNodes[5].childNodes[3].childNodes[3].classList.remove('active')
         })
     });
 

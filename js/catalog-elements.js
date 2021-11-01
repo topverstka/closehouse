@@ -206,6 +206,13 @@ window.addEventListener('click', e => {
 	if(target.closest('.catalog-descr__result-category')){
 		if(target.tagName != 'IMG') return;
 
+		Array.from(document.querySelectorAll('.categoryItem')).forEach(categoryItem => {
+			Array.from(document.querySelectorAll('.list-category ul li label input')).forEach(input => {
+				if(input.value == categoryItem.childNodes[0].innerHTML){
+					input.checked = false
+				}
+			})
+		})
 		
 		let removeElement = target.closest('.categoryItem');
 		removeElement.remove();
@@ -214,7 +221,14 @@ window.addEventListener('click', e => {
 	if(target.closest('.catalog-descr__result-size')){
 		if(target.tagName != 'IMG') return;
 
-		
+		Array.from(document.querySelectorAll('.sizeItem')).forEach(categoryItem => {
+			Array.from(document.querySelectorAll('.filter-form__size-button label input')).forEach(input => {
+				if(input.value == categoryItem.childNodes[0].innerHTML){
+					input.checked = false
+				}
+			})
+		})
+
 		let removeElement = target.closest('.sizeItem');
 		removeElement.remove();
 	}
@@ -222,7 +236,15 @@ window.addEventListener('click', e => {
 	if(target.closest('.catalog-descr__result-color')){
 		if(target.tagName != 'IMG') return;
 
-		
+		Array.from(document.querySelectorAll('.colorItem')).forEach(categoryItem => {
+			Array.from(document.querySelectorAll('.filter-form__color-button label input')).forEach(input => {
+				console.log(categoryItem.childNodes[0].innerHTML)
+				if(input.value == categoryItem.childNodes[0].innerHTML){
+					input.checked = false
+				}
+			})
+		})
+
 		let removeElement = target.closest('.colorItem');
 		removeElement.remove();
 	}

@@ -147,26 +147,18 @@ window.addEventListener('click', e => {
         document.querySelector('.list-sort').classList.remove('active')
     }
 
-	// if(target.closest('.list-category')){
-	// 	let categoryCheck = document.querySelector('.catalog-descr__result-category')
-	// 	let imgCategoryCheck = document.createElement('img');
-
-	// 	if(target.value != undefined){
-	// 		categoryCheck.innerHTML = target.value
-	// 	}
-	// }
-
 	if(target.closest('.list-category')){
 		let categoryCheck = document.querySelector('.catalog-descr__result-category')
 		let imgCategoryCheck = document.createElement('img');
 		if(target.value != undefined){
 			document.querySelector('.catalog-descr__result-category').classList.add('active')
-			categoryCheck.innerHTML = `<div><p>${target.value}</p> <img src="./img/delete.svg"></div>`
+			categoryCheck.innerHTML = `<div class="categoryItem"><p>${target.value}</p> <img src="./img/delete.svg"></div>`
 		}
 	}
 
 	if(target.closest('.filter-form__size')){
 		let categoryCheck = document.createElement('div');
+		categoryCheck.setAttribute('class', 'sizeItem')
 		let imgCategoryCheck = document.createElement('img');
 		imgCategoryCheck.setAttribute('src', './img/delete.svg')
 		let textCategoryCheck = document.createElement('p');
@@ -189,6 +181,7 @@ window.addEventListener('click', e => {
 
 	if(target.closest('.filter-form__color')){
 		let categoryCheck = document.createElement('div');
+		categoryCheck.setAttribute('class', 'colorItem')
 		let imgCategoryCheck = document.createElement('img');
 		imgCategoryCheck.setAttribute('src', './img/delete.svg')
 		let textCategoryCheck = document.createElement('p');
@@ -208,6 +201,30 @@ window.addEventListener('click', e => {
 			}
 			
 		}
+	}
+
+	if(target.closest('.catalog-descr__result-category')){
+		if(target.tagName != 'IMG') return;
+
+		
+		let removeElement = target.closest('.categoryItem');
+		removeElement.remove();
+	}
+
+	if(target.closest('.catalog-descr__result-size')){
+		if(target.tagName != 'IMG') return;
+
+		
+		let removeElement = target.closest('.sizeItem');
+		removeElement.remove();
+	}
+
+	if(target.closest('.catalog-descr__result-color')){
+		if(target.tagName != 'IMG') return;
+
+		
+		let removeElement = target.closest('.colorItem');
+		removeElement.remove();
 	}
 
 	let lengthCategory = document.querySelectorAll('.catalog-descr__result-category div').length;

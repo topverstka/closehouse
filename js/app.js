@@ -89,6 +89,9 @@ function getMyCookie(name) {
 
 // 6) Слайдер с контрольными точками (Используется библиотека swiper: https://swiperjs.com/)
 var swiper = new Swiper('.home-swiper-container', {
+	autoplay: {
+		delay: 5000,
+	},
 	loop: true,
 	// init: false,
 	pagination: {

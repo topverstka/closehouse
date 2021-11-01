@@ -5,6 +5,7 @@
 }
 
 .first-screen{
+    max-height: 1000px;
     padding-top: 0;
     padding-bottom: 0px;
     position: relative;
@@ -114,11 +115,15 @@
 
 .arrow-scroll{
     position: absolute;
-    bottom: 34px;
-    z-index: 1;
-    right: 30px;
+    top: 0px;
+    z-index: -1;
+    right: 19px;
     text-align: center;
-    width: 7px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: -93px;
 
     p {
         font-size: 14px;

@@ -1394,7 +1394,6 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 18px;
   margin-top: 50px;
 }
 
@@ -1430,6 +1429,11 @@ h2 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-right: 18px;
+}
+
+.catalog-elemetn__item:last-child {
+  margin-right: 0px;
 }
 
 .invertet-text__position {

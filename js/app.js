@@ -53,6 +53,19 @@ menuBurger.addEventListener('click', function(e){
 	}
 })
 
+Array.from(document.querySelectorAll('.nav-burger ul li a')).forEach(el => {
+	console.log(el)
+	el.addEventListener('click', function(){
+		document.querySelector('.header__nav').classList.remove('header__nav--active')
+		Array.from(findAll('.header__button')).forEach(el => {
+			el.style.opacity =  '1'
+		})
+		find('header').style.zIndex = '4'
+		find('.header__logo').style.opacity = '1'
+		body.classList.remove('_lock');
+	})
+})
+
 
 // 2) Скрытие мобильного меню
 function findCloseBtns(){

@@ -1342,7 +1342,10 @@ h2 {
   padding: 10px;
   margin-left: 12px;
   background-color: rgba(255, 255, 255, 0.4);
-  width: 220px;
+  max-width: 220px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   opacity: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;

@@ -5,19 +5,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #1C1C1C;
 }
 
 .error-titl{
     text-align: center;
-    h2{
-        font-size: 140px;
-        margin-bottom: 0;
-    }
 }
 
 .error-titl__subtitle{
-    a{
+    p{
+        font-size: 15px;
         color: #fff;
-        text-decoration: underline;
+        opacity: 0.6;
+    }
+    a{
+        margin-top: 40px;
+        padding: 20px 57px;
     }
 }

@@ -81,6 +81,12 @@
     }
 }
 
+.product-button:hover ~ .scale .scale-bg{
+    transition: all .8s;
+    opacity: 1;
+    background: rgba(4, 4, 4, 0.4);
+}
+
 // .scale img {
 //     filter: brightness(1);
 //     transition: 0.8s; 

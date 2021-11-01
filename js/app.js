@@ -167,28 +167,6 @@ Array.from(allProduct).forEach((el, id) => {
     });
 });
 
-// Скрытие и открытие хедера при скроле
-let lastScrollTop = 0;
-
-window.addEventListener("scroll", function(){  
-   	let st = window.pageYOffset || document.documentElement.scrollTop;  
-
-   	if (st <= 1000){
-		document.querySelector(".header").style.position = "absolute";
-		document.querySelector(".header").style.top = "0";
-		document.querySelector(".header").style.transition = "0s";
-   	} else if(st >= lastScrollTop) {	
-		document.querySelector(".header").style.position = "fixed";
-		document.querySelector(".header").style.top = "-100%";
-		document.querySelector(".header").style.transition = "0s";
-   	} else {
-		document.querySelector(".header").style.position = "fixed";
-		document.querySelector(".header").style.top = "0";
-		document.querySelector(".header").style.transition = "0.4s";
-	}
-   	lastScrollTop = st;
-}, false);
-
 // 9) AOS анимации инициализация (https://michalsnik.github.io/aos/)
 
 AOS.init();

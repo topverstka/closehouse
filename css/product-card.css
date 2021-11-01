@@ -1894,6 +1894,13 @@ h2 {
   transition: 0.8s;
 }
 
+.product-button:hover ~ .scale .scale-bg {
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  opacity: 1;
+  background: rgba(4, 4, 4, 0.4);
+}
+
 .new-product__item {
   position: relative;
   width: 100%;

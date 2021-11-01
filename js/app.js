@@ -37,9 +37,19 @@ menuBurger.addEventListener('click', function(e){
 	if(this.classList.contains('header__burger--active')){
 		this.classList.remove('header__burger--active');
 		d.querySelector('.header__nav').classList.remove('header__nav--active');
+		find('.header__logo').style.opacity = '1'
+		Array.from(findAll('.header__button')).forEach(el => {
+			el.style.opacity =  '1'
+		})
+		find('header').style.zIndex = '4'
 	}else{
 		this.classList.add('header__burger--active');
 		d.querySelector('.header__nav').classList.add('header__nav--active');
+		find('.header__logo').style.opacity = '0'
+		Array.from(findAll('.header__button')).forEach(el => {
+			el.style.opacity =  '0'
+		})
+		find('header').style.zIndex = '5'
 	}
 })
 

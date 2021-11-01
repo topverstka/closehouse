@@ -115,15 +115,11 @@
 
 .arrow-scroll{
     position: absolute;
-    top: 0px;
-    z-index: -1;
-    right: 19px;
+    bottom: 34px;
+    z-index: 1;
+    right: 30px;
     text-align: center;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    margin-top: -93px;
+    width: 7px;
 
     p {
         font-size: 14px;

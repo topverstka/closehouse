@@ -5,7 +5,7 @@
 
 .catalog{
     padding-top: 0;
-    padding-bottom: 23px;
+    padding-bottom: 45px;
 }
 
 .clear-filter{
@@ -85,16 +85,7 @@ button.active{
 }
 
 .catalog-descr{
-    display: flex;
-    justify-content: center;
     margin-bottom: 20px;
-    margin-right: 68px;
-
-    p{
-        font-size: 12px;
-        opacity: 0.6;
-        line-height: 15px;
-    }
 }
 
 .catalog-content{
@@ -116,6 +107,7 @@ button.active{
         transition: 0.4s;
         background-color: rgba(255, 255, 255, 0.4);
         pointer-events: none;
+        z-index: 3;
         
         &.active{
             opacity: 1;
@@ -140,7 +132,6 @@ button.active{
             list-style: none;
             li{
                 margin-bottom: 10px;
-
                 &:last-child{
                     margin-bottom: 0px;
                 }
@@ -153,9 +144,16 @@ button.active{
                     margin-right: auto;
                 }
 
-                &.active{
-                    p{
-                        opacity: 1;
+
+                label{
+                    position: relative;
+
+                    input{
+                        display: none;
+
+                        &:checked ~ p {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -367,6 +365,7 @@ button.active{
         transition: 0.4s;
         background-color: rgba(255, 255, 255, 0.4);
         pointer-events: none;
+        z-index: 3;
         
         &.active{
             opacity: 1;
@@ -392,9 +391,15 @@ button.active{
                     margin-right: auto;
                 }
 
-                &.active{
-                    p{
-                        opacity: 1;
+                label{
+                    position: relative;
+
+                    input{
+                        display: none;
+
+                        &:checked ~ p {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -519,5 +524,104 @@ button.active{
 
     a{
         padding: 17px 58px;
+    }
+}
+
+.search-result{
+    display: none;
+    margin-bottom: 30px;
+
+    p{
+        font-size: 15px;
+        color: #fff;
+        
+        span{
+            &:first-child{
+                opacity: 0.6;
+            }
+
+            &:last-child{
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+}
+
+.catalog-descr__result{
+    display: flex;
+    align-items: center;
+
+    p{
+        font-size: 15px;
+        &:first-child{
+            margin-right: 25px;
+        }
+    }
+}
+
+.catalog-descr__result-category{
+    margin-right: 20px;
+    div{
+        display: flex;
+        font-size: 15px;
+        border: 1px solid #fff;
+        padding: 8px 10px;
+        p{
+            margin-right: 22px;
+        }
+
+        img{
+            width: 9px;
+            cursor: pointer;
+        }
+    }
+}
+
+.catalog-descr__result-size{
+    display: flex;
+    margin-right: 20px;
+    div{
+        display: flex;
+        font-size: 15px;
+        border: 1px solid #fff;
+        padding: 8px 10px;
+        margin-right: 15px;
+
+        p{
+            margin-right: 22px;
+        }
+
+        img{
+            width: 9px;
+            cursor: pointer;
+        }
+
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+
+.catalog-descr__result-color{
+    display: flex;
+    div{
+        display: flex;
+        font-size: 15px;
+        border: 1px solid #fff;
+        padding: 8px 10px;
+        margin-right: 15px;
+
+        p{
+            margin-right: 22px;
+        }
+
+        img{
+            width: 9px;
+            cursor: pointer;
+        }
+
+        &:last-child{
+            margin-right: 0px;
+        }
     }
 }

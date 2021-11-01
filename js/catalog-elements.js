@@ -132,3 +132,101 @@ find('.clear-filter').addEventListener('click', () => {
 		el.checked = false;
 	});
 })
+
+window.addEventListener('click', e => {
+    const target = e.target
+    if (!target.closest('.catalog-button__setting-category') && !target.closest('.list-category')) {
+        document.querySelector('.list-category').classList.remove('active')
+    }
+
+	if (!target.closest('.catalog-button__setting-filter') && !target.closest('.filter-form')) {
+        document.querySelector('.filter-form').classList.remove('active')
+    }
+
+	if (!target.closest('.catalog-button__setting-sort') && !target.closest('.list-sort')) {
+        document.querySelector('.list-sort').classList.remove('active')
+    }
+
+	// if(target.closest('.list-category')){
+	// 	let categoryCheck = document.querySelector('.catalog-descr__result-category')
+	// 	let imgCategoryCheck = document.createElement('img');
+
+	// 	if(target.value != undefined){
+	// 		categoryCheck.innerHTML = target.value
+	// 	}
+	// }
+
+	if(target.closest('.list-category')){
+		let categoryCheck = document.querySelector('.catalog-descr__result-category')
+		let imgCategoryCheck = document.createElement('img');
+		if(target.value != undefined){
+			document.querySelector('.catalog-descr__result-category').classList.add('active')
+			categoryCheck.innerHTML = `<div><p>${target.value}</p> <img src="./img/delete.svg"></div>`
+		}
+	}
+
+	if(target.closest('.filter-form__size')){
+		let categoryCheck = document.createElement('div');
+		let imgCategoryCheck = document.createElement('img');
+		imgCategoryCheck.setAttribute('src', './img/delete.svg')
+		let textCategoryCheck = document.createElement('p');
+		if(target.value != undefined){
+			textCategoryCheck.innerHTML = target.value
+			if(target.checked){
+				document.querySelector('.catalog-descr__result-size').append(categoryCheck)
+				categoryCheck.append(textCategoryCheck)
+				categoryCheck.append(imgCategoryCheck)
+				
+			} else {
+				Array.from(document.querySelectorAll('.catalog-descr__result-size div')).forEach(el => {
+					if(target.value == el.childNodes[0].innerHTML){
+						el.remove()
+					}
+				})
+			}
+		}
+	}
+
+	if(target.closest('.filter-form__color')){
+		let categoryCheck = document.createElement('div');
+		let imgCategoryCheck = document.createElement('img');
+		imgCategoryCheck.setAttribute('src', './img/delete.svg')
+		let textCategoryCheck = document.createElement('p');
+		if(target.value != undefined){
+			textCategoryCheck.innerHTML = target.value
+			if(target.checked){
+				document.querySelector('.catalog-descr__result-color').append(categoryCheck)
+				categoryCheck.append(textCategoryCheck)
+				categoryCheck.append(imgCategoryCheck)
+				
+			} else {
+				Array.from(document.querySelectorAll('.catalog-descr__result-color div')).forEach(el => {
+					if(target.value == el.childNodes[0].innerHTML){
+						el.remove()
+					}
+				})
+			}
+			
+		}
+	}
+
+	let lengthCategory = document.querySelectorAll('.catalog-descr__result-category div').length;
+	let lengthColor = document.querySelectorAll('.catalog-descr__result-size div').length;
+	let lengthSize = document.querySelectorAll('.catalog-descr__result-color div').length;
+
+	if(lengthCategory == 0 && lengthColor == 0 && lengthSize == 0){
+		document.querySelector('.catalog-descr__result p').style.display = 'none'
+	} else {
+		document.querySelector('.catalog-descr__result p').style.display = 'block'
+	}
+})
+
+let lengthCategory = document.querySelectorAll('.catalog-descr__result-category div').length;
+let lengthColor = document.querySelectorAll('.catalog-descr__result-size div').length;
+let lengthSize = document.querySelectorAll('.catalog-descr__result-color div').length;
+
+if(lengthCategory <= 0 && lengthColor <= 0 && lengthSize <= 0){
+	document.querySelector('.catalog-descr__result p').style.display = 'none'
+}
+
+

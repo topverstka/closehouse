@@ -1991,8 +1991,8 @@ section.contact {
 
 .product-button {
   position: absolute;
-  top: 4%;
-  left: 4%;
+  top: 3%;
+  left: 6%;
   z-index: 1;
 }
 
@@ -2017,7 +2017,7 @@ section.contact {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 section.new {

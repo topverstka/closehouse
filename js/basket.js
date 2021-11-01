@@ -165,3 +165,10 @@ document.querySelector('.modal-close').addEventListener('click', function(){
     document.querySelector('.modal').classList.remove('active')
     document.querySelector('body').style.overflowY = 'auto'
 })
+
+
+window.addEventListener('click', e => {
+    if (!e.target.closest('.modal-content') && !e.target.closest('.open-modal')) {
+        document.querySelector('.modal').classList.remove('active')
+    }
+})

@@ -18,6 +18,41 @@
 
 
 <body>
+    <header class="header">
+		<div class="container">
+			<div class="wrap">
+				<!-- Логотип -->
+				<div class="header__logo header__logo--pc">
+					<object type="image/svg+xml" data="./img/logo.svg">
+						<img src="./img/logo.svg" alt="Logo">
+					</object>
+				</div>
+				
+				<!-- Кнопки в шапке -->
+				<div class="header__buttons">
+					<input class="saearch-header" type="text" placeholder="Поиск">
+					<button class="header__button header__button-search" id="btnHeaderSearch">
+						<img src="./img/search.svg" alt="Поиск">
+					</button>
+					<button class="header__button header__button-like">
+						<img src="./img/like.svg" alt="Избранное">
+					</button>
+					<button class="header__button header__button-basket">
+						<img src="./img/basket.svg" alt="Корзина">
+					</button>
+				<!-- Бургер для меню -->
+					<div class="burger__container">
+						<a class="header__burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
     <div class="order-alert">
         <a class="link-home" href="#">Close House</a>
 
@@ -209,7 +244,67 @@
         </div>
     </section>
 
+    <!-- Подвал -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrap">
+				<div class="footer__title">
+					<p>Copyright © 2021 “Clouse House”</p>
+				</div>
 
+				<div class="footer__content">
+					<div class="footer__content-links">
+						<nav>
+							<ul>
+								<li>
+									<a href="#">Политика конфиденциальности</a>
+								</li>
+								<li>
+									<a href="#">Согласие на обработку персональных данных</a>
+								</li>
+								<li>
+									<a href="#">Реквизиты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__content-nav">
+						<nav>
+							<ul>
+								<li>
+									<a href="#">Главная</a>
+								</li>
+								<li>
+									<a href="#">О нас</a>
+								</li>
+								<li>
+									<a href="#">Каталог</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<a href="#">
+							<img src="./img/instagram.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__content-shop">
+						<nav>
+							<ul>
+								<li>
+									<a href="#">Доставка & оплата</a>
+								</li>
+								<li>
+									<a href="#">Возврат</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- Подключение скриптов -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

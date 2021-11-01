@@ -258,6 +258,8 @@ window.addEventListener('click', e => {
 	} else {
 		document.querySelector('.catalog-descr__result p').style.display = 'block'
 	}
+
+
 })
 
 let lengthCategory = document.querySelectorAll('.catalog-descr__result-category div').length;
@@ -268,4 +270,22 @@ if(lengthCategory <= 0 && lengthColor <= 0 && lengthSize <= 0){
 	document.querySelector('.catalog-descr__result p').style.display = 'none'
 }
 
+Array.from(document.querySelectorAll('.open-modal')).forEach(el => {
+	el.addEventListener('click', function(){
+		document.querySelector('.modal').classList.add('active')
+    	document.querySelector('body').style.overflowY = 'hidden'
+	})
+})
 
+
+document.querySelector('.modal-close').addEventListener('click', function(){
+    document.querySelector('.modal').classList.remove('active')
+    document.querySelector('body').style.overflowY = 'auto'
+})
+
+
+window.addEventListener('click', e => {
+    if (!e.target.closest('.modal-content') && !e.target.closest('.open-modal')) {
+        document.querySelector('.modal').classList.remove('active')
+    }
+})

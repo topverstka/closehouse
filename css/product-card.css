@@ -813,6 +813,97 @@ footer h3 {
   margin: 0 30px;
 }
 
+.modal {
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(17, 17, 17, 0.6);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.modal.active {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 13;
+  opacity: 1;
+}
+
+.modal-content {
+  padding: 24px 20px;
+  max-width: 400px;
+  background-color: #524F4F;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content__title {
+  font-size: 18px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.modal-content__subtitle {
+  font-size: 11px;
+  margin-top: 16px;
+  margin-bottom: 43px;
+}
+
+.modal-content__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-content__form label {
+  margin-bottom: 20px;
+}
+
+.modal-content__form label input {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  width: 100%;
+  margin-top: 3px;
+}
+
+.modal-content__form label p {
+  font-size: 12px;
+  text-align: start;
+}
+
+.modal-content__form button {
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: 600;
+  border: 0;
+  background-color: #fff;
+}
+
 h1, h2, h3, h4 {
   font-family: "Kharkiv-Tone";
   margin: 0;

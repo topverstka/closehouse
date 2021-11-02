@@ -1368,6 +1368,11 @@ h2 {
   gap: 30px;
 }
 
+.product-cards__less {
+  -ms-grid-columns: 48.55% 48.55%;
+      grid-template-columns: 48.55% 48.55%;
+}
+
 .product-card {
   position: relative;
   margin-bottom: 29px;
@@ -1393,6 +1398,18 @@ h2 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   opacity: 1;
+}
+
+.catalog-swiper-container .product-button:hover ~ .swiper-button-next {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.catalog-swiper-container .product-button:hover ~ .swiper-button-prev {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
 }
 
 .swiper-button-next {

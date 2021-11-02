@@ -71,47 +71,12 @@
 			</div>
 		</div>
 	</header>
-
-	<!-- всплывающий поиск -->
-	<div class="search-panel">
-		<div class="container">
-			<div class="wrap">
-
-				<div class="search-panel__close">
-					<span></span>
-					<span></span>
-				</div>
-
-				<div class="header__logo header__logo--nav">
-					<a class="header__logo-img" href="#">
-						<object type="image/svg+xml" data="./img/logo.svg">
-							<img src="./img/logo.svg" alt="Logo">
-						</object>
-						<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
-							<img src="./img/pages/home/Elegant-clothes.svg" alt="">
-						</object>
-					</a>
-				</div>
-
-				<div class="search-panel__input">
-					<input type="text">
-					<button class="btn btn-search">ПОИСК</button>
-				</div>
-			</div>
-		</div>
-	</div>
 	
 	<!-- Всплывающее меню -->
 	<div class="header__nav">
 		<div class="header__nav-bg">
 			<div class="container">
 				<div class="wrap">
-					<!-- Закрывающий элемент -->
-					<div class="close">
-						<span></span>
-						<span></span>
-					</div>
-
 					<!-- Логотип -->
 					<div class="header__logo header__logo--nav">
 						<a class="header__logo-img" href="#">
@@ -426,12 +391,12 @@
 				<!-- Визуализация -->
 				<div class="catalog-visualization">
 					<div class="catalog-visualization__button">
-						<a href="./catalog.html" class="active" id="visualizationThree">
+						<a href="./catalog.html" id="visualizationThree">
 							3
-						</a>
-						<a href="./catalog-less.html" id="visualizationTwo">
+                        </a>
+						<a href="./catalog-less.html" class="active" id="visualizationTwo">
 							2
-						</a>
+                        </a>
 					</div>
 					<p class="catalog-visualization__inverted">Визуализация</p>
 				</div>
@@ -467,7 +432,7 @@
 	<section class="catalog-content">
 		<div class="container">
 			<div class="wrap">
-				<div class="product-cards">
+				<div class="product-cards product-cards__less">
 					<div class="product-card">
 						<div class="product-card__content">
 							<div class="catalog-swiper-container swiper-container">

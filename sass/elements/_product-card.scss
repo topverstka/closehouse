@@ -4,6 +4,10 @@
     gap: 30px;
 }
 
+.product-cards__less{
+    grid-template-columns: 48.55% 48.55%;
+}
+
 .product-card{
     position: relative;
     margin-bottom: 29px;
@@ -24,6 +28,16 @@
             transition: 0.4s;
             opacity: 1;
         }
+    }
+
+    .product-button:hover ~ .swiper-button-next{
+        transition: 0.4s;
+        opacity: 0;
+    }
+
+    .product-button:hover ~ .swiper-button-prev{
+        transition: 0.4s;
+        opacity: 0;
     }
 }
 

@@ -1189,6 +1189,22 @@ input:required:valid, textarea:required:valid, button:required:valid {
   font-size: 15px;
 }
 
+.order-title a::after {
+  content: '';
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.order-title a:hover::after {
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 100%;
+}
+
 .order-form__info {
   padding: 23px 18px;
   border: 1px solid #fff;

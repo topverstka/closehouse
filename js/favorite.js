@@ -76,3 +76,11 @@ btnHeaderSearch.addEventListener('click', () => {
 })
 
 
+
+var swiperProductCard = new Swiper('.favorite-sper-content', {
+	loop: true,
+	navigation: {
+		nextEl: '.swiper-button-prev',
+		prevEl: '.swiper-button-next',
+	  },
+});

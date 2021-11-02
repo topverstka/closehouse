@@ -1105,6 +1105,10 @@ input:required:valid, textarea:required:valid, button:required:valid {
   margin-bottom: 0px;
 }
 
+.comment p {
+  margin-bottom: 20px;
+}
+
 .order {
   padding-top: 120px;
 }

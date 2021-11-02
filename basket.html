@@ -37,18 +37,19 @@
 			</form>
 		</div>
 	</div>
-	<header class="header" data-aos="fade-up">
+	<header class="header">
 		<div class="container">
 			<div class="wrap">
 				<!-- Логотип -->
 				<div class="header__logo header__logo--pc">
-					<a href="#">
+					<object type="image/svg+xml" data="./img/logo.svg">
 						<img src="./img/logo.svg" alt="Logo">
-					</a>
+					</object>
 				</div>
 				
 				<!-- Кнопки в шапке -->
 				<div class="header__buttons">
+					<input class="saearch-header" type="text" placeholder="Поиск">
 					<button class="header__button header__button-search" id="btnHeaderSearch">
 						<img src="./img/search.svg" alt="Поиск">
 					</button>
@@ -70,47 +71,12 @@
 			</div>
 		</div>
 	</header>
-
-	<!-- всплывающий поиск -->
-	<div class="search-panel">
-		<div class="container">
-			<div class="wrap">
-
-				<div class="search-panel__close">
-					<span></span>
-					<span></span>
-				</div>
-
-				<div class="header__logo header__logo--nav">
-					<a class="header__logo-img" href="#">
-						<object type="image/svg+xml" data="./img/logo.svg">
-							<img src="./img/logo.svg" alt="Logo">
-						</object>
-						<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
-							<img src="./img/pages/home/Elegant-clothes.svg" alt="">
-						</object>
-					</a>
-				</div>
-
-				<div class="search-panel__input">
-					<input type="text">
-					<button class="btn btn-search">ПОИСК</button>
-				</div>
-			</div>
-		</div>
-	</div>
 	
 	<!-- Всплывающее меню -->
 	<div class="header__nav">
 		<div class="header__nav-bg">
 			<div class="container">
 				<div class="wrap">
-					<!-- Закрывающий элемент -->
-					<div class="close">
-						<span></span>
-						<span></span>
-					</div>
-
 					<!-- Логотип -->
 					<div class="header__logo header__logo--nav">
 						<a class="header__logo-img" href="#">
@@ -129,9 +95,9 @@
 					<nav class="nav-burger">
 						<ul>
 							<li><a href="#">Главная</a></li>
-							<li><a href="#">О нас</a></li>
+							<li><a href="#about">О нас</a></li>
 							<li><a href="#">Каталог</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="#contact">Контакты</a></li>
 						</ul>
 					</nav>
 

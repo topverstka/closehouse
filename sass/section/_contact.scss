@@ -1,13 +1,13 @@
 .contact-title{
     h2{
         word-spacing: 40px;
+        margin-bottom: 50px;
     }
-
-    margin-bottom: 60px;
 }
 
 section.contact{
     padding-bottom: 0px;
+    padding-top: 95px;
 }
 
 .contact-info{
@@ -15,8 +15,9 @@ section.contact{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     margin-right: 75px;
+    margin-top: -8px;
 }
 
 .contact-info__working{

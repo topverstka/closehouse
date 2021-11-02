@@ -65,3 +65,12 @@ window.addEventListener('click', e => {
         document.querySelector('.modal').classList.remove('active')
     }
 })
+
+// Открыть поисковое меню
+btnHeaderSearch.addEventListener('click', () => {
+	if(document,querySelector('.saearch-header').classList.contains('open')){
+		document,querySelector('.saearch-header').classList.remove('open')
+	}else {
+		document,querySelector('.saearch-header').classList.add('open')
+	}
+})

@@ -238,7 +238,6 @@ window.addEventListener('click', e => {
 
 		Array.from(document.querySelectorAll('.colorItem')).forEach(categoryItem => {
 			Array.from(document.querySelectorAll('.filter-form__color-button label input')).forEach(input => {
-				console.log(categoryItem.childNodes[0].innerHTML)
 				if(input.value == categoryItem.childNodes[0].innerHTML){
 					input.checked = false
 				}

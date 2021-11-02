@@ -976,14 +976,10 @@ input:required:valid, textarea:required:valid, button:required:valid {
   border-color: green;
 }
 
-.order-form {
-  padding: 23px 19px;
-}
-
 .order-form label p {
   color: #fff;
   opacity: 0.8;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .order-form label input {
@@ -1119,7 +1115,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 
 .order-title h2 {
   line-height: 73px;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 }
 
 .order-title h2 span {
@@ -1268,11 +1264,17 @@ input:required:valid, textarea:required:valid, button:required:valid {
   cursor: pointer;
   width: 100%;
   padding: 15px 0;
-  background: #fff;
-  border: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   font-size: 15px;
+}
+
+.order-form__info button:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #fff;
+  padding: 15px 0;
   color: #383838;
-  font-weight: 600;
 }
 
 .order-form__basket {
@@ -1288,7 +1290,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 .invert-img {
   position: absolute;
   right: 29px;
-  top: 207px;
+  top: 183px;
 }
 
 .mailrus-content label {

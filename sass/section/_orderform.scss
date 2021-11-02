@@ -7,7 +7,7 @@
 
     h2{
         line-height: 73px;
-        margin-bottom: 39px;
+        margin-bottom: 35px;
 
         span{
             margin-left: 345px;
@@ -128,11 +128,14 @@
     cursor: pointer;
     width: 100%;
     padding: 15px 0;
-    background: #fff;
-    border: 0;
+    transition: 0.4s;
     font-size: 15px;
-    color: #383838;
-    font-weight: 600;
+    &:hover{
+        transition: 0.4s;
+        background: #fff;
+        padding: 15px 0;
+        color: #383838;
+    }
 }
 
 .order-form__basket{
@@ -145,7 +148,7 @@
 .invert-img {
     position: absolute;
     right: 29px;
-    top: 207px;
+    top: 183px;
 }
 
 .mailrus-content{

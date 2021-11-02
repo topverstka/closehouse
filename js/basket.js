@@ -145,7 +145,6 @@ Array.from(allBasketItem).forEach((basketItem, basketItemId, basketItemArray) =>
 // Кол-во товаров в корзине
 Array.from(allBasketItem).forEach((basketItem, basketItemId, basketItemArray) => {
     countProduct.innerHTML = basketItemArray.length
-    console.log(countProduct.innerHTML)
 
     // Выводим сообщение об отсутствии товаров
     if(countProduct.innerHTML == 0){

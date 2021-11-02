@@ -54,7 +54,6 @@ menuBurger.addEventListener('click', function(e){
 })
 
 Array.from(document.querySelectorAll('.nav-burger ul li a')).forEach(el => {
-	console.log(el)
 	el.addEventListener('click', function(){
 		document.querySelector('.header__nav').classList.remove('header__nav--active')
 		Array.from(findAll('.header__button')).forEach(el => {

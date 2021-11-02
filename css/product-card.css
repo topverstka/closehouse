@@ -1363,8 +1363,8 @@ h2 {
 .product-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 32% 32% 32%;
-      grid-template-columns: 32% 32% 32%;
+  -ms-grid-columns: 31.6% 31.6% 31.6%;
+      grid-template-columns: 31.6% 31.6% 31.6%;
   gap: 30px;
 }
 
@@ -1585,6 +1585,13 @@ h2 {
 
 .product-card__content-price p:first-child {
   margin-bottom: 5px;
+}
+
+.less-catalog-btn {
+  padding: 19px 71px !important;
+  max-width: 300px;
+  max-height: 55px;
+  width: 100%;
 }
 
 .breadcrumbs {

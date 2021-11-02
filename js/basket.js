@@ -171,3 +171,15 @@ window.addEventListener('click', e => {
         document.querySelector('.modal').classList.remove('active')
     }
 })
+
+window.addEventListener('click', e => {
+	const target = e.target
+	if (!target.closest('.button-size') && !target.closest('.line-size')) {
+		Array.from(document.querySelectorAll('.line-size')).forEach(el => {
+			el.classList.remove('active')
+		})
+        Array.from(document.querySelectorAll('.basket-content__item-bg')).forEach(el => {
+            el.classList.remove('active')
+        })
+    }
+})

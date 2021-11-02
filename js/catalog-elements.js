@@ -10,10 +10,12 @@ var swiper = new Swiper('.catalog-swiper-container', {
 find('.catalog-button__setting-category p').addEventListener('click', () => {
 	if(find('.catalog-button__setting-category div').classList.contains('active')){
 		find('.catalog-button__setting-category div').classList.remove('active')
+		find('.bg-swiper-container').classList.remove('active')
 	} else {
 		find('.catalog-button__setting-category div').classList.add('active')
 		find('.catalog-button__setting-filter div').classList.remove('active')
 		find('.catalog-button__setting-sort div').classList.remove('active')
+		find('.bg-swiper-container').classList.add('active')
 	}
 })
 
@@ -21,10 +23,12 @@ find('.catalog-button__setting-category p').addEventListener('click', () => {
 find('.catalog-button__setting-filter p').addEventListener('click', () => {
 	if(find('.catalog-button__setting-filter div').classList.contains('active')){
 		find('.catalog-button__setting-filter div').classList.remove('active')
+		find('.bg-swiper-container').classList.remove('active')
 	} else {
 		find('.catalog-button__setting-filter div').classList.add('active')
 		find('.catalog-button__setting-category div').classList.remove('active')
 		find('.catalog-button__setting-sort div').classList.remove('active')
+		find('.bg-swiper-container').classList.add('active')
 	}
 })
 
@@ -32,10 +36,12 @@ find('.catalog-button__setting-filter p').addEventListener('click', () => {
 find('.catalog-button__setting-sort p').addEventListener('click', () => {
 	if(find('.catalog-button__setting-sort div').classList.contains('active')){
 		find('.catalog-button__setting-sort div').classList.remove('active')
+		find('.bg-swiper-container').classList.remove('active')
 	} else {
 		find('.catalog-button__setting-sort div').classList.add('active')
 		find('.catalog-button__setting-filter div').classList.remove('active')
 		find('.catalog-button__setting-category div').classList.remove('active')
+		find('.bg-swiper-container').classList.add('active')
 	}
 })
 
@@ -132,6 +138,10 @@ find('.clear-filter').addEventListener('click', () => {
 	document.querySelector('.irs-handle.to').style.left="94.6078%"
 	document.querySelector('.irs-bar').setAttribute('style', 'width:100%; left:0%;')
 
+	document.querySelector('.catalog-descr__result-category').innerHTML = ''
+	document.querySelector('.catalog-descr__result-size').innerHTML = ''
+	document.querySelector('.catalog-descr__result-color').innerHTML = ''
+
 	Array.from(checkedColor).forEach(el => {
 		el.checked = false;
 	});
@@ -154,6 +164,10 @@ window.addEventListener('click', e => {
 	if (!target.closest('.catalog-button__setting-sort') && !target.closest('.list-sort')) {
         document.querySelector('.list-sort').classList.remove('active')
     }
+
+	if(!target.closest('.catalog-button__setting-category') && !target.closest('.catalog-button__setting-filter') && !target.closest('.catalog-button__setting-sort')){
+		find('.bg-swiper-container').classList.remove('active')
+	}
 
 	if(target.closest('.list-category')){
 		let categoryCheck = document.querySelector('.catalog-descr__result-category')

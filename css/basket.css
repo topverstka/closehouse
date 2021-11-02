@@ -1332,6 +1332,30 @@ h2 {
   height: 90px;
 }
 
+.product-cards__less .product-button {
+  top: 3.9%;
+  left: 6.4%;
+}
+
+.product-cards__less .product-button .product-button__like {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 16px;
+}
+
+.product-cards__less .product-button .product-button__size img {
+  width: 23px;
+  height: 23px;
+}
+
+.product-cards__less .size-list.activator-list {
+  top: 70px;
+}
+
+.product-cards__less .product-card__content-price p {
+  font-size: 18px;
+}
+
 .breadcrumbs {
   padding: 120px 0 50px 0;
 }

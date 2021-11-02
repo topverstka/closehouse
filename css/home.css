@@ -1883,7 +1883,7 @@ section.contact {
           flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
 }
 
 .arrow-scroll p {

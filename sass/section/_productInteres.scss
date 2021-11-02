@@ -127,8 +127,8 @@
 
 .product-button{
     position: absolute;
-    top: 4%;
-    left: 4%;
+    top: 3.2%;
+    left: 7%;
     z-index: 2;
 
     button{
@@ -188,6 +188,7 @@
                 padding: 7px 7px;
                 color: #fff;
                 font-size: 12px;
+                cursor: auto;
             }
         }
     }

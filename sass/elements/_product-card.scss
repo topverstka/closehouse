@@ -85,8 +85,8 @@
 
 .product-button{
     position: absolute;
-    top: 4%;
-    left: 4%;
+    top: 3.9%;
+    left: 9.5%;
     z-index: 10;
 
     button{
@@ -128,6 +128,7 @@
                 padding: 7px 7px;
                 color: #fff;
                 font-size: 12px;
+                cursor: auto;
             }
         }
     }
@@ -192,4 +193,10 @@
     max-width: 300px;
     max-height: 55px;
     width: 100%;
+}
+
+.product-cards__less{
+    .product-card__content-price{
+        height: 90px;
+    }
 }

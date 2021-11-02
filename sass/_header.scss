@@ -552,3 +552,47 @@ input.saearch-header{
 		display: block;
 	}
 }
+
+.header__button-like{
+	position: relative;
+	&.active{
+		&::after{
+			content: '1';
+			width: 13px;
+			height: 13px;
+			color: #111111;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 8px;
+			font-weight: bolder;
+			border-radius: 100%;
+			position: absolute;
+			background-color: #fff;
+			bottom: -4px;
+			right: -3px;
+		}
+	}
+}
+
+.header__button-basket{
+	position: relative;
+	&.active{
+		&::after{
+			content: '1';
+			width: 13px;
+			height: 13px;
+			color: #111111;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 8px;
+			font-weight: bolder;
+			border-radius: 100%;
+			position: absolute;
+			background-color: #fff;
+			bottom: -4px;
+			right: -7px;
+		}
+	}
+}

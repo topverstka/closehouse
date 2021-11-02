@@ -74,3 +74,11 @@ btnHeaderSearch.addEventListener('click', () => {
 		document,querySelector('.saearch-header').classList.add('open')
 	}
 })
+
+var swiper = new Swiper('.catalog-swiper-container', {
+	loop: true,
+	navigation: {
+		nextEl: '.swiper-button-prev',
+		prevEl: '.swiper-button-next',
+	  },
+});

@@ -722,6 +722,60 @@ input.saearch-header::placeholder {
   display: block;
 }
 
+.header__button-like {
+  position: relative;
+}
+
+.header__button-like.active::after {
+  content: '1';
+  width: 13px;
+  height: 13px;
+  color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 8px;
+  font-weight: bolder;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #fff;
+  bottom: -4px;
+  right: -3px;
+}
+
+.header__button-basket {
+  position: relative;
+}
+
+.header__button-basket.active::after {
+  content: '1';
+  width: 13px;
+  height: 13px;
+  color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 8px;
+  font-weight: bolder;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #fff;
+  bottom: -4px;
+  right: -7px;
+}
+
 footer {
   padding-top: 55px;
   padding-bottom: 35px;
@@ -2101,8 +2155,8 @@ section.contact {
 
 .product-button {
   position: absolute;
-  top: 3%;
-  left: 6%;
+  top: 3.2%;
+  left: 7%;
   z-index: 1;
 }
 
@@ -2169,6 +2223,7 @@ section.new {
   padding: 7px 7px;
   color: #fff;
   font-size: 12px;
+  cursor: auto;
 }
 
 .season-title {

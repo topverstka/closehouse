@@ -1,3 +1,11 @@
+var swiper = new Swiper('.catalog-swiper-container', {
+	loop: true,
+	navigation: {
+		nextEl: '.swiper-button-prev',
+		prevEl: '.swiper-button-next',
+	  },
+});
+
 // Открыть фильтр по категориям
 find('.catalog-button__setting-category p').addEventListener('click', () => {
 	if(find('.catalog-button__setting-category div').classList.contains('active')){

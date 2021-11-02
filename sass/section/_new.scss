@@ -125,8 +125,8 @@
 
 .product-button{
     position: absolute;
-    top: 3%;
-    left: 6%;
+    top: 3.2%;
+    left: 7%;
     z-index: 1;
 
     button{
@@ -186,6 +186,7 @@ section.new{
                 padding: 7px 7px;
                 color: #fff;
                 font-size: 12px;
+                cursor: auto;
             }
         }
     }

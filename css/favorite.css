@@ -328,7 +328,7 @@ input.saearch-header::placeholder {
   position: absolute;
   left: -20px;
   top: 4px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .header__contacts-mail {
@@ -1052,7 +1052,7 @@ h2 {
   display: inline-block;
   width: 5px;
   height: 5px;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #fff;
   margin-right: 2.1875VW;
   -webkit-transition: all 0.2s;
@@ -1077,7 +1077,7 @@ h2 {
   display: block;
   width: 15px;
   height: 15px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: solid 1px #fff;
   top: -6px;
   right: -6px;

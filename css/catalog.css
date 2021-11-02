@@ -328,7 +328,7 @@ input.saearch-header::placeholder {
   position: absolute;
   left: -20px;
   top: 4px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .header__contacts-mail {
@@ -1052,7 +1052,7 @@ h2 {
   display: inline-block;
   width: 5px;
   height: 5px;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #fff;
   margin-right: 2.1875VW;
   -webkit-transition: all 0.2s;
@@ -1077,7 +1077,7 @@ h2 {
   display: block;
   width: 15px;
   height: 15px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: solid 1px #fff;
   top: -6px;
   right: -6px;
@@ -1725,7 +1725,7 @@ h2 {
   background-color: inherit;
   color: #fff;
   border: 1px solid #fff;
-  border-radius: 50%;
+  border-radius: 100%;
   width: 45px;
   height: 45px;
   cursor: pointer;
@@ -1896,7 +1896,7 @@ a.active {
 
 .filter-form__size-button label input:checked ~ p {
   border: 1px solid #fff;
-  border-radius: 50%;
+  border-radius: 100%;
   padding: 3.3px;
 }
 
@@ -1945,20 +1945,20 @@ a.active {
 
 .filter-form__color-button label input:checked ~ p {
   border: 1px solid #fff;
-  border-radius: 50%;
+  border-radius: 100%;
   padding: 6px;
 }
 
 .filter-form__color-button label input:not(:checked) ~ p {
   padding: 7px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .filter-form__color-button label p span {
   width: 11px;
   height: 11px;
   display: block;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #fff;
 }
 
@@ -2246,6 +2246,7 @@ a.active {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 8px 0;
 }
 
 .catalog-descr__result p {
@@ -2264,6 +2265,8 @@ a.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 15px;
   border: 1px solid #fff;
   padding: 8px 10px;
@@ -2283,6 +2286,9 @@ a.active {
   display: -ms-flexbox;
   display: flex;
   margin-right: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px 0;
 }
 
 .catalog-descr__result-size div {
@@ -2312,6 +2318,9 @@ a.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px 0;
 }
 
 .catalog-descr__result-color div {

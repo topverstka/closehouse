@@ -67,7 +67,7 @@
         background-color: inherit;
         color: #fff;
         border: 1px solid #fff; 
-        border-radius: 50%;
+        border-radius: 100%;
         width: 45px;
         height: 45px;
         cursor: pointer;
@@ -216,7 +216,7 @@ a.active{
 
             &:checked ~ p{
                 border: 1px solid #fff;
-                border-radius: 50%;
+                border-radius: 100%;
                 padding: 3.3px;
             }
 
@@ -261,13 +261,13 @@ a.active{
 
             &:checked ~ p{
                 border: 1px solid #fff;
-                border-radius: 50%;
+                border-radius: 100%;
                 padding: 6px;
             }
 
             &:not(:checked) ~ p{
                 padding: 7px;
-                border-radius: 50%;
+                border-radius: 100%;
             }
         }
 
@@ -275,7 +275,7 @@ a.active{
             width: 11px;
             height: 11px;
             display: block;
-            border-radius: 50%;
+            border-radius: 100%;
             background-color: #fff;
 
             &.gray{
@@ -554,6 +554,7 @@ a.active{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 8px 0;
 
     p{
         font-size: 15px;
@@ -567,6 +568,7 @@ a.active{
     margin-right: 20px;
     div{
         display: flex;
+        flex-wrap: wrap;
         font-size: 15px;
         border: 1px solid #fff;
         padding: 8px 10px;
@@ -584,6 +586,8 @@ a.active{
 .catalog-descr__result-size{
     display: flex;
     margin-right: 20px;
+    flex-wrap: wrap;
+    gap: 8px 0;
     div{
         display: flex;
         font-size: 15px;
@@ -608,6 +612,8 @@ a.active{
 
 .catalog-descr__result-color{
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px 0;
     div{
         display: flex;
         font-size: 15px;

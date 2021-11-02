@@ -327,7 +327,7 @@ input.saearch-header::placeholder {
   position: absolute;
   left: -20px;
   top: 4px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .header__contacts-mail {
@@ -960,7 +960,7 @@ h2 {
   display: inline-block;
   width: 5px;
   height: 5px;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #fff;
   margin-right: 2.1875VW;
   -webkit-transition: all 0.2s;
@@ -985,7 +985,7 @@ h2 {
   display: block;
   width: 15px;
   height: 15px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: solid 1px #fff;
   top: -6px;
   right: -6px;
@@ -1736,10 +1736,14 @@ section.contact {
 }
 
 .first-screen__social {
+  width: 100% !important;
+  max-width: 1140px !important;
+  -webkit-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
+  left: 50% !important;
   position: absolute;
   z-index: 10;
   bottom: 34px;
-  left: 30px;
   display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1796,12 +1800,29 @@ section.contact {
   right: 30px;
   text-align: center;
   width: 7px;
+  width: 100%;
+  max-width: 1140px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .arrow-scroll p {
   font-size: 14px;
   -webkit-transform: rotateZ(-90deg);
           transform: rotateZ(-90deg);
+  margin-right: -19px;
+  margin-bottom: 15px;
 }
 
 .arrow-scroll object {

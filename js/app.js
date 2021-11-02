@@ -123,14 +123,19 @@ var swiper = new Swiper('.home-swiper-container', {
 	},
 });
 
+// Подтягиваем с сервера
+let labels = ['brown', 'white', 'yellow'];
 var swiperCatalog = new Swiper('.catalog-swiper-container', {
 	loop: true,
 	// init: false,
-	navigation: {
-		nextEl: '.swiper-button-prev',
-		prevEl: '.swiper-button-next',
-	  },
-	
+	pagination: {
+		el: '.swiper-pagination-for-color',
+		type: 'bullets',
+		clickable: true,
+		renderBullet: function(index, className){
+			return `<span class="${className} ${(labels[index])}"></span>`;
+		}
+	},
 });
 
 

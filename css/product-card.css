@@ -327,7 +327,7 @@ input.saearch-header::placeholder {
   position: absolute;
   left: -20px;
   top: 4px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .header__contacts-mail {
@@ -1051,7 +1051,7 @@ h2 {
   display: inline-block;
   width: 5px;
   height: 5px;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #fff;
   margin-right: 2.1875VW;
   -webkit-transition: all 0.2s;
@@ -1076,7 +1076,7 @@ h2 {
   display: block;
   width: 15px;
   height: 15px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: solid 1px #fff;
   top: -6px;
   right: -6px;
@@ -1633,6 +1633,13 @@ h2 {
   display: grid;
   -ms-grid-columns: 55.6% 44.4%;
       grid-template-columns: 55.6% 44.4%;
+  margin: 0 30px;
+}
+
+.cont-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .new-title h2 {
@@ -1646,6 +1653,7 @@ h2 {
 
 .header {
   width: 60%;
+  z-index: 100;
 }
 
 .breadcrumbs {
@@ -1854,6 +1862,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   gap: 0 13px;
+  margin-left: 0px;
 }
 
 .product-buttons__buy {
@@ -2013,6 +2022,99 @@ h2 {
   transition: 0.4s;
   z-index: 15;
   opacity: 1;
+}
+
+.swiper-pagination-for-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-pagination-for-color span.gray {
+  background-color: #808080;
+}
+
+.swiper-pagination-for-color span.black {
+  background-color: #000;
+}
+
+.swiper-pagination-for-color span.red {
+  background-color: #962B2B;
+}
+
+.swiper-pagination-for-color span.green {
+  background-color: #75BE48;
+}
+
+.swiper-pagination-for-color span.yellow {
+  background-color: #D7BC2E;
+}
+
+.swiper-pagination-for-color span.skay {
+  background-color: #3897CD;
+}
+
+.swiper-pagination-for-color span.blue {
+  background-color: #162A92;
+}
+
+.swiper-pagination-for-color span.purple {
+  background-color: #6F2C80;
+}
+
+.swiper-pagination-for-color span.orange {
+  background-color: #DF6812;
+}
+
+.swiper-pagination-for-color span.beige {
+  background-color: #E3E1A4;
+}
+
+.swiper-pagination-for-color span.beryl {
+  background-color: #1BCDCD;
+}
+
+.swiper-pagination-for-color span.brown {
+  background-color: #8D5A5A;
+}
+
+.swiper-pagination-for-color span.violet {
+  background-color: #78617E;
+}
+
+.swiper-pagination-for-color span.white {
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  margin-right: 35px;
+}
+
+.swiper-pagination-bullet::before {
+  content: ' ';
+  display: block;
+  width: 43px;
+  height: 43px;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  top: -11px;
+  right: -11px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.swiper-pagination-bullet-active::before {
+  border: 3px solid white;
+  top: -11px;
+  right: -11px;
+  width: 39px;
+  height: 39px;
 }
 
 .new-title {

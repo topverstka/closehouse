@@ -327,7 +327,7 @@ input.saearch-header::placeholder {
   position: absolute;
   left: -20px;
   top: 4px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .header__contacts-mail {

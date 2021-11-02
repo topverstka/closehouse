@@ -1,6 +1,11 @@
 .card{
     display: grid;
     grid-template-columns: 55.6% 44.4%;
+    margin: 0 30px;
+}
+
+.cont-head{
+    display: flex;
 }
 
 .new-title{
@@ -17,6 +22,7 @@
 
 .header {
     width: 60%;
+    z-index: 100;
 }
 
 .breadcrumbs {
@@ -211,6 +217,7 @@
 .product-buttons .wrap{
     display: flex;
     gap: 0 13px;
+    margin-left: 0px;
 }
 
 .product-buttons__buy{
@@ -360,4 +367,95 @@
         z-index: 15;
         opacity: 1;
     }
+}
+
+.swiper-pagination-for-color{
+    display: flex;
+    align-items: center;
+    span{
+        &.gray{
+            background-color: #808080;
+        }
+
+        &.black{
+            background-color: #000;
+        }
+
+        &.red{
+            background-color: #962B2B;
+        }
+
+        &.green{
+            background-color: #75BE48;
+        }
+
+        &.yellow{
+            background-color: #D7BC2E;
+        }
+
+        &.skay{
+            background-color: #3897CD;
+        }
+
+        &.blue{
+            background-color: #162A92;
+        }
+
+        &.purple{
+            background-color: #6F2C80;
+        }
+
+        &.orange{
+            background-color: #DF6812;
+        }
+
+        &.beige{
+            background-color: #E3E1A4;
+        }
+
+        &.beryl{
+            background-color: #1BCDCD;
+        }
+
+        &.brown{
+            background-color: #8D5A5A;
+        }
+
+        &.violet{
+            background-color: #78617E;
+        }
+
+
+        &.white{
+            background-color: #fff;
+        }
+    }
+}
+
+.swiper-pagination-bullet{
+    position: relative;
+    width: 23px;
+    height: 23px;
+    margin-right: 35px;
+}
+
+.swiper-pagination-bullet::before{
+    content: ' ';
+    display: block;
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    top: -11px;
+    right: -11px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.swiper-pagination-bullet-active::before{
+    border: 3px solid rgba(255, 255, 255, 1);
+    top: -11px;
+    right: -11px;
+    width: 39px;
+    height: 39px;
 }

@@ -965,9 +965,11 @@ footer h3 {
   margin-top: 3px;
 }
 
-.modal-content__form label p {
+.modal-content__form label span {
   font-size: 12px;
   text-align: start;
+  margin-right: auto;
+  display: block;
 }
 
 .modal-content__form button {

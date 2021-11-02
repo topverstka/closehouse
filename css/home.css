@@ -1593,6 +1593,22 @@ h2 {
 .contact-title h2 {
   word-spacing: 40px;
   margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-title h2 span {
+  width: 75px;
+  height: 4px;
+  background-color: #fff;
+  display: block;
+  margin-left: 49px;
+  margin-right: 49px;
+  margin-bottom: 5px;
 }
 
 section.contact {

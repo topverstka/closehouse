@@ -197,6 +197,13 @@ Array.from(allProduct).forEach((el, id) => {
     });
 });
 
+window.addEventListener('click', e => {
+	const target = e.target
+	if (!target.closest('.product-button__size') && !target.closest('.size-list')) {
+        document.querySelector('.size-list').classList.remove('activator-list')
+    }
+})
+
 // 9) AOS анимации инициализация (https://michalsnik.github.io/aos/)
 
 AOS.init();

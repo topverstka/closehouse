@@ -1850,21 +1850,29 @@ h2 {
   max-height: 356px;
 }
 
-.product-button {
+.new-product__item .product-button {
   position: absolute;
-  top: 3.2%;
-  left: 7%;
+  top: 24px;
+  left: 21px;
   z-index: 2;
 }
 
-.product-button button {
+.new-product__item .product-button .product-button__like {
+  margin-bottom: 11px;
+}
+
+.new-product__item .product-button button {
   background-color: inherit;
   border: none;
   cursor: pointer;
 }
 
-.product-button button img {
+.new-product__item .product-button button img {
   width: 18px;
+}
+
+.new-product__item .product-button .size-list.activator-list {
+  top: 55px;
 }
 
 .product-button__like.active-favorite {
@@ -2022,6 +2030,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 15px;
 }
 
 .favorite-visualization__inverted {

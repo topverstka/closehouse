@@ -53,3 +53,24 @@ window.addEventListener('click', e => {
         document.querySelector('.modal').classList.remove('active')
     }
 })
+
+let colorServer = ['brown', 'white', 'yellow']
+
+Array.from(document.querySelectorAll('.product-setting__color label')).forEach(el => {
+    el.addEventListener('click', () => {
+        if(el.childNodes[1].value == 'white'){
+            Array.from(document.querySelectorAll('.swiper-slide')).forEach(el => {
+                el.childNodes[1].src = './img/pages/catalog/catalog-swiper-white.png'
+            })
+        } else if (el.childNodes[1].value == 'brown'){
+            Array.from(document.querySelectorAll('.swiper-slide')).forEach(el => {
+                el.childNodes[1].src = './img/pages/catalog/catalog-swiper.png'
+            })
+        } else if (el.childNodes[1].value == 'yellow') {
+            Array.from(document.querySelectorAll('.swiper-slide')).forEach(el => {
+                el.childNodes[1].src = './img/pages/catalog/catalog-swiper-yellow.png'
+            })
+        }
+    })
+})
+

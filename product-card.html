@@ -65,6 +65,7 @@
 						
 						<!-- Кнопки в шапке -->
 						<div class="header__buttons">
+							<input class="saearch-header" type="text" placeholder="Поиск">
 							<button class="header__button header__button-search" id="btnHeaderSearch">
 								<img src="./img/search.svg" alt="Поиск">
 							</button>
@@ -149,39 +150,38 @@
 						<div class="product-setting__controlls">
 							<div class="product-setting__size">
 								<label>
-									<input type="radio" name="checksize">
+									<input type="radio" name="checksize" value="42">
 									<p>42</p>
 								</label>
 								<label>
-									<input type="radio" name="checksize">
+									<input type="radio" name="checksize" value="44">
 									<p>44</p>
 								</label>
 								<label>
-									<input type="radio" name="checksize">
+									<input type="radio" name="checksize" value="46">
 									<p>46</p>
 								</label>
 								<label>
-									<input type="radio" name="checksize">
+									<input type="radio" name="checksize" value="48">
 									<p>48</p>
 								</label>
 							</div>
 
-							<!-- <div class="product-setting__color">
+							<div class="product-setting__color">
 								<label>
-									<input type="radio" name="checkcolor">
+									<input type="radio" name="checkcolor" value="brown">
 									<p><span class="brown"></span></p>
 								</label>
 								<label>
-									<input type="radio" name="checkcolor">
+									<input type="radio" name="checkcolor" value="white">
 									<p><span class="white"></span></p>
 								</label>
 								<label>
-									<input type="radio" name="checkcolor">
+									<input type="radio" name="checkcolor" value="yellow">
 									<p><span class="yellow"></span></p>
 								</label>
-							</div> -->
-
-							<div class="swiper-pagination-for-color"></div>
+							</div>
+							<!-- <div class="swiper-pagination-for-color"></div> -->
 						</div>
 			</div>
 
@@ -262,7 +262,7 @@
 
 		</div>
 		<div class="card-swiper">
-			<div class="catalog-swiper-container swiper-container">
+			<div class="catalog-swiper-container swiper-container product-card-swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">

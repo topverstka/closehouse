@@ -53,7 +53,7 @@
     div{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 14px;
 
         p{
             font-size: 12px;
@@ -61,7 +61,7 @@
         }
 
         &:last-child{
-            padding-bottom: 20px;
+            padding-bottom: 8px;
         }
     }
 
@@ -92,7 +92,7 @@
         }
 
         &:first-child{
-            margin-bottom: 10px;
+            margin-bottom: 16px;
         }
     }
 
@@ -141,14 +141,15 @@
 .order-form__info button {
     cursor: pointer;
     width: 100%;
-    padding: 15px 0;
+    padding: 14px 0;
     transition: 0.4s;
     font-size: 15px;
     &:hover{
         transition: 0.4s;
         background: #fff;
         padding: 15px 0;
-        color: #383838;
+        color: #000;
+        font-weight: bolder;
     }
 }
 
@@ -222,7 +223,7 @@
     &.active{
         transition: 0.4s;
         opacity: 1;
-        z-index: 2;
+        z-index: 1000;
     }
 }
 

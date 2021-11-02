@@ -6,6 +6,15 @@
 
 .cont-head{
     display: flex;
+
+    .header__logo{
+        a{
+            width: 169px;
+            img{
+                width: 169px;
+            }
+        }
+    }
 }
 
 .new-title{
@@ -30,7 +39,11 @@
 }
 
 .header__buttons{
-    margin-right: 173px;
+    margin-right: 120px;
+
+    input{
+        width: max-content;
+    }
 }
 
 .swiper-slide img{

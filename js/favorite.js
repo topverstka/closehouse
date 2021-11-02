@@ -75,10 +75,4 @@ btnHeaderSearch.addEventListener('click', () => {
 	}
 })
 
-var swiper = new Swiper('.catalog-swiper-container', {
-	loop: true,
-	navigation: {
-		nextEl: '.swiper-button-prev',
-		prevEl: '.swiper-button-next',
-	  },
-});
+

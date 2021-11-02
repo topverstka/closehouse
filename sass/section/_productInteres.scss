@@ -125,11 +125,15 @@
     }
 }
 
-.product-button{
+.new-product__item .product-button{
     position: absolute;
-    top: 3.2%;
-    left: 7%;
+    top: 24px;
+    left: 21px;
     z-index: 2;
+
+    .product-button__like{
+        margin-bottom: 11px;
+    }
 
     button{
         background-color: inherit;
@@ -139,6 +143,10 @@
         img{
             width: 18px;
         }
+    }
+
+    .size-list.activator-list {
+        top: 55px;
     }
 }
 

@@ -2670,6 +2670,10 @@ a.active {
   height: 21px;
 }
 
+.favorite-sper-content .swiper-slide {
+  height: 100%;
+}
+
 .favorite-sper-content .bg-favorite {
   position: absolute;
   top: 0;

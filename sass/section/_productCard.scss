@@ -472,3 +472,14 @@
     width: 39px;
     height: 39px;
 }
+
+.product-card-swiper{
+    .swiper-slide{
+        height: 100%;
+
+        img{
+            max-height: 750px;
+            height: 100%;
+        }
+    }
+}

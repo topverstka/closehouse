@@ -1103,8 +1103,8 @@ h2 {
 .product-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 31.6% 31.6% 31.6%;
-      grid-template-columns: 31.6% 31.6% 31.6%;
+  -ms-grid-columns: 31.3% 31.3% 31.3%;
+      grid-template-columns: 31.3% 31.3% 31.3%;
   gap: 30px;
 }
 
@@ -1150,6 +1150,10 @@ h2 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   opacity: 0;
+}
+
+.catalog-swiper-container .swiper-slide {
+  height: 547px;
 }
 
 .swiper-button-next {
@@ -1633,6 +1637,7 @@ h2 {
   border: 1px solid #fff;
   border-radius: 50%;
   cursor: pointer;
+  margin-top: 4px;
 }
 
 .button-color span {
@@ -1647,9 +1652,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: absolute;
   top: 48px;
 }

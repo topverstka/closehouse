@@ -165,8 +165,10 @@ window.addEventListener('click', e => {
         document.querySelector('.list-sort').classList.remove('active')
     }
 
-	if(!target.closest('.catalog-button__setting-category') && !target.closest('.catalog-button__setting-filter') && !target.closest('.catalog-button__setting-sort')){
-		find('.bg-swiper-container').classList.remove('active')
+	if(!target.closest('.catalog-button__setting-category') && !target.closest('.catalog-button__setting-filter') && !target.closest('.catalog-button__setting-sort') && !target.closest('.product-button__contain')){
+		document.querySelectorAll('.bg-swiper-container').forEach(el => {
+			el.classList.remove('active')
+		})
 	}
 
 	if(target.closest('.list-category')){
@@ -279,8 +281,6 @@ window.addEventListener('click', e => {
 	} else {
 		document.querySelector('.catalog-descr__result p').style.display = 'block'
 	}
-
-
 })
 
 let lengthCategory = document.querySelectorAll('.catalog-descr__result-category div').length;
@@ -311,3 +311,48 @@ window.addEventListener('click', e => {
 		document.querySelector('body').style.overflowY = 'auto'
     }
 })
+
+
+document.querySelectorAll('.extra-controls input').forEach(el => {
+	el.setAttribute('type', 'number')
+})
+
+
+document.querySelector('.js-input-to').setAttribute('min', 0)
+document.querySelector('.js-input-from').setAttribute('max', 12600)
+// Устанавливаем минимальное значение
+document.querySelector('.irs-handle.from').addEventListener('mouseup', ()=> {
+	document.querySelector('.js-input-to').setAttribute('min', document.querySelector('.js-input-from').value)
+})
+// Устанавливаем максимальное значение
+document.querySelector('.irs-handle.to').addEventListener('mouseup', ()=> {
+	document.querySelector('.js-input-from').setAttribute('max', document.querySelector('.js-input-to').value)
+})
+
+document.querySelector('.js-input-to').addEventListener('keyup', function(){
+	if(this.value < document.querySelector('.js-input-to').getAttribute('min')){
+		document.querySelector('.js-input-to').value = document.querySelector('.js-input-to').getAttribute('min')
+	}
+})
+
+document.querySelector('.js-input-from').addEventListener('keyup', function(){
+	if(this.value > document.querySelector('.js-input-from').getAttribute('max')){
+		document.querySelector('.js-input-from').value = document.querySelector('.js-input-from').getAttribute('max')
+	}
+})
+
+let allProductCard = document.querySelectorAll('.product-card')
+
+Array.from(allProductCard).forEach((basketItem, basketItemId, basketItemArray) => {
+    let allbuttonSize = basketItem.querySelectorAll('.product-button__size')
+
+    Array.from(allbuttonSize).forEach((deleteElement) => {
+        deleteElement.addEventListener('click', function(event) {
+			if(basketItem.childNodes[1].childNodes[1].childNodes[1].classList.contains('active')){
+				basketItem.childNodes[1].childNodes[1].childNodes[1].classList.remove('active')
+			} else {
+				basketItem.childNodes[1].childNodes[1].childNodes[1].classList.add('active')
+			}
+        })
+    })
+});

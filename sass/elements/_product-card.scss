@@ -1,6 +1,6 @@
 .product-cards{
     display: grid;
-    grid-template-columns: 31.6% 31.6% 31.6%;
+    grid-template-columns: 31.3% 31.3% 31.3%;
     gap: 30px;
 }
 
@@ -40,6 +40,10 @@
     .product-button:hover ~ .swiper-button-prev{
         transition: 0.4s;
         opacity: 0;
+    }
+
+    .swiper-slide{
+        height: 547px;
     }
 }
 

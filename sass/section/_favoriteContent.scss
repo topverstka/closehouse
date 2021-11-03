@@ -592,6 +592,8 @@ a.active{
             font-size: 18px;
         }
     }
+
+    
 }
 
 .favorite-sper-content{
@@ -607,6 +609,31 @@ a.active{
 
         .product-button__like{
             margin-bottom: 12px;
+        }
+
+        .product-button__size{
+            img{
+                width: 21px;
+                height: 21px;
+            }
+        }
+    }
+
+    .bg-favorite{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(11, 11, 11, 0.6);
+        display: block;
+        z-index: 1;
+        opacity: 0;
+        transition: 0.4s;
+
+        &.active{
+            transition: 0.4s;
+            z-index: 2;
+            opacity: 1;
         }
     }
 }

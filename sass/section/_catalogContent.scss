@@ -82,6 +82,10 @@
 .catalog-visualization__inverted{
     transform: rotateZ(-90deg);
     font-size: 15px;
+    position: absolute;
+    top: 42px;
+    right: -43px;
+    height: 16px;
 }
 
 a.active{
@@ -653,4 +657,16 @@ a.active{
         z-index: 2;
         opacity: 1;
     }
+}
+
+.catalog-swiper-container{
+    .swiper-slide{
+        height: 100%;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
 }

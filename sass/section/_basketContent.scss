@@ -193,6 +193,7 @@
     border: 1px solid #fff;
     border-radius: 50%;
     cursor: pointer;
+    margin-top: 4px;
 
     span {
         width: 17px;
@@ -205,7 +206,7 @@
 
 .setting-color{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: absolute;
     top: 48px;
 }

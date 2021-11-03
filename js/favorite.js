@@ -1,21 +1,21 @@
-let vizualButton = document.querySelectorAll('.favorite-visualization__button button')
-Array.from(vizualButton).forEach((el, id, lems) => {
-    lems[0].addEventListener('click', function(event) {
-        if(lems[1].classList.contains('active')){
-			lems[1].classList.remove('active')
-		} else {
-			lems[0].classList.add('active')
-		}
-    });
+// let vizualButton = document.querySelectorAll('.favorite-visualization__button button')
+// Array.from(vizualButton).forEach((el, id, lems) => {
+//     lems[0].addEventListener('click', function(event) {
+//         if(lems[1].classList.contains('active')){
+// 			lems[1].classList.remove('active')
+// 		} else {
+// 			lems[0].classList.add('active')
+// 		}
+//     });
 
-	lems[1].addEventListener('click', function(event) {
-        if(lems[0].classList.contains('active')){
-			lems[0].classList.remove('active')
-		} else {
-			lems[1].classList.add('active')
-		}
-    });
-});
+// 	lems[1].addEventListener('click', function(event) {
+//         if(lems[0].classList.contains('active')){
+// 			lems[0].classList.remove('active')
+// 		} else {
+// 			lems[1].classList.add('active')
+// 		}
+//     });
+// });
 
 visualizationThree.addEventListener('click', () => {
 	find('.product-cards').style.gridTemplateColumns = '32% 32% 32%'
@@ -103,3 +103,29 @@ var swiperProductCard = new Swiper('.favorite-sper-content', {
 		prevEl: '.swiper-button-next',
 	  },
 });
+
+
+let allProductCard = document.querySelectorAll('.product-card')
+
+Array.from(allProductCard).forEach((basketItem, basketItemId, basketItemArray) => {
+    let allbuttonSize = basketItem.querySelectorAll('.product-button__size')
+
+    Array.from(allbuttonSize).forEach((deleteElement) => {
+        deleteElement.addEventListener('click', function(event) {
+			if(basketItem.childNodes[1].childNodes[1].childNodes[1].classList.contains('active')){
+				basketItem.childNodes[1].childNodes[1].childNodes[1].classList.remove('active')
+			} else {
+				basketItem.childNodes[1].childNodes[1].childNodes[1].classList.add('active')
+			}
+        })
+    })
+});
+
+window.addEventListener('click', e => {
+	let target = e.target
+	if(!target.closest('.product-button__size')){
+		document.querySelectorAll('.bg-favorite').forEach(el => {
+			el.classList.remove('active')
+		})
+	}
+})

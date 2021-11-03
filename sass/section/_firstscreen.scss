@@ -284,6 +284,28 @@
 
 }
 
+@media (max-width: 1200px){
+    .first-screen__title{
+        margin-bottom: 0vh;
+    }
+
+    .first-screen__title h1{
+        gap: 0 126px;
+    }
+
+    .first-screen__social{
+        margin-left: 30px;
+    }
+
+    .arrow-scroll p{
+        margin-right: 2px;
+    }
+
+    .arrow-scroll object{
+        margin-right: 20px;
+    }
+}
+
 @media (min-width: 1420px){
     .first-screen__title{
         font-size: 45px;

@@ -24,6 +24,21 @@ document.querySelector('.table-size__button').addEventListener('click', ()=> {
     }
 })
 
+Array.from(document.querySelectorAll('.open-modal')).forEach(el => {
+	el.addEventListener('click', function(){
+		document.querySelector('.modal').classList.add('active')
+    	document.querySelector('body').classList.add('lock')
+	})
+})
+
+
+document.querySelector('.modal-close').addEventListener('click', function(){
+    document.querySelector('.modal').classList.remove('active')
+    document.querySelector('body').classList.remove('lock')
+})
+
+
+
 window.addEventListener('click', e => {
     const target = e.target
     if (!target.closest('table') && !target.closest('.table-size__button')) {
@@ -33,25 +48,10 @@ window.addEventListener('click', e => {
     }
 })
 
-
-Array.from(document.querySelectorAll('.open-modal')).forEach(el => {
-	el.addEventListener('click', function(){
-		document.querySelector('.modal').classList.add('active')
-    	document.querySelector('body').style.overflowY = 'hidden'
-	})
-})
-
-
-document.querySelector('.modal-close').addEventListener('click', function(){
-    document.querySelector('.modal').classList.remove('active')
-    document.querySelector('body').style.overflowY = 'auto'
-})
-
-
 window.addEventListener('click', e => {
     if (!e.target.closest('.modal-content') && !e.target.closest('.open-modal')) {
         document.querySelector('.modal').classList.remove('active')
-        document.querySelector('body').style.overflowY = 'auto'
+        document.querySelector('body').classList.remove('lock')
     }
 })
 

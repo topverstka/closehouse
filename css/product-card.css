@@ -1047,6 +1047,7 @@ footer h3 {
   color: #fff;
   width: 100%;
   margin-top: 3px;
+  font-size: 15px;
 }
 
 .modal-content__form label span {
@@ -2320,6 +2321,10 @@ h2 {
 .product-card-swiper .swiper-slide img {
   max-height: 750px;
   height: 100%;
+}
+
+body.lock {
+  overflow-y: hidden !important;
 }
 
 .new-title {

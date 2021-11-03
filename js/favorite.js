@@ -63,6 +63,7 @@ document.querySelector('.modal-close').addEventListener('click', function(){
 window.addEventListener('click', e => {
     if (!e.target.closest('.modal-content') && !e.target.closest('.open-modal')) {
         document.querySelector('.modal').classList.remove('active')
+		document.querySelector('body').style.overflowY = 'auto'
     }
 })
 
@@ -75,7 +76,25 @@ btnHeaderSearch.addEventListener('click', () => {
 	}
 })
 
+// Перключение отображения
+let vizualButton = document.querySelectorAll('.catalog-visualization__button a')
+Array.from(vizualButton).forEach((el, id, lems) => {
+    lems[0].addEventListener('click', function(event) {
+        if(lems[1].classList.contains('active')){
+			lems[1].classList.remove('active')
+		} else {
+			lems[0].classList.add('active')
+		}
+    });
 
+	lems[1].addEventListener('click', function(event) {
+        if(lems[0].classList.contains('active')){
+			lems[0].classList.remove('active')
+		} else {
+			lems[1].classList.add('active')
+		}
+    });
+});
 
 var swiperProductCard = new Swiper('.favorite-sper-content', {
 	loop: true,

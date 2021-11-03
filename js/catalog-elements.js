@@ -47,7 +47,7 @@ find('.catalog-button__setting-sort p').addEventListener('click', () => {
 
 
 // Перключение отображения
-let vizualButton = document.querySelectorAll('.catalog-visualization__button button')
+let vizualButton = document.querySelectorAll('.catalog-visualization__button a')
 Array.from(vizualButton).forEach((el, id, lems) => {
     lems[0].addEventListener('click', function(event) {
         if(lems[1].classList.contains('active')){
@@ -308,5 +308,6 @@ document.querySelector('.modal-close').addEventListener('click', function(){
 window.addEventListener('click', e => {
     if (!e.target.closest('.modal-content') && !e.target.closest('.open-modal')) {
         document.querySelector('.modal').classList.remove('active')
+		document.querySelector('body').style.overflowY = 'auto'
     }
 })

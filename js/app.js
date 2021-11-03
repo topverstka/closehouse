@@ -56,6 +56,7 @@ menuBurger.addEventListener('click', function(e){
 Array.from(document.querySelectorAll('.nav-burger ul li a')).forEach(el => {
 	el.addEventListener('click', function(){
 		document.querySelector('.header__nav').classList.remove('header__nav--active')
+		document.querySelector('.burger__container').classList.remove('header__burger--active')
 		Array.from(findAll('.header__button')).forEach(el => {
 			el.style.opacity =  '1'
 		})

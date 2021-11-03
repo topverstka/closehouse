@@ -474,6 +474,14 @@ input.saearch-header::placeholder {
   max-width: none;
 }
 
+.nav-burger ul li {
+  margin-right: 45px;
+}
+
+.nav-burger ul li:last-child {
+  margin-right: 0px;
+}
+
 .header__nav .wrap {
   position: relative;
   padding: 20px 20px;
@@ -493,7 +501,6 @@ input.saearch-header::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 0 45px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

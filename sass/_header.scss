@@ -304,6 +304,14 @@ input.saearch-header{
 	max-width: none;
 }
 
+.nav-burger ul li{
+	margin-right: 45px;
+
+	&:last-child{
+		margin-right: 0px;
+	}
+}
+
 .header__nav{
 	.wrap{
 		position: relative;
@@ -319,7 +327,6 @@ input.saearch-header{
 	ul{
 		display: flex;
 		flex-direction: row;
-		gap: 0 45px;
 		justify-content: center;
 	}
 		

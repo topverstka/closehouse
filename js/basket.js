@@ -50,6 +50,7 @@ Array.from(allButtonColor).forEach((el, id) => {
 				allLineColor[id].classList.add('active')
                 Array.from(allBg).forEach((lineSize, number, allBg) => {
                     allBg[id].classList.add('active')
+                    allBg[0].classList.add('active')
                 });
                 Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
                     allSettingColor[id].style.zIndex = '2'
@@ -180,7 +181,17 @@ window.addEventListener('click', e => {
 			el.classList.remove('active')
 		})
         Array.from(document.querySelectorAll('.basket-content__item-bg')).forEach(el => {
-            el.classList.remove('active')
+            // el.classList.remove('active')
+        })
+    }
+
+
+    if (!target.closest('.button-color') && !target.closest('.line-color')) {
+		Array.from(document.querySelectorAll('.line-color')).forEach(el => {
+			el.classList.remove('active')
+		})
+        Array.from(document.querySelectorAll('.basket-content__item-bg')).forEach(el => {
+            // el.classList.remove('active')
         })
     }
 })

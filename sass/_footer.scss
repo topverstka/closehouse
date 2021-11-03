@@ -14,6 +14,8 @@ footer{
 		font-size: 18px;
 	}
 }
+
+
 	
 .footer__title{
 	text-align: center;
@@ -84,4 +86,72 @@ footer{
 
 .footer-wrap{
 	margin: 0 30px;
+}
+
+.footer__content-links ul li{
+	width: max-content;
+}
+
+.footer__content-links ul li a::after{
+    transition: .4s;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+}
+
+.footer__content-links ul li a:hover::after {
+    transition: .4s;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+}
+
+.footer__content-nav ul li{
+	width: max-content;
+}
+
+
+.footer__content-nav ul li a::after{
+    transition: .4s;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+}
+
+.footer__content-nav ul li a:hover::after {
+    transition: .4s;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+}
+
+.footer__content-shop ul li{
+	width: max-content;
+}
+
+
+.footer__content-shop ul li a::after{
+    transition: .4s;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+}
+
+.footer__content-shop ul li a:hover::after {
+    transition: .4s;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
 }

@@ -621,6 +621,10 @@ a.active{
 
     .swiper-slide {
         height: auto;
+
+        img{
+            object-fit: cover;
+        }
     }
 
     .bg-favorite{

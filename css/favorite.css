@@ -2697,6 +2697,11 @@ a.active {
   height: auto;
 }
 
+.favorite-sper-content .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .favorite-sper-content .bg-favorite {
   position: absolute;
   top: 0;

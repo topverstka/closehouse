@@ -92,7 +92,9 @@ function updateInputs (data) {
 	to = data.to;
 			
 	$inputFrom.prop("value", from);
-	$inputTo.prop("value", to);	
+	$inputTo.prop("value", to);
+	$inputTo.prop("min", from);
+	$inputFrom.prop("max", to);
 }
 
 $inputFrom.on("input", function () {

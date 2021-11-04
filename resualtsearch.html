@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+	<meta charset="utf-8">
+	<title>Close House</title>
+	<meta name="description" content="Close House — удобная одежда, в которой легко передвигаться, расслабляться и в то же время быть соблазнительной и привлекательной">
+	<link rel="icon" href="./img/favicon.ico">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/aos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+	<!-- Кастомые анимации -->
+	<link rel="stylesheet" href="./css/animation.css">
+	<!-- / Кастомые анимации -->
+
+    <link rel="stylesheet" href="./css/catalog.css"> 
+</head> 
+
+
+<body>
+	<div class="modal">
+		<div class="modal-content">
+			<img class="modal-close" src="./img/pages/basket/close-modal.svg" alt="">
+			<p class="modal-content__title">Купить в один клик</p>
+			<p class="modal-content__subtitle">Оставьте свои данные и мы перезвоним Вам в течении 10 минут</p>
+			<form class="modal-content__form">
+				<label>
+					<span>Имя</span>
+					<input type="text">
+				</label>
+				<label>
+					<span>Номер телефона</span>
+					<input type="tel">
+				</label>
+
+				<button>Отправить</button>
+			</form>
+		</div>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="wrap">
+				<!-- Логотип -->
+				<div class="header__logo header__logo--pc">
+					<a href="index.html">
+						<img src="./img/logo.svg" alt="Logo">
+					</a>
+				</div>
+				
+				<!-- Кнопки в шапке -->
+				<div class="header__buttons">
+					<input class="saearch-header" type="text" placeholder="Поиск">
+					<button class="header__button header__button-search" id="btnHeaderSearch">
+						<img src="./img/search.svg" alt="Поиск">
+					</button>
+					<button class="header__button header__button-like">
+						<img src="./img/like.svg" alt="Избранное">
+					</button>
+					<button class="header__button header__button-basket">
+						<img src="./img/basket.svg" alt="Корзина">
+					</button>
+				<!-- Бургер для меню -->
+					<div class="burger__container">
+						<a class="header__burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- всплывающий поиск -->
+	<div class="search-panel">
+		<div class="container">
+			<div class="wrap">
+
+				<div class="search-panel__close">
+					<span></span>
+					<span></span>
+				</div>
+
+				<div class="header__logo header__logo--nav">
+					<a class="header__logo-img" href="#">
+						<object type="image/svg+xml" data="./img/logo.svg">
+							<img src="./img/logo.svg" alt="Logo">
+						</object>
+						<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
+							<img src="./img/pages/home/Elegant-clothes.svg" alt="">
+						</object>
+					</a>
+				</div>
+
+				<div class="search-panel__input">
+					<input type="text">
+					<button class="btn btn-search">ПОИСК</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Всплывающее меню -->
+	<div class="header__nav">
+		<div class="header__nav-bg">
+			<div class="container">
+				<div class="wrap">
+					<!-- Логотип -->
+					<div class="header__logo header__logo--nav">
+						<a class="header__logo-img" href="#">
+							<object type="image/svg+xml" data="./img/logo.svg">
+								<img src="./img/logo.svg" alt="Logo">
+							</object>
+							<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
+								<img src="./img/pages/home/Elegant-clothes.svg" alt="">
+							</object>
+						</a>
+
+						
+					</div>
+
+					<!-- Навигация -->
+					<nav class="nav-burger">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<!-- Элемент контактов -->
+					<div class="header__contacts">
+						<a href="#">
+							<img src="./img/instagram.svg" alt="instagram">
+						</a>
+
+						<a href="#">Instargam</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="wrap">
+				<div class="breadcrumbs-content">
+					<a href="#">Главная</a>
+					<p>•</p>
+					<a href="#">Каталог</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="catalog">
+		<div class="container">
+			<div class="wrap">
+				<!-- Заголовок каталога -->
+				<div class="catalog-title">
+					<h2>КАТАЛОГ <img src="./img/pages/catalog/catalog-title.svg" alt=""></h2>
+				</div>
+
+				<!-- Кнопки фильтрации и т.д. -->
+				<div class="catalog-button__setting">
+					<div class="catalog-button__setting-category">
+						<p>Категория</p>
+
+						<div class="list-category">
+							<ul>
+								<li>
+									<label>
+										<input type="radio" value="Все категории" name="category">
+										<p>Все категории</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Платья" name="category">
+										<p>Платья</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Костюмы" name="category">
+										<p>Костюмы</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Верхняя одежда" name="category">
+										<p>Верхняя одежда</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Рубашки" name="category">
+										<p>Рубашки</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Кофты" name="category">
+										<p>Кофты</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Юбки" name="category">
+										<p>Юбки</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Блузки" name="category">
+										<p>Блузки</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Комбинезоны" name="category">
+										<p>Комбинезоны</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Брюки" name="category">
+										<p>Брюки</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Спортивная одежда" name="category">
+										<p>Спортивная одежда</p>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-button__setting-filter">
+						<p>Фильтры</p>
+
+						<div class="filter-form">
+							<div class="filter-form__size">
+								<p>Размер</p>
+
+								<div class="filter-form__size-button">
+									<label>
+										<input type="checkbox" value="38">
+										<p>38</p>
+									</label>
+									<label>
+										<input type="checkbox" value="40">
+										<p>40</p>
+									</label>
+									<label>
+										<input type="checkbox" value="42">
+										<p>42</p>
+									</label>
+									<label>
+										<input type="checkbox" value="44">
+										<p>44</p>
+									</label>
+									<label>
+										<input type="checkbox" value="46">
+										<p>46</p>
+									</label>
+									<label>
+										<input type="checkbox" value="48">
+										<p>48</p>
+									</label>
+									<label>
+										<input type="checkbox" value="50">
+										<p>50</p>
+									</label>
+									<label>
+										<input type="checkbox" value="52">
+										<p>52</p>
+									</label>
+								</div>
+							</div>
+							<div class="filter-form__color">
+								<p>Цвет</p>
+								<div class="filter-form__color-button">
+									<label>
+										<input type="checkbox" value="серый">
+										<p><span class="gray"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="черный">
+										<p><span class="black"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="красный">
+										<p><span class="red"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="зеленый">
+										<p><span class="green"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="желтый">
+										<p><span class="yellow"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="голубой">
+										<p><span class="skay"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="синий">
+										<p><span class="blue"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="фиолетовый">
+										<p><span class="purple"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="оранжевый">
+										<p><span class="orange"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="бежевый">
+										<p><span class="beige"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="бирюзовый">
+										<p><span class="beryl"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="коричневый">
+										<p><span class="brown"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="сиреневый">
+										<p><span class="violet"></span></p>
+									</label>
+									<label>
+										<input type="checkbox" value="белый">
+										<p><span class="white"></span></p>
+									</label>
+								</div>
+							</div>
+							<div class="filter-form__price">
+								<p>Ценовой диапазон</p>
+
+								<div class="filter-form__price-content">
+									<div class="range-slider">
+										<input type="text" class="js-range-slider" value="" />
+									</div>
+									<div class="extra-controls">
+										<input type="number" min="0" max="12600" pattern="[0-9]*" class="js-input-from" value="0" />
+										<input type="number" min="0" max="12600" pattern="[0-9]*" class="js-input-to" value="0" />
+									</div>
+								</div>
+							</div>
+
+							<p class="clear-filter">Сбросить фильтры ×</p>
+						</div>
+					</div>
+					<div class="catalog-button__setting-sort">
+						<p>Сортировка</p>
+
+						<div class="list-sort">
+							<ul>
+								<li class="active">
+									<label>
+										<input type="radio" value="По умолчанию" name="sort">
+										<p>По умолчанию</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Рекомендованное" name="sort">
+										<p>Рекомендованное</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Популярное" name="sort">
+										<p>Популярное</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" value="Новинки" name="sort">
+										<p>Новинки</p>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Визуализация -->
+				<div class="catalog-visualization">
+					<div class="catalog-visualization__button">
+						<a href="./catalog.html" class="active" id="visualizationThree">
+							3
+						</a>
+						<a href="./catalog-less.html" id="visualizationTwo">
+							2
+						</a>
+					</div>
+					<p class="catalog-visualization__inverted">Визуализация</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="catalog-descr">
+		<div class="container">
+			<div class="wrap">
+				<div class="search-result" style="display: block;">
+					<p>
+						<span>Показаны результаты для:</span> <span>“Вечерние длинные платья”</span>
+					</p>
+				</div>
+
+				<div class="catalog-descr__result">
+					<p>Выбрано:</p>
+					<div class="catalog-descr__result-category">
+
+					</div>
+					<div class="catalog-descr__result-size">
+
+					</div>
+					<div class="catalog-descr__result-color">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="catalog-content">
+		<div class="container">
+			<div class="wrap">
+				<div class="product-cards">
+					<div class="product-card">
+						<div class="product-card__content">
+							<div class="catalog-swiper-container swiper-container">
+								<div class="bg-swiper-container"></div>
+								<div class="product-button">
+									<div class="product-button__contain">
+										<button class="product-button__like">
+										</button>
+										<button class="product-button__size">
+											<img src="./img/size-product.svg" alt="scroll">
+										</button>
+		
+										<div class="size-list">
+											<ul>
+												<li>
+													<button>40</button>
+												</li>
+												<li>
+													<button>42</button>
+												</li>
+												<li>
+													<button>44</button>
+												</li>
+												<li>
+													<button>46</button>
+												</li>
+												<li>
+													<button>48</button>
+												</li>
+												<li>
+													<button>50</button>
+												</li>
+												<li>
+													<button>52</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev">
+									<img src="./img/prev.svg" alt="">
+								</div>
+  								<div class="swiper-button-next">
+									<img src="./img/next.svg" alt="">
+								</div>
+							</div>
+							<div class="product-card__content-price">
+								<p>Пальто</p>
+								<p>7 200 RUB</p>
+							</div>
+						</div>
+
+						<div class="product-card__button">
+							<button class="btn open-modal">Купить в один клик</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__content">
+							<div class="catalog-swiper-container swiper-container">
+								<div class="bg-swiper-container"></div>
+								<div class="product-button">
+									<div class="product-button__contain">
+										<button class="product-button__like">
+										</button>
+										<button class="product-button__size">
+											<img src="./img/size-product.svg" alt="scroll">
+										</button>
+		
+										<div class="size-list">
+											<ul>
+												<li>
+													<button>40</button>
+												</li>
+												<li>
+													<button>42</button>
+												</li>
+												<li>
+													<button>44</button>
+												</li>
+												<li>
+													<button>46</button>
+												</li>
+												<li>
+													<button>48</button>
+												</li>
+												<li>
+													<button>50</button>
+												</li>
+												<li>
+													<button>52</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev">
+									<img src="./img/prev.svg" alt="">
+								</div>
+  								<div class="swiper-button-next">
+									<img src="./img/next.svg" alt="">
+								</div>
+							</div>
+							<div class="product-card__content-price">
+								<p>Пальто</p>
+								<p>7 200 RUB</p>
+							</div>
+						</div>
+
+						<div class="product-card__button">
+							<button class="btn open-modal">Купить в один клик</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__content">
+							<div class="catalog-swiper-container swiper-container">
+								<div class="bg-swiper-container"></div>
+								<div class="product-button">
+									<div class="product-button__contain">
+										<button class="product-button__like">
+										</button>
+										<button class="product-button__size">
+											<img src="./img/size-product.svg" alt="scroll">
+										</button>
+		
+										<div class="size-list">
+											<ul>
+												<li>
+													<button>40</button>
+												</li>
+												<li>
+													<button>42</button>
+												</li>
+												<li>
+													<button>44</button>
+												</li>
+												<li>
+													<button>46</button>
+												</li>
+												<li>
+													<button>48</button>
+												</li>
+												<li>
+													<button>50</button>
+												</li>
+												<li>
+													<button>52</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev">
+									<img src="./img/prev.svg" alt="">
+								</div>
+  								<div class="swiper-button-next">
+									<img src="./img/next.svg" alt="">
+								</div>
+							</div>
+							<div class="product-card__content-price">
+								<p>Пальто</p>
+								<p>7 200 RUB</p>
+							</div>
+						</div>
+
+						<div class="product-card__button">
+							<button class="btn open-modal">Купить в один клик</button>
+						</div>
+					</div>
+				</div>
+				<p class="load-more">Показать еще</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Подвал -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrap">
+				<div class="footer__title">
+					<p>Copyright © 2021 “Clouse House”</p>
+				</div>
+
+				<div class="footer__content">
+					<div class="footer__content-links">
+						<nav>
+							<ul>
+								<li>
+									<a href="#">Политика конфиденциальности</a>
+								</li>
+								<li>
+									<a href="#">Согласие на обработку персональных данных</a>
+								</li>
+								<li>
+									<a href="#">Реквизиты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__content-nav">
+						<nav>
+							<ul>
+								<li>
+									<a href="#">Главная</a>
+								</li>
+								<li>
+									<a href="#">О нас</a>
+								</li>
+								<li>
+									<a href="#">Каталог</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<a href="#">
+							<img src="./img/instagram.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__content-shop">
+						<nav>
+							<ul>
+								<li>
+									<a href="#">Доставка & оплата</a>
+								</li>
+								<li>
+									<a href="#">Возврат</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Подключение скриптов -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="./js/swiper-bundle.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+	<script src="./js/aos.js" defer></script>
+
+	<script src="./js/app.js" defer></script>
+	<script src="./js/catalog-elements.js" defer></script>
+</body>
+</html>

@@ -2554,7 +2554,12 @@ a.active {
 }
 
 .catalog-swiper-container .swiper-slide {
-  height: 100%;
+  height: auto;
+}
+
+.catalog-swiper-container .swiper-slide .swiper-slide__content img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 input::-webkit-outer-spin-button,

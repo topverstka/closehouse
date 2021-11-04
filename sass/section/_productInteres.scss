@@ -121,7 +121,30 @@
     width: 80%;
     
     .scale{
-        // max-height: 356px;
+        
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+.new-product__item:nth-child(1){
+    .scale{
+        height: 90%;
+
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+.new-product__item:nth-child(3){
+    .scale{
+        height: 90%;
+
+        img {
+            object-fit: cover;
+        }
     }
 }
 

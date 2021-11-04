@@ -1936,6 +1936,29 @@ h2 {
   width: 80%;
 }
 
+.new-product__item:nth-child(2n) .scale img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new-product__item:nth-child(1) .scale {
+  height: 90%;
+}
+
+.new-product__item:nth-child(1) .scale img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new-product__item:nth-child(3) .scale {
+  height: 90%;
+}
+
+.new-product__item:nth-child(3) .scale img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .new-product__item .product-button {
   position: absolute;
   top: 24px;
@@ -2671,7 +2694,7 @@ a.active {
 }
 
 .favorite-sper-content .swiper-slide {
-  height: 100%;
+  height: auto;
 }
 
 .favorite-sper-content .bg-favorite {

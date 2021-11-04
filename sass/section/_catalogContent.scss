@@ -661,7 +661,12 @@ a.active{
 
 .catalog-swiper-container{
     .swiper-slide{
-        height: 100%;
+        height: auto;
+        .swiper-slide__content{
+            img{
+                object-fit: cover;
+            }
+        }
     }
 }
 

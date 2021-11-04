@@ -2320,7 +2320,8 @@ h2 {
 
 .product-card-swiper .swiper-slide img {
   max-height: 750px;
-  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body.lock {
@@ -2449,6 +2450,29 @@ body.lock {
 
 .new-product__item:nth-child(2n) {
   width: 80%;
+}
+
+.new-product__item:nth-child(2n) .scale img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new-product__item:nth-child(1) .scale {
+  height: 90%;
+}
+
+.new-product__item:nth-child(1) .scale img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new-product__item:nth-child(3) .scale {
+  height: 90%;
+}
+
+.new-product__item:nth-child(3) .scale img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .new-product__item .product-button {

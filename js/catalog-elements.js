@@ -313,13 +313,16 @@ window.addEventListener('click', e => {
 })
 
 
-document.querySelectorAll('.extra-controls input').forEach(el => {
-	el.setAttribute('type', 'number')
-})
+// document.querySelectorAll('.extra-controls input').forEach(el => {
+// 	el.setAttribute('type', 'number')
+// })
 
 
-document.querySelector('.js-input-to').setAttribute('min', 0)
-document.querySelector('.js-input-from').setAttribute('max', 12600)
+// document.querySelector('.js-input-to').setAttribute('min', 0)
+// document.querySelector('.js-input-to').setAttribute('max', 12600)
+
+// document.querySelector('.js-input-from').setAttribute('min', 0)
+// document.querySelector('.js-input-from').setAttribute('max', 12600)
 // Устанавливаем минимальное значение
 document.querySelector('.irs-handle.from').addEventListener('mouseup', ()=> {
 	document.querySelector('.js-input-to').setAttribute('min', document.querySelector('.js-input-from').value)
@@ -329,14 +332,32 @@ document.querySelector('.irs-handle.to').addEventListener('mouseup', ()=> {
 	document.querySelector('.js-input-from').setAttribute('max', document.querySelector('.js-input-to').value)
 })
 
-document.querySelector('.js-input-to').addEventListener('keyup', function(){
-	if(this.value < document.querySelector('.js-input-to').getAttribute('min')){
+document.querySelector('.js-input-to').addEventListener('keypress', function(e){
+	var allowedChars = '0123456789';
+    function contains(stringValue, charValue) {
+        return stringValue.indexOf(charValue) > -1;
+    }
+    var invalidKey = e.key.length === 1 && !contains(allowedChars, e.key);
+    invalidKey && e.preventDefault();
+})
+document.querySelector('.js-input-to').addEventListener('keyup', function(e){
+	console.log(typeof document.querySelector('.js-input-to').getAttribute('min'))
+	if(+document.querySelector('.js-input-to').value < +document.querySelector('.js-input-to').getAttribute('min')){
 		document.querySelector('.js-input-to').value = document.querySelector('.js-input-to').getAttribute('min')
 	}
 })
 
-document.querySelector('.js-input-from').addEventListener('keyup', function(){
-	if(this.value > document.querySelector('.js-input-from').getAttribute('max')){
+document.querySelector('.js-input-from').addEventListener('keypress', function(e){
+	var allowedChars = '0123456789';
+    function contains(stringValue, charValue) {
+        return stringValue.indexOf(charValue) > -1;
+    }
+    var invalidKey = e.key.length === 1 && !contains(allowedChars, e.key);
+    invalidKey && e.preventDefault();
+})
+document.querySelector('.js-input-from').addEventListener('keyup', function(e){
+	console.log(document.querySelector('.js-input-from').value)
+	if(+document.querySelector('.js-input-from').value > +document.querySelector('.js-input-from').getAttribute('max')){
 		document.querySelector('.js-input-from').value = document.querySelector('.js-input-from').getAttribute('max')
 	}
 })

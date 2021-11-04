@@ -71,35 +71,6 @@
 			</div>
 		</div>
 	</header>
-
-	<!-- всплывающий поиск -->
-	<div class="search-panel">
-		<div class="container">
-			<div class="wrap">
-
-				<div class="search-panel__close">
-					<span></span>
-					<span></span>
-				</div>
-
-				<div class="header__logo header__logo--nav">
-					<a class="header__logo-img" href="#">
-						<object type="image/svg+xml" data="./img/logo.svg">
-							<img src="./img/logo.svg" alt="Logo">
-						</object>
-						<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
-							<img src="./img/pages/home/Elegant-clothes.svg" alt="">
-						</object>
-					</a>
-				</div>
-
-				<div class="search-panel__input">
-					<input type="text">
-					<button class="btn btn-search">ПОИСК</button>
-				</div>
-			</div>
-		</div>
-	</div>
 	
 	<!-- Всплывающее меню -->
 	<div class="header__nav">
@@ -350,8 +321,8 @@
 										<input type="text" class="js-range-slider" value="" />
 									</div>
 									<div class="extra-controls">
-										<input type="number" min="0" max="12600" pattern="[0-9]*" class="js-input-from" value="0" />
-										<input type="number" min="0" max="12600" pattern="[0-9]*" class="js-input-to" value="0" />
+										<input type="text" class="js-input-from" value="0" />
+										<input type="text" class="js-input-to" value="0" />
 									</div>
 								</div>
 							</div>
@@ -396,12 +367,12 @@
 				<!-- Визуализация -->
 				<div class="catalog-visualization">
 					<div class="catalog-visualization__button">
-						<a href="./resualtsearch.html" class="active" id="visualizationThree">
+						<a href="./catalog.html" id="visualizationThree">
 							3
-						</a>
-						<a href="./resualtsearch-less.html" id="visualizationTwo">
+                        </a>
+						<a href="./catalog-less.html" class="active" id="visualizationTwo">
 							2
-						</a>
+                        </a>
 					</div>
 					<p class="catalog-visualization__inverted">Визуализация</p>
 				</div>
@@ -437,7 +408,7 @@
 	<section class="catalog-content">
 		<div class="container">
 			<div class="wrap">
-				<div class="product-cards">
+				<div class="product-cards product-cards__less">
 					<div class="product-card">
 						<div class="product-card__content">
 							<div class="catalog-swiper-container swiper-container">
@@ -510,13 +481,12 @@
 						</div>
 
 						<div class="product-card__button">
-							<button class="btn open-modal">Купить в один клик</button>
+							<button class="btn open-modal less-catalog-btn">Купить в один клик</button>
 						</div>
 					</div>
 					<div class="product-card">
 						<div class="product-card__content">
 							<div class="catalog-swiper-container swiper-container">
-								<div class="bg-swiper-container"></div>
 								<div class="product-button">
 									<div class="product-button__contain">
 										<button class="product-button__like">
@@ -585,13 +555,12 @@
 						</div>
 
 						<div class="product-card__button">
-							<button class="btn open-modal">Купить в один клик</button>
+							<button class="btn open-modal less-catalog-btn">Купить в один клик</button>
 						</div>
 					</div>
 					<div class="product-card">
 						<div class="product-card__content">
 							<div class="catalog-swiper-container swiper-container">
-								<div class="bg-swiper-container"></div>
 								<div class="product-button">
 									<div class="product-button__contain">
 										<button class="product-button__like">
@@ -660,7 +629,229 @@
 						</div>
 
 						<div class="product-card__button">
-							<button class="btn open-modal">Купить в один клик</button>
+							<button class="btn open-modal less-catalog-btn">Купить в один клик</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__content">
+							<div class="catalog-swiper-container swiper-container">
+								<div class="product-button">
+									<div class="product-button__contain">
+										<button class="product-button__like">
+										</button>
+										<button class="product-button__size">
+											<img src="./img/size-product.svg" alt="scroll">
+										</button>
+		
+										<div class="size-list">
+											<ul>
+												<li>
+													<button>40</button>
+												</li>
+												<li>
+													<button>42</button>
+												</li>
+												<li>
+													<button>44</button>
+												</li>
+												<li>
+													<button>46</button>
+												</li>
+												<li>
+													<button>48</button>
+												</li>
+												<li>
+													<button>50</button>
+												</li>
+												<li>
+													<button>52</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev">
+									<img src="./img/prev.svg" alt="">
+								</div>
+  								<div class="swiper-button-next">
+									<img src="./img/next.svg" alt="">
+								</div>
+							</div>
+							<div class="product-card__content-price">
+								<p>Пальто</p>
+								<p>7 200 RUB</p>
+							</div>
+						</div>
+
+						<div class="product-card__button">
+							<button class="btn open-modal less-catalog-btn">Купить в один клик</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__content">
+							<div class="catalog-swiper-container swiper-container">
+								<div class="product-button">
+									<div class="product-button__contain">
+										<button class="product-button__like">
+										</button>
+										<button class="product-button__size">
+											<img src="./img/size-product.svg" alt="scroll">
+										</button>
+		
+										<div class="size-list">
+											<ul>
+												<li>
+													<button>40</button>
+												</li>
+												<li>
+													<button>42</button>
+												</li>
+												<li>
+													<button>44</button>
+												</li>
+												<li>
+													<button>46</button>
+												</li>
+												<li>
+													<button>48</button>
+												</li>
+												<li>
+													<button>50</button>
+												</li>
+												<li>
+													<button>52</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev">
+									<img src="./img/prev.svg" alt="">
+								</div>
+  								<div class="swiper-button-next">
+									<img src="./img/next.svg" alt="">
+								</div>
+							</div>
+							<div class="product-card__content-price">
+								<p>Пальто</p>
+								<p>7 200 RUB</p>
+							</div>
+						</div>
+
+						<div class="product-card__button">
+							<button class="btn open-modal less-catalog-btn">Купить в один клик</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<div class="product-card__content">
+							<div class="catalog-swiper-container swiper-container">
+								<div class="product-button">
+									<div class="product-button__contain">
+										<button class="product-button__like">
+										</button>
+										<button class="product-button__size">
+											<img src="./img/size-product.svg" alt="scroll">
+										</button>
+		
+										<div class="size-list">
+											<ul>
+												<li>
+													<button>40</button>
+												</li>
+												<li>
+													<button>42</button>
+												</li>
+												<li>
+													<button>44</button>
+												</li>
+												<li>
+													<button>46</button>
+												</li>
+												<li>
+													<button>48</button>
+												</li>
+												<li>
+													<button>50</button>
+												</li>
+												<li>
+													<button>52</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide__content">
+											<img src="./img/pages/catalog/catalog-swiper.png" alt="Close House" title="Close House">
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev">
+									<img src="./img/prev.svg" alt="">
+								</div>
+  								<div class="swiper-button-next">
+									<img src="./img/next.svg" alt="">
+								</div>
+							</div>
+							<div class="product-card__content-price">
+								<p>Пальто</p>
+								<p>7 200 RUB</p>
+							</div>
+						</div>
+
+						<div class="product-card__button">
+							<button class="btn open-modal less-catalog-btn">Купить в один клик</button>
 						</div>
 					</div>
 				</div>

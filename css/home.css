@@ -2187,6 +2187,9 @@ section.contact {
   display: -ms-flexbox;
   display: flex;
   gap: 0 15px;
+  min-height: 528px;
+  height: 100%;
+  max-height: 529px;
 }
 
 .scale {

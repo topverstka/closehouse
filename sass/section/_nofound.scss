@@ -13,10 +13,15 @@
 }
 
 .error-titl__subtitle{
-    p{
+    h2{
         font-size: 15px;
         color: #fff;
         opacity: 0.6;
+        font-family: 'Gilroy';
+        font-weight: 500;
+        letter-spacing: normal;
+        text-transform: inherit;
+        margin-bottom: 0;
     }
     a{
         margin-top: 40px;

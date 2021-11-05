@@ -2345,16 +2345,16 @@ a.active {
   padding: 4.3px;
 }
 
-.filter-form__size-button label p {
+.filter-form__size-button label span {
   font-size: 12px;
   color: #fff;
 }
 
-.filter-form__color p {
+.filter-form__color span {
   text-align: center;
 }
 
-.filter-form__color p:first-child {
+.filter-form__color span:first-child {
   margin-bottom: 15px;
 }
 
@@ -2395,7 +2395,7 @@ a.active {
   border-radius: 50%;
 }
 
-.filter-form__color-button label p span {
+.filter-form__color-button label span span {
   width: 11px;
   height: 11px;
   display: block;
@@ -2403,67 +2403,67 @@ a.active {
   background-color: #fff;
 }
 
-.filter-form__color-button label p span.gray {
+.filter-form__color-button label span span.gray {
   background-color: #808080;
 }
 
-.filter-form__color-button label p span.black {
+.filter-form__color-button label span span.black {
   background-color: #000;
 }
 
-.filter-form__color-button label p span.red {
+.filter-form__color-button label span span.red {
   background-color: #962B2B;
 }
 
-.filter-form__color-button label p span.green {
+.filter-form__color-button label span span.green {
   background-color: #75BE48;
 }
 
-.filter-form__color-button label p span.yellow {
+.filter-form__color-button label span span.yellow {
   background-color: #D7BC2E;
 }
 
-.filter-form__color-button label p span.skay {
+.filter-form__color-button label span span.skay {
   background-color: #3897CD;
 }
 
-.filter-form__color-button label p span.blue {
+.filter-form__color-button label span span.blue {
   background-color: #162A92;
 }
 
-.filter-form__color-button label p span.purple {
+.filter-form__color-button label span span.purple {
   background-color: #6F2C80;
 }
 
-.filter-form__color-button label p span.orange {
+.filter-form__color-button label span span.orange {
   background-color: #DF6812;
 }
 
-.filter-form__color-button label p span.beige {
+.filter-form__color-button label span span.beige {
   background-color: #E3E1A4;
 }
 
-.filter-form__color-button label p span.beryl {
+.filter-form__color-button label span span.beryl {
   background-color: #1BCDCD;
 }
 
-.filter-form__color-button label p span.brown {
+.filter-form__color-button label span span.brown {
   background-color: #8D5A5A;
 }
 
-.filter-form__color-button label p span.violet {
+.filter-form__color-button label span span.violet {
   background-color: #78617E;
 }
 
-.filter-form__color-button label p span.white {
+.filter-form__color-button label span span.white {
   background-color: #fff;
 }
 
-.filter-form__price p {
+.filter-form__price span {
   text-align: center;
 }
 
-.filter-form__price p:first-child {
+.filter-form__price span:first-child {
   margin-bottom: 15px;
 }
 
@@ -2654,14 +2654,20 @@ a.active {
   display: none;
 }
 
-.favorite-alert p {
+.favorite-alert h2 {
   font-size: 17px;
   color: #fff;
-}
-
-.favorite-alert p:first-child {
+  font-family: "Gilroy";
+  letter-spacing: normal;
+  margin-bottom: auto;
+  text-transform: none;
   opacity: 0.6;
   margin-bottom: 25px;
+}
+
+.favorite-alert p {
+  font-size: 15px;
+  color: #fff;
 }
 
 .favorite-alert a {

@@ -171,40 +171,41 @@
 }
 
 .mailrus-content{
-    label{
-        position: relative;
+    
+        // position: relative;
 
         input{
             display: none;
 
-            &:checked ~ p{
+            &:checked ~ .radio-container{
+                display: block;
                 span{
                     background-color: #fff;
                 }
             }
 
-            &:not(:checked) ~ p{
+            &:not(:checked) ~ .radio-container{
                 opacity: 0.3;
+                display: block;
             }
         }
 
 
-        p{
+        .radio-container{
             padding: 3px;
             border: 1px solid #fff;
             border-radius: 50%;
+            display: block;
+            width: 20px;
+            height: 20px;
 
-            span{
-                width: 10px;
-                height: 10px;
-                
+            span{ 
+                width: 12px;
+                height: 12px;
                 display: block;
                 border-radius: 50%;
             }
         }
-
-
-    }
     
 }
 

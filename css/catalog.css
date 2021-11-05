@@ -2009,7 +2009,7 @@ a.active {
   margin-bottom: 0px;
 }
 
-.catalog-button__setting-category div ul li p {
+.catalog-button__setting-category div ul li span {
   font-size: 12px;
   color: #fff;
   opacity: 0.6;
@@ -2018,6 +2018,8 @@ a.active {
   width: max-content;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+  cursor: pointer;
 }
 
 .catalog-button__setting-category div ul li label {
@@ -2028,7 +2030,7 @@ a.active {
   display: none;
 }
 
-.catalog-button__setting-category div ul li label input:checked ~ p {
+.catalog-button__setting-category div ul li label input:checked ~ span {
   opacity: 1;
 }
 
@@ -2107,19 +2109,20 @@ a.active {
   display: none;
 }
 
-.filter-form__size-button label input:checked ~ p {
+.filter-form__size-button label input:checked ~ span {
   border: 1px solid #fff;
   border-radius: 100%;
   padding: 3.3px;
 }
 
-.filter-form__size-button label input:not(:checked) ~ p {
+.filter-form__size-button label input:not(:checked) ~ span {
   padding: 4.3px;
 }
 
-.filter-form__size-button label p {
+.filter-form__size-button label span {
   font-size: 12px;
   color: #fff;
+  cursor: pointer;
 }
 
 .filter-form__color p {
@@ -2156,78 +2159,81 @@ a.active {
   display: none;
 }
 
-.filter-form__color-button label input:checked ~ p {
+.filter-form__color-button label input:checked ~ .color-container {
   border: 1px solid #fff;
   border-radius: 100%;
   padding: 6px;
+  display: block;
 }
 
-.filter-form__color-button label input:not(:checked) ~ p {
+.filter-form__color-button label input:not(:checked) ~ .color-container {
   padding: 7px;
   border-radius: 100%;
+  display: block;
 }
 
-.filter-form__color-button label p span {
+.filter-form__color-button label .color-container span {
   width: 11px;
   height: 11px;
   display: block;
   border-radius: 100%;
   background-color: #fff;
+  cursor: pointer;
 }
 
-.filter-form__color-button label p span.gray {
+.filter-form__color-button label .color-container span.gray {
   background-color: #808080;
 }
 
-.filter-form__color-button label p span.black {
+.filter-form__color-button label .color-container span.black {
   background-color: #000;
 }
 
-.filter-form__color-button label p span.red {
+.filter-form__color-button label .color-container span.red {
   background-color: #962B2B;
 }
 
-.filter-form__color-button label p span.green {
+.filter-form__color-button label .color-container span.green {
   background-color: #75BE48;
 }
 
-.filter-form__color-button label p span.yellow {
+.filter-form__color-button label .color-container span.yellow {
   background-color: #D7BC2E;
 }
 
-.filter-form__color-button label p span.skay {
+.filter-form__color-button label .color-container span.skay {
   background-color: #3897CD;
 }
 
-.filter-form__color-button label p span.blue {
+.filter-form__color-button label .color-container span.blue {
   background-color: #162A92;
 }
 
-.filter-form__color-button label p span.purple {
+.filter-form__color-button label .color-container span.purple {
   background-color: #6F2C80;
 }
 
-.filter-form__color-button label p span.orange {
+.filter-form__color-button label .color-container span.orange {
   background-color: #DF6812;
 }
 
-.filter-form__color-button label p span.beige {
+.filter-form__color-button label .color-container span.beige {
   background-color: #E3E1A4;
 }
 
-.filter-form__color-button label p span.beryl {
+.filter-form__color-button label .color-container span.beryl {
   background-color: #1BCDCD;
 }
 
-.filter-form__color-button label p span.brown {
+.filter-form__color-button label .color-container span.brown {
   background-color: #8D5A5A;
 }
 
-.filter-form__color-button label p span.violet {
+.filter-form__color-button label .color-container span.violet {
   background-color: #78617E;
 }
 
-.filter-form__color-button label p span.white {
+.filter-form__color-button label .color-container span.white {
   background-color: #fff;
 }
 

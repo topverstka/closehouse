@@ -143,13 +143,15 @@ a.active{
                 &:last-child{
                     margin-bottom: 0px;
                 }
-                p{
+                span{
                     font-size: 12px;
                     color: #fff;
                     opacity: 0.6;
                     width: max-content;
                     margin-left: auto;
                     margin-right: auto;
+                    display: block;
+                    cursor: pointer;
                 }
 
 
@@ -159,7 +161,7 @@ a.active{
                     input{
                         display: none;
 
-                        &:checked ~ p {
+                        &:checked ~ span {
                             opacity: 1;
                         }
                     }
@@ -229,20 +231,21 @@ a.active{
         input{
             display: none;
 
-            &:checked ~ p{
+            &:checked ~ span{
                 border: 1px solid #fff;
                 border-radius: 100%;
                 padding: 3.3px;
             }
 
-            &:not(:checked) ~ p{
+            &:not(:checked) ~ span{
                 padding: 4.3px;
             }
         }
 
-        p{
+        span{
             font-size: 12px;
             color: #fff;
+            cursor: pointer;
         }
     }
 }
@@ -274,24 +277,27 @@ a.active{
         input{
             display: none;
 
-            &:checked ~ p{
+            &:checked ~ .color-container{
                 border: 1px solid #fff;
                 border-radius: 100%;
                 padding: 6px;
+                display: block;
             }
 
-            &:not(:checked) ~ p{
+            &:not(:checked) ~ .color-container{
                 padding: 7px;
                 border-radius: 100%;
+                display: block;
             }
         }
 
-        p span{
+        .color-container span{
             width: 11px;
             height: 11px;
             display: block;
             border-radius: 100%;
             background-color: #fff;
+            cursor: pointer;
 
             &.gray{
                 background-color: #808080;

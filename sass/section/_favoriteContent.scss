@@ -247,7 +247,7 @@ a.active{
             }
         }
 
-        p{
+        span{
             font-size: 12px;
             color: #fff;
         }
@@ -255,7 +255,7 @@ a.active{
 }
 
 .filter-form__color{
-    p{
+    span{
         text-align: center;
 
         &:first-child{
@@ -293,7 +293,7 @@ a.active{
             }
         }
 
-        p span{
+        span span{
             width: 11px;
             height: 11px;
             display: block;
@@ -361,7 +361,7 @@ a.active{
 }
 
 .filter-form__price{
-    p{
+    span{
         text-align: center;
 
         &:first-child{
@@ -548,14 +548,20 @@ a.active{
     margin-top: 70px;
     display: none;
 
-    p{
+    h2{
         font-size: 17px;
         color: #fff;
+        font-family: "Gilroy";
+        letter-spacing: normal;
+        margin-bottom: auto;
+        text-transform: none;
+        opacity: 0.6;
+        margin-bottom: 25px;
+    }
 
-        &:first-child{
-            opacity: 0.6;
-            margin-bottom: 25px;
-        }
+    p{
+        font-size: 15px;
+        color: #fff;
     }
 
     a{

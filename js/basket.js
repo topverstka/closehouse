@@ -13,7 +13,7 @@ Array.from(allButtonSize).forEach((el, id) => {
                     allBg[id].classList.remove('active')
                 });
                 Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
-                    allSettingSize[id].style.zIndex = '0'
+                    allSettingSize[id].style.zIndex = '3'
                 });
 			} else {
 				allLinesizes[id].classList.add('active')
@@ -21,7 +21,7 @@ Array.from(allButtonSize).forEach((el, id) => {
                     allBg[id].classList.add('active')
                 });
                 Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
-                    allSettingSize[id].style.zIndex = '2'
+                    allSettingSize[id].style.zIndex = '3'
                 });
 			}
 
@@ -44,7 +44,7 @@ Array.from(allButtonColor).forEach((el, id) => {
                     allBg[id].classList.remove('active')
                 });
                 Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
-                    allSettingColor[id].style.zIndex = '0'
+                    allSettingColor[id].style.zIndex = '3'
                 });
 			} else {
 				allLineColor[id].classList.add('active')
@@ -53,7 +53,7 @@ Array.from(allButtonColor).forEach((el, id) => {
                     allBg[0].classList.add('active')
                 });
                 Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
-                    allSettingColor[id].style.zIndex = '2'
+                    allSettingColor[id].style.zIndex = '3'
                 });
 			}
 

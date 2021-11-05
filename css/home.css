@@ -1823,8 +1823,12 @@ section.contact {
 
 .circle-animation {
   position: absolute;
-  bottom: -56px !important;
-  left: -66px !important;
+  bottom: -39px !important;
+  left: -44px !important;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotateZ(7deg);
+          transform: rotateZ(7deg);
 }
 
 .first-screen {

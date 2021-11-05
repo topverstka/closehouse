@@ -75,3 +75,9 @@ Array.from(document.querySelectorAll('.product-setting__color label')).forEach(e
     })
 })
 
+window.addEventListener('keyup', function(e){
+	if(e.key === "Escape") {
+        document.querySelector('.modal').classList.remove('active')
+        document.querySelector('body').style.overflowY = 'auto'
+    }
+})

@@ -1012,11 +1012,12 @@ footer h3 {
 }
 
 .modal-content {
-  padding: 24px 20px;
+  padding: 24px 22px;
   max-width: 400px;
   background-color: #524F4F;
   text-align: center;
   position: relative;
+  width: 100%;
 }
 
 .modal-content__title {
@@ -1032,8 +1033,8 @@ footer h3 {
 
 .modal-content__subtitle {
   font-size: 11px;
-  margin-top: 16px;
-  margin-bottom: 43px;
+  margin-top: 15px;
+  margin-bottom: 45px;
 }
 
 .modal-content__form {
@@ -1053,7 +1054,7 @@ footer h3 {
 .modal-content__form label input {
   background-color: rgba(255, 255, 255, 0);
   border: 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
   width: 100%;
   margin-top: 3px;
@@ -1069,12 +1070,10 @@ footer h3 {
 
 .modal-content__form button {
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 15px 0;
   font-size: 15px;
-  font-weight: 600;
-  border: 0;
-  background-color: #fff;
+  margin-bottom: 3px;
 }
 
 h1, h2, h3, h4 {
@@ -2098,15 +2097,15 @@ h2 {
   background-size: 19px;
   background-position: center center;
   background-repeat: no-repeat;
-  opacity: 0.5;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  background-blend-mode: difference;
 }
 
 .product-buttons__other-like:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  opacity: 1;
+  background-color: #fff;
 }
 
 .product-buttons__other-basket {
@@ -2115,15 +2114,15 @@ h2 {
   background-size: 19px;
   background-position: center center;
   background-repeat: no-repeat;
-  opacity: 0.5;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  background-blend-mode: difference;
 }
 
 .product-buttons__other-basket:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  opacity: 1;
+  background-color: #fff;
 }
 
 .table-size__button {

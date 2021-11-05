@@ -195,3 +195,11 @@ window.addEventListener('click', e => {
         })
     }
 })
+
+
+window.addEventListener('keyup', function(e){
+	if(e.key === "Escape") {
+        document.querySelector('.modal').classList.remove('active')
+        document.querySelector('body').style.overflowY = 'auto'
+    }
+})

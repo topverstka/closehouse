@@ -2478,9 +2478,10 @@ section.new {
 .season-content__descr-text a {
   font-size: 15px;
   font-style: italic;
-  text-decoration: underline;
   color: #FFFFFF;
   margin-right: 160px;
+  position: relative;
+  border-bottom: 1px solid #fff;
 }
 
 .season-content__descr-text img {

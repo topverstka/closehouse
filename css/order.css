@@ -1276,7 +1276,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 }
 
 .order {
-  padding-top: 120px;
+  padding-top: 70px;
 }
 
 .order-title {
@@ -1328,6 +1328,9 @@ input:required:valid, textarea:required:valid, button:required:valid {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
 }
 
 .order-form__info-data {
@@ -1471,6 +1474,12 @@ input:required:valid, textarea:required:valid, button:required:valid {
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
   gap: 8px 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .invert-img {
@@ -1487,8 +1496,8 @@ input:required:valid, textarea:required:valid, button:required:valid {
   display: none;
 }
 
-.mailrus-content label input:checked ~ p {
-  opacity: 1;
+.mailrus-content label input:checked ~ p span {
+  background-color: #fff;
 }
 
 .mailrus-content label input:not(:checked) ~ p {
@@ -1504,7 +1513,6 @@ input:required:valid, textarea:required:valid, button:required:valid {
 .mailrus-content label p span {
   width: 10px;
   height: 10px;
-  background-color: #fff;
   display: block;
   border-radius: 50%;
 }

@@ -1,5 +1,5 @@
 .order{
-    padding-top: 120px;
+    padding-top: 70px;
 }
 
 .order-title{
@@ -47,6 +47,8 @@
     border: 1px solid #fff;
     max-width: 325px;
     height: fit-content;
+    position: sticky;
+    top: 10px;
 }
 
 .order-form__info-data{
@@ -157,6 +159,9 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: max-content;
     gap: 8px 20px;
+    position: sticky;
+    top: 10px;
+    height: fit-content;
 }
 
 .invert-img {
@@ -173,7 +178,9 @@
             display: none;
 
             &:checked ~ p{
-                opacity: 1;
+                span{
+                    background-color: #fff;
+                }
             }
 
             &:not(:checked) ~ p{
@@ -190,7 +197,7 @@
             span{
                 width: 10px;
                 height: 10px;
-                background-color: #fff;
+                
                 display: block;
                 border-radius: 50%;
             }

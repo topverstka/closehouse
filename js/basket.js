@@ -21,7 +21,7 @@ Array.from(allButtonSize).forEach((el, id) => {
                     allBg[id].classList.add('active')
                 });
                 Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
-                    allSettingSize[id].style.zIndex = '3'
+                    allSettingSize[id].style.zIndex = '5'
                 });
 			}
 
@@ -50,10 +50,9 @@ Array.from(allButtonColor).forEach((el, id) => {
 				allLineColor[id].classList.add('active')
                 Array.from(allBg).forEach((lineSize, number, allBg) => {
                     allBg[id].classList.add('active')
-                    allBg[0].classList.add('active')
                 });
                 Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
-                    allSettingColor[id].style.zIndex = '3'
+                    allSettingColor[id].style.zIndex = '5'
                 });
 			}
 
@@ -180,12 +179,18 @@ window.addEventListener('click', e => {
 		Array.from(document.querySelectorAll('.line-size')).forEach(el => {
 			el.classList.remove('active')
 		})
+        Array.from(document.querySelectorAll('.setting-size')).forEach(el => {
+			el.style.zIndex = '3'
+		})
     }
 
 
     if (!target.closest('.button-color') && !target.closest('.line-color')) {
 		Array.from(document.querySelectorAll('.line-color')).forEach(el => {
 			el.classList.remove('active')
+		})
+        Array.from(document.querySelectorAll('.setting-color')).forEach(el => {
+			el.style.zIndex = '3'
 		})
     }
 

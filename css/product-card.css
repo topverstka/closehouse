@@ -1944,13 +1944,13 @@ h2 {
   display: none;
 }
 
-.product-setting__size label input:checked ~ p {
+.product-setting__size label input:checked ~ span {
   border: 3px solid #fff;
   border-radius: 50%;
   padding: 11px;
 }
 
-.product-setting__size label input:not(:checked) ~ p {
+.product-setting__size label input:not(:checked) ~ span {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   padding: 13px;
@@ -1987,19 +1987,21 @@ h2 {
   display: none;
 }
 
-.product-setting__color label input:checked ~ p {
+.product-setting__color label input:checked ~ .setting__color-container {
   border: 3px solid #fff;
   border-radius: 50%;
   padding: 8px;
+  display: block;
 }
 
-.product-setting__color label input:not(:checked) ~ p {
+.product-setting__color label input:not(:checked) ~ .setting__color-container {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   padding: 10px;
+  display: block;
 }
 
-.product-setting__color label p span {
+.product-setting__color label .setting__color-container span {
   width: 23px;
   height: 23px;
   display: block;
@@ -2007,59 +2009,59 @@ h2 {
   background-color: #fff;
 }
 
-.product-setting__color label p span.gray {
+.product-setting__color label .setting__color-container span.gray {
   background-color: #808080;
 }
 
-.product-setting__color label p span.black {
+.product-setting__color label .setting__color-container span.black {
   background-color: #000;
 }
 
-.product-setting__color label p span.red {
+.product-setting__color label .setting__color-container span.red {
   background-color: #962B2B;
 }
 
-.product-setting__color label p span.green {
+.product-setting__color label .setting__color-container span.green {
   background-color: #75BE48;
 }
 
-.product-setting__color label p span.yellow {
+.product-setting__color label .setting__color-container span.yellow {
   background-color: #D7BC2E;
 }
 
-.product-setting__color label p span.skay {
+.product-setting__color label .setting__color-container span.skay {
   background-color: #3897CD;
 }
 
-.product-setting__color label p span.blue {
+.product-setting__color label .setting__color-container span.blue {
   background-color: #162A92;
 }
 
-.product-setting__color label p span.purple {
+.product-setting__color label .setting__color-container span.purple {
   background-color: #6F2C80;
 }
 
-.product-setting__color label p span.orange {
+.product-setting__color label .setting__color-container span.orange {
   background-color: #DF6812;
 }
 
-.product-setting__color label p span.beige {
+.product-setting__color label .setting__color-container span.beige {
   background-color: #E3E1A4;
 }
 
-.product-setting__color label p span.beryl {
+.product-setting__color label .setting__color-container span.beryl {
   background-color: #1BCDCD;
 }
 
-.product-setting__color label p span.brown {
+.product-setting__color label .setting__color-container span.brown {
   background-color: #8D5A5A;
 }
 
-.product-setting__color label p span.violet {
+.product-setting__color label .setting__color-container span.violet {
   background-color: #78617E;
 }
 
-.product-setting__color label p span.white {
+.product-setting__color label .setting__color-container span.white {
   background-color: #fff;
 }
 

@@ -115,6 +115,7 @@ var swiper = new Swiper('.home-swiper-container', {
 	autoplay: {
 		delay: 5000,
 	},
+	speed: 1000,
 	loop: true,
 	// init: false,
 	pagination: {

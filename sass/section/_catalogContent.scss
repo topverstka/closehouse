@@ -179,7 +179,7 @@ a.active{
     top: 0;
     opacity: 0;
     left: 115px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #757575;
 
     padding: 18px 8px;
     max-width: 220px;
@@ -196,7 +196,17 @@ a.active{
 
 .filter-form__size{
     p{
+        &:first-child{
+            width: auto;
+            height: auto;
+        }
+
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 22px;
+        width: 22px;
 
         &:first-child{
             margin-bottom: 15px;
@@ -571,12 +581,16 @@ a.active{
 
 .catalog-descr__result-category{
     margin-right: 20px;
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    gap: 8px 0;
     div{
         display: flex;
-        flex-wrap: wrap;
         font-size: 15px;
         border: 1px solid #fff;
         padding: 8px 10px;
+        margin-right: 15px;
         p{
             margin-right: 22px;
         }
@@ -584,6 +598,10 @@ a.active{
         img{
             width: 9px;
             cursor: pointer;
+        }
+
+        &:last-child{
+            margin-right: 0px;
         }
     }
 }

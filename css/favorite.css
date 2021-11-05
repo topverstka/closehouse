@@ -1356,13 +1356,13 @@ h2 {
   -webkit-transition: all .2s;
   transition: all .2s;
   border-radius: 0px;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .btn:hover {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  opacity: 1;
+  background-color: #fff;
+  color: #000;
+  font-weight: 800;
 }
 
 .btn img {
@@ -2261,7 +2261,7 @@ a.active {
   top: 0;
   opacity: 0;
   left: 115px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #757575;
   padding: 18px 8px;
   max-width: 220px;
   width: -webkit-max-content;
@@ -2281,6 +2281,22 @@ a.active {
 
 .filter-form__size p {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 22px;
+  width: 22px;
+}
+
+.filter-form__size p:first-child {
+  width: auto;
+  height: auto;
 }
 
 .filter-form__size p:first-child {

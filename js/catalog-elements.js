@@ -174,11 +174,25 @@ window.addEventListener('click', e => {
 	}
 
 	if(target.closest('.list-category')){
-		let categoryCheck = document.querySelector('.catalog-descr__result-category')
+		let categoryCheck = document.createElement('div');
+		categoryCheck.setAttribute('class', 'categoryItem')
 		let imgCategoryCheck = document.createElement('img');
+		imgCategoryCheck.setAttribute('src', './img/delete.svg')
+		let textCategoryCheck = document.createElement('p');
 		if(target.value != undefined){
-			document.querySelector('.catalog-descr__result-category').classList.add('active')
-			categoryCheck.innerHTML = `<div class="categoryItem"><p>${target.value}</p> <img src="./img/delete.svg"></div>`
+			textCategoryCheck.innerHTML = target.value
+			if(target.checked){
+				document.querySelector('.catalog-descr__result-category').append(categoryCheck)
+				categoryCheck.append(textCategoryCheck)
+				categoryCheck.append(imgCategoryCheck)
+				
+			} else {
+				Array.from(document.querySelectorAll('.catalog-descr__result-category div')).forEach(el => {
+					if(target.value == el.childNodes[0].innerHTML){
+						el.remove()
+					}
+				})
+			}
 		}
 	}
 

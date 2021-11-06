@@ -17,6 +17,7 @@ Array.from(allButtonSize).forEach((el, id) => {
                 });
                 Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
                     allSettingColor[id].style.opacity = '1'
+                    allSettingColor[id].style.pointerEvents = 'auto'
                 });
 			} else {
 				allLinesizes[id].classList.add('active')
@@ -25,6 +26,7 @@ Array.from(allButtonSize).forEach((el, id) => {
                 });
                 Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
                     allSettingColor[id].style.opacity = '0.5'
+                    allSettingColor[id].style.pointerEvents = 'none'
                 });
 			}
 
@@ -42,6 +44,7 @@ Array.from(allButtonColor).forEach((el, id) => {
 				allLineColor[id].classList.remove('active')
                 Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
                     allSettingSize[id].style.opacity = '1'
+                    allSettingSize[id].style.pointerEvents = 'auto'
                 });
                 Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
                     allSettingColor[id].style.zIndex = '2'
@@ -50,6 +53,7 @@ Array.from(allButtonColor).forEach((el, id) => {
 				allLineColor[id].classList.add('active')
                 Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
                     allSettingSize[id].style.opacity = '0.5'
+                    allSettingSize[id].style.pointerEvents = 'none'
                 });
                 Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
                     allSettingColor[id].style.zIndex = '3'
@@ -185,6 +189,7 @@ window.addEventListener('click', e => {
        
         Array.from(document.querySelectorAll('.setting-color')).forEach((el) => {
             el.style.opacity = '1'
+            el.style.pointerEvents = 'auto'
         });
     }
 
@@ -199,6 +204,7 @@ window.addEventListener('click', e => {
 
         Array.from(document.querySelectorAll('.setting-size')).forEach((el) => {
             el.style.opacity = '1'
+            el.style.pointerEvents = 'auto'
         });
     }
 

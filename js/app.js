@@ -42,6 +42,7 @@ menuBurger.addEventListener('click', function(e){
 			el.style.opacity =  '1'
 		})
 		find('header').style.zIndex = '4'
+		find('.saearch-header').classList.remove('open')
 	}else{
 		this.classList.add('header__burger--active');
 		d.querySelector('.header__nav').classList.add('header__nav--active');
@@ -50,6 +51,7 @@ menuBurger.addEventListener('click', function(e){
 			el.style.opacity =  '0'
 		})
 		find('header').style.zIndex = '5'
+		find('.saearch-header').classList.remove('open')
 	}
 })
 

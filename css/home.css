@@ -961,6 +961,7 @@ footer h3 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-left: auto;
 }
 
 .footer__content-shop ul li a::after {
@@ -1618,14 +1619,15 @@ h2 {
 }
 
 .btn-catalog__home {
-  padding: 15px 45px;
+  padding: 13px 44px;
   text-transform: uppercase;
   font-size: 15px;
   position: absolute;
   opacity: 0;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  margin-bottom: 50px;
+  text-transform: inherit;
+  margin-bottom: 49px;
 }
 
 .catalog-elemetn {
@@ -1823,12 +1825,12 @@ section.contact {
 
 .circle-animation {
   position: absolute;
-  bottom: -39px !important;
-  left: -44px !important;
-  width: 200px;
-  height: 200px;
-  -webkit-transform: rotateZ(7deg);
-          transform: rotateZ(7deg);
+  bottom: -37px !important;
+  left: -41px !important;
+  width: 210px;
+  height: 210px;
+  -webkit-transform: rotateZ(7.6deg);
+  transform: rotateZ(7.6deg);
 }
 
 .first-screen {
@@ -1876,7 +1878,7 @@ section.contact {
 }
 
 .first-screen__title h1 {
-  font-size: 109.53px;
+  font-size: 120px;
   margin-bottom: 25px;
   line-height: normal;
   text-transform: none;
@@ -2349,8 +2351,8 @@ section.new {
   position: absolute;
   top: 55px;
   opacity: 1;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .product-button__contain {
@@ -2375,8 +2377,8 @@ section.new {
   z-index: 0;
   top: 55px;
   opacity: 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .size-list ul {

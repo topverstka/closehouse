@@ -191,11 +191,11 @@ a.active{
     padding: 18px 8px;
     max-width: 220px;
     width: max-content;
-    transition: 0.4s;
+    transition: 0.8s;
     pointer-events: none;
 
     &.active{
-        transition: 0.4s;
+        transition: 0.8s;
         pointer-events: auto;
         opacity: 1;
     }

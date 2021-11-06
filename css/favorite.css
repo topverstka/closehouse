@@ -962,6 +962,7 @@ footer h3 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-left: auto;
 }
 
 .footer__content-shop ul li a::after {
@@ -1645,8 +1646,8 @@ h2 {
   position: absolute;
   top: 55px;
   opacity: 1;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   z-index: 1;
 }
 
@@ -1672,8 +1673,8 @@ h2 {
   z-index: -3;
   top: 55px;
   opacity: 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .size-list ul {
@@ -2028,8 +2029,8 @@ h2 {
   position: absolute;
   top: 55px;
   opacity: 1;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .product-button__contain {
@@ -2054,8 +2055,8 @@ h2 {
   z-index: 0;
   top: 55px;
   opacity: 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .size-list ul {
@@ -2293,14 +2294,14 @@ a.active {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   pointer-events: none;
 }
 
 .filter-form.active {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   pointer-events: auto;
   opacity: 1;
 }

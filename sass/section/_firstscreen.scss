@@ -1,10 +1,11 @@
 .circle-animation {
     position: absolute;
-    bottom: -39px!important;
-    left: -44px!important;
-    width: 200px;
-    height: 200px;
-    transform: rotateZ(7deg);
+    bottom: -37px!important;
+    left: -41px!important;
+    width: 210px;
+    height: 210px;
+    -webkit-transform: rotateZ(7.6deg);
+    transform: rotateZ(7.6deg);
 }
 
 .first-screen{
@@ -38,7 +39,7 @@
     width: fit-content;
 
     h1{
-        font-size: 109.53px;
+        font-size: 120px;
         margin-bottom: 25px;
         // word-spacing: 10vw;
         line-height: normal;

@@ -961,6 +961,7 @@ footer h3 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-left: auto;
 }
 
 .footer__content-shop ul li a::after {
@@ -1644,8 +1645,8 @@ h2 {
   position: absolute;
   top: 55px;
   opacity: 1;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   z-index: 1;
 }
 
@@ -1671,8 +1672,8 @@ h2 {
   z-index: -3;
   top: 55px;
   opacity: 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .size-list ul {
@@ -1943,6 +1944,9 @@ h2 {
 .product-setting__size label {
   margin-right: 10px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .product-setting__size label:last-child {
@@ -2145,6 +2149,15 @@ h2 {
   width: max-content;
   z-index: 15;
   position: absolute;
+  opacity: 0.7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.table-size__button:hover {
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .product-buttons {
@@ -2546,8 +2559,8 @@ body.lock {
   position: absolute;
   top: 55px;
   opacity: 1;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .product-button__contain {
@@ -2572,8 +2585,8 @@ body.lock {
   z-index: 0;
   top: 55px;
   opacity: 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .size-list ul {

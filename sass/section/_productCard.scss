@@ -102,6 +102,7 @@
     label{
         margin-right: 10px;
         cursor: pointer;
+        display: flex;
 
         &:last-child{
             margin-right: 0;
@@ -294,6 +295,13 @@
     width: max-content;
     z-index: 15;
     position: absolute;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.table-size__button:hover{
+    opacity: 1;
+    transition: 0.4s;
 }
 
 .product-buttons{

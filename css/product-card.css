@@ -1643,6 +1643,10 @@ h2 {
   display: block;
   position: absolute;
   top: 55px;
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 1;
 }
 
 .product-button__contain {
@@ -1663,7 +1667,12 @@ h2 {
   margin-top: 15%;
   background-color: rgba(255, 255, 255, 0.4);
   max-width: 30px;
-  display: none;
+  position: absolute;
+  z-index: -3;
+  top: 55px;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .size-list ul {
@@ -2535,7 +2544,10 @@ body.lock {
 .size-list.activator-list {
   display: block;
   position: absolute;
-  top: 45px;
+  top: 55px;
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .product-button__contain {
@@ -2556,7 +2568,12 @@ body.lock {
   margin-top: 15%;
   background-color: rgba(255, 255, 255, 0.4);
   max-width: 30px;
-  display: none;
+  position: absolute;
+  z-index: 0;
+  top: 55px;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .size-list ul {

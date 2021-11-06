@@ -108,6 +108,9 @@
     display: block;
     position: absolute;
     top: 55px;
+    opacity: 1;
+    transition: 0.4s;
+    z-index: 1;
 }
 
 .product-button__contain{
@@ -121,7 +124,11 @@
     margin-top: 15%;
     background-color: rgba(255, 255, 255, 0.4);
     max-width: 30px;
-    display: none;
+    position: absolute;
+    z-index: -3;
+    top: 55px;
+    opacity: 0;
+    transition: 0.4s;
 
     ul{
         list-style: none;

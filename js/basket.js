@@ -3,25 +3,28 @@ let allButtonSize = document.querySelectorAll('.button-size')
 let allLineSize = document.querySelectorAll('.line-size')
 let allBg = document.querySelectorAll('.basket-content__item-bg')
 let allSettingSize = document.querySelectorAll('.setting-size')
+let allButtonColor = document.querySelectorAll('.button-color')
+let allLineColor = document.querySelectorAll('.line-color')
+let allSettingColor = document.querySelectorAll('.setting-color')
 
 Array.from(allButtonSize).forEach((el, id) => {
     el.addEventListener('click', function(event) {
 		Array.from(allLineSize).some((lineSize, number, allLinesizes) => {
 			if(allLinesizes[id].classList.contains('active')){
 				allLinesizes[id].classList.remove('active')
-                Array.from(allBg).forEach((lineSize, number, allBg) => {
-                    allBg[id].classList.remove('active')
-                });
                 Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
-                    allSettingSize[id].style.zIndex = '3'
+                    allSettingSize[id].style.zIndex = '2'
+                });
+                Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
+                    allSettingColor[id].style.opacity = '1'
                 });
 			} else {
 				allLinesizes[id].classList.add('active')
-                Array.from(allBg).forEach((lineSize, number, allBg) => {
-                    allBg[id].classList.add('active')
-                });
                 Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
-                    allSettingSize[id].style.zIndex = '5'
+                    allSettingSize[id].style.zIndex = '3'
+                });
+                Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
+                    allSettingColor[id].style.opacity = '0.5'
                 });
 			}
 
@@ -31,28 +34,25 @@ Array.from(allButtonSize).forEach((el, id) => {
 });
 
 // Активация/деактивация меню цвета
-let allButtonColor = document.querySelectorAll('.button-color')
-let allLineColor = document.querySelectorAll('.line-color')
-let allSettingColor = document.querySelectorAll('.setting-color')
 
 Array.from(allButtonColor).forEach((el, id) => {
     el.addEventListener('click', function(event) {
 		Array.from(allLineColor).some((lineSize, number, allLineColor) => {
 			if(allLineColor[id].classList.contains('active')){
 				allLineColor[id].classList.remove('active')
-                Array.from(allBg).forEach((lineSize, number, allBg) => {
-                    allBg[id].classList.remove('active')
+                Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
+                    allSettingSize[id].style.opacity = '1'
                 });
                 Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
-                    allSettingColor[id].style.zIndex = '3'
+                    allSettingColor[id].style.zIndex = '2'
                 });
 			} else {
 				allLineColor[id].classList.add('active')
-                Array.from(allBg).forEach((lineSize, number, allBg) => {
-                    allBg[id].classList.add('active')
+                Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
+                    allSettingSize[id].style.opacity = '0.5'
                 });
                 Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
-                    allSettingColor[id].style.zIndex = '5'
+                    allSettingColor[id].style.zIndex = '3'
                 });
 			}
 
@@ -180,8 +180,12 @@ window.addEventListener('click', e => {
 			el.classList.remove('active')
 		})
         Array.from(document.querySelectorAll('.setting-size')).forEach(el => {
-			el.style.zIndex = '3'
+			el.style.zIndex = '2'
 		})
+       
+        Array.from(document.querySelectorAll('.setting-color')).forEach((el) => {
+            el.style.opacity = '1'
+        });
     }
 
 
@@ -190,8 +194,12 @@ window.addEventListener('click', e => {
 			el.classList.remove('active')
 		})
         Array.from(document.querySelectorAll('.setting-color')).forEach(el => {
-			el.style.zIndex = '3'
+			el.style.zIndex = '2'
 		})
+
+        Array.from(document.querySelectorAll('.setting-size')).forEach((el) => {
+            el.style.opacity = '1'
+        });
     }
 
     if (!target.closest('.button-color') && !target.closest('.line-color') && !target.closest('.button-size') && !target.closest('.line-size')){

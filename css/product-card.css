@@ -1969,7 +1969,9 @@ h2 {
   padding: 13px;
 }
 
-.product-setting__size label p {
+.product-setting__size label span {
+  width: 45px;
+  height: 45px;
   font-size: 15px;
   color: #fff;
 }

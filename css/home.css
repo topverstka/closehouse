@@ -1826,7 +1826,7 @@ section.contact {
 .circle-animation {
   position: absolute;
   bottom: -37px !important;
-  left: -41px !important;
+  left: -49px !important;
   width: 210px;
   height: 210px;
   -webkit-transform: rotateZ(7.6deg);
@@ -1883,11 +1883,12 @@ section.contact {
   line-height: normal;
   text-transform: none;
   margin-bottom: 0px;
-  letter-spacing: 6px;
+  letter-spacing: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0 176px;
+  gap: 0 173px;
+  margin-left: 1px;
 }
 
 .first-screen__title h1 object {

@@ -2247,15 +2247,15 @@ section.contact {
 }
 
 .product-button:hover ~ .scale .scale-bg {
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 1;
   background: rgba(4, 4, 4, 0.4);
 }
 
 .scale:hover .scale-bg {
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 1;
   background: rgba(4, 4, 4, 0.4);
 }

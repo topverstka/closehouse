@@ -32,13 +32,6 @@ Array.from(document.querySelectorAll('.open-modal')).forEach(el => {
 })
 
 
-document.querySelector('.modal-close').addEventListener('click', function(){
-    document.querySelector('.modal').classList.remove('active')
-    document.querySelector('body').classList.remove('lock')
-})
-
-
-
 window.addEventListener('click', e => {
     const target = e.target
     if (!target.closest('table') && !target.closest('.table-size__button')) {

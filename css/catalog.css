@@ -1026,13 +1026,6 @@ footer h3 {
   font-size: 18px;
 }
 
-.modal-close {
-  position: absolute;
-  top: 24px;
-  right: 20px;
-  cursor: pointer;
-}
-
 .modal-content__subtitle {
   font-size: 11px;
   margin-top: 15px;

@@ -1852,7 +1852,7 @@ h2 {
 .clear-filter {
   text-align: center;
   vertical-align: middle;
-  font-size: 12px !important;
+  font-size: 10px !important;
 }
 
 .catalog-title {
@@ -2083,6 +2083,7 @@ a.active {
 .filter-form__size p:first-child {
   width: auto;
   height: auto;
+  font-size: 12px;
 }
 
 .filter-form__size p:first-child {
@@ -2144,7 +2145,12 @@ a.active {
 }
 
 .filter-form__color p:first-child {
+  font-size: 12px;
   margin-bottom: 15px;
+}
+
+.filter-form__size-title {
+  font-size: 12px;
 }
 
 .filter-form__color-button {
@@ -2257,6 +2263,7 @@ a.active {
 
 .filter-form__price p:first-child {
   margin-bottom: 15px;
+  font-size: 12px;
 }
 
 .filter-form__price-content input {

@@ -13,7 +13,7 @@
 .clear-filter{
     text-align: center;
     vertical-align: middle;
-    font-size: 12px!important;
+    font-size: 10px!important;
 }
 
 .favorite-title{
@@ -206,6 +206,7 @@ a.active{
         &:first-child{
             width: auto;
             height: auto;
+            font-size: 12px;
         }
 
         text-align: center;
@@ -264,6 +265,7 @@ a.active{
         text-align: center;
 
         &:first-child{
+            font-size: 12px;
             margin-bottom: 15px;
         }
     }
@@ -371,6 +373,7 @@ a.active{
 
         &:first-child{
             margin-bottom: 15px;
+            font-size: 12px;
         }
     }
 }

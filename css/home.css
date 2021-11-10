@@ -793,6 +793,114 @@ input.saearch-header:focus::-webkit-input-placeholder {
   right: -7px;
 }
 
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.hamburger {
+  margin: 0 auto;
+  width: 44px;
+  height: 8.73px;
+  position: relative;
+  margin-left: 100px;
+  margin-top: 0px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.hamburger .bar {
+  padding: 0;
+  width: 44px;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+
+.bar1 {
+  top: 0px;
+}
+
+.bar2,
+.bar3 {
+  top: 4.5px;
+}
+
+.bar3 {
+  right: 0;
+}
+
+.bar4 {
+  bottom: 0;
+}
+
+.hamburger2 .bar2,
+.hamburger3 .bar3,
+.hamburger4 .bar4 {
+  top: 4.5px;
+}
+
+.hamburger4 .bar5 {
+  bottom: -1px;
+}
+
+.hamburger4 .bar {
+  -webkit-transition: all 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out 0.4s;
+  transition: all 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out 0.4s;
+  transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+  transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s, -webkit-transform 0.4s ease-in-out 0.4s;
+}
+
+.hamburger4 .bar2 {
+  width: 1px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: 19.5px;
+}
+
+.hamburger4 .bar3 {
+  width: 1px;
+  left: 19.5px;
+}
+
+#checkbox4:checked + label > .hamburger4 > .bar1 {
+  top: 13.5px;
+  background-color: transparent;
+}
+
+#checkbox4:checked + label > .hamburger4 > .bar2 {
+  left: 5px;
+  width: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#checkbox4:checked + label > .hamburger4 > .bar3 {
+  left: 5px;
+  width: 30px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#checkbox4:checked + label > .hamburger4 > .bar4 {
+  background-color: transparent;
+}
+
+#checkbox4:checked + label > .hamburger4 > .bar5 {
+  bottom: 13.5px;
+  background-color: transparent;
+}
+
 footer {
   padding-top: 55px;
   padding-bottom: 35px;
@@ -820,6 +928,10 @@ footer h3 {
   margin-bottom: 11px;
   font-size: 12px;
   font-family: 'Kharkiv-Tone';
+}
+
+.footer__title p {
+  letter-spacing: -0.04em;
 }
 
 .footer__content {

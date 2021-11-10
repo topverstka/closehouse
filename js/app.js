@@ -30,12 +30,13 @@ function bodyLock() {
 //<------Основные функции---------->
 
 // 1) Мобильное меню
-var menuBurger = d.querySelector('.burger__container');
-menuBurger.addEventListener('click', function(e){
-	e.preventDefault();
+var menuBurger = d.querySelector('#checkbox4');
+checkbox4.addEventListener('click', function(e){
+	console.log(this)
+	// e.preventDefault();
 	bodyLock();
-	if(this.classList.contains('header__burger--active')){
-		this.classList.remove('header__burger--active');
+	if(this.classList.contains('burger-activator--active')){
+		this.classList.remove('burger-activator--active');
 		d.querySelector('.header__nav').classList.remove('header__nav--active');
 		find('.header__logo').style.opacity = '1'
 		Array.from(findAll('.header__button')).forEach(el => {
@@ -44,7 +45,7 @@ menuBurger.addEventListener('click', function(e){
 		find('header').style.zIndex = '4'
 		find('.saearch-header').classList.remove('open')
 	}else{
-		this.classList.add('header__burger--active');
+		this.classList.add('burger-activator--active');
 		d.querySelector('.header__nav').classList.add('header__nav--active');
 		find('.header__logo').style.opacity = '0'
 		Array.from(findAll('.header__button')).forEach(el => {
@@ -70,18 +71,18 @@ Array.from(document.querySelectorAll('.nav-burger ul li a')).forEach(el => {
 
 
 // 2) Скрытие мобильного меню
-function findCloseBtns(){
-	let closeBtns = document.querySelectorAll('.close');
-	for (let i = 0; i < closeBtns.length; i++) {
-		closeBtns[i].addEventListener('click', function(e){
-			e.preventDefault();
-			menuBurger.classList.remove('header__burger--active');
-			d.querySelector('.header__nav').classList.remove('header__nav--active');
-			bodyLock();
-		})
-	}
-}
-findCloseBtns();
+// function findCloseBtns(){
+// 	let closeBtns = document.querySelectorAll('.close');
+// 	for (let i = 0; i < closeBtns.length; i++) {
+// 		closeBtns[i].addEventListener('click', function(e){
+// 			e.preventDefault();
+// 			menuBurger.classList.remove('header__burger--active');
+// 			d.querySelector('.header__nav').classList.remove('header__nav--active');
+// 			bodyLock();
+// 		})
+// 	}
+// }
+// findCloseBtns();
 
 
 
@@ -89,12 +90,12 @@ findCloseBtns();
 
 
 // 4) Ленивая загрузка изображений
-[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
-	img.setAttribute('src', img.getAttribute('data-src'));
-	img.onload = function() {
-	img.removeAttribute('data-src');
-	};
-});
+// [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+// 	img.setAttribute('src', img.getAttribute('data-src'));
+// 	img.onload = function() {
+// 	img.removeAttribute('data-src');
+// 	};
+// });
 
 
 // 5) Куки

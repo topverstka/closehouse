@@ -1459,6 +1459,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 14px;
+  opacity: 0.8;
 }
 
 .order-form__info-data div p {

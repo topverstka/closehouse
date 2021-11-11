@@ -2531,9 +2531,14 @@ a.active {
   text-align: center;
   margin-top: 50px;
   font-size: 15px;
-  text-decoration: underline;
   font-style: italic;
   cursor: pointer;
+  border-bottom: 1px solid #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search-false__title {

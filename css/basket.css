@@ -2108,6 +2108,7 @@ h2 {
   font-size: 11px;
   margin-top: 15px;
   margin-bottom: 45px;
+  opacity: 0.8;
 }
 
 .modal-content__form {
@@ -2139,6 +2140,7 @@ h2 {
   text-align: start;
   margin-right: auto;
   display: block;
+  opacity: 0.8;
 }
 
 .modal-content__form button {

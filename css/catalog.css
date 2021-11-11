@@ -2604,6 +2604,7 @@ a.active {
 
 .search-result p span:last-child {
   border-bottom: 1px solid #fff;
+  margin-left: 12px;
 }
 
 .catalog-descr__result {

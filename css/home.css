@@ -2013,6 +2013,7 @@ section.contact {
   display: flex;
   gap: 0 173px;
   margin-left: 1px;
+  position: relative;
 }
 
 .first-screen__title h1 object {

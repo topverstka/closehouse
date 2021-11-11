@@ -1153,6 +1153,7 @@ footer h3 {
   font-size: 11px;
   margin-top: 15px;
   margin-bottom: 45px;
+  opacity: 0.8;
 }
 
 .modal-content__form {
@@ -1184,6 +1185,7 @@ footer h3 {
   text-align: start;
   margin-right: auto;
   display: block;
+  opacity: 0.8;
 }
 
 .modal-content__form button {
@@ -1693,8 +1695,7 @@ h2 {
   position: absolute;
   opacity: 0;
   z-index: 1;
-  border: 1px
- solid #fff;
+  border: 1px solid #fff;
   left: -40px;
   border-radius: 100%;
   width: 80px;
@@ -1721,8 +1722,7 @@ h2 {
   position: absolute;
   opacity: 0;
   z-index: 1;
-  border: 1px
- solid #fff;
+  border: 1px solid #fff;
   right: -40px;
   border-radius: 100%;
   width: 80px;
@@ -2324,7 +2324,7 @@ h2 {
 .table-size__table table {
   text-align: center;
   padding: 15px;
-  background-color: rgba(160, 160, 160);
+  background-color: #a0a0a0;
 }
 
 .table-size__table thead tr {

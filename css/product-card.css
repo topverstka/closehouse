@@ -1693,7 +1693,8 @@ h2 {
   position: absolute;
   opacity: 0;
   z-index: 1;
-  border: 1px solid #fff;
+  border: 1px
+ solid #fff;
   left: -40px;
   border-radius: 100%;
   width: 80px;
@@ -1720,7 +1721,8 @@ h2 {
   position: absolute;
   opacity: 0;
   z-index: 1;
-  border: 1px solid #fff;
+  border: 1px
+ solid #fff;
   right: -40px;
   border-radius: 100%;
   width: 80px;
@@ -2322,7 +2324,7 @@ h2 {
 .table-size__table table {
   text-align: center;
   padding: 15px;
-  background-color: rgba(160, 160, 160, 0.6);
+  background-color: rgba(160, 160, 160);
 }
 
 .table-size__table thead tr {

@@ -56,6 +56,20 @@ checkbox4.addEventListener('click', function(e){
 	}
 })
 
+window.addEventListener('keyup', function(e){
+	if(e.key === "Escape") {
+		checkbox4.classList.remove('burger-activator--active');
+		checkbox4.checked = false
+        d.querySelector('.header__nav').classList.remove('header__nav--active');
+		find('.header__logo').style.opacity = '1'
+		Array.from(findAll('.header__button')).forEach(el => {
+			el.style.opacity =  '1'
+		})
+		find('header').style.zIndex = '4'
+		find('.saearch-header').classList.remove('open')
+    }
+})
+
 Array.from(document.querySelectorAll('.nav-burger ul li a')).forEach(el => {
 	el.addEventListener('click', function(){
 		document.querySelector('.header__nav').classList.remove('header__nav--active')

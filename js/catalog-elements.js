@@ -185,7 +185,29 @@ window.addEventListener('click', e => {
 				document.querySelector('.catalog-descr__result-category').append(categoryCheck)
 				categoryCheck.append(textCategoryCheck)
 				categoryCheck.append(imgCategoryCheck)
-				
+				if(target.value == 'Все категории'){
+					document.querySelectorAll('.list-category ul li label input').forEach(el => {
+						if(el.value != 'Все категории'){
+							el.checked = false
+							Array.from(document.querySelectorAll('.catalog-descr__result-category div')).forEach(el => {
+								if(el.childNodes[0].innerHTML != 'Все категории'){
+									el.remove()
+								}
+							})
+						}
+					})
+				} else {
+					document.querySelectorAll('.list-category ul li label input').forEach(el => {
+						if(el.value == 'Все категории'){
+							el.checked = false
+						}
+						Array.from(document.querySelectorAll('.catalog-descr__result-category div')).forEach(el => {
+							if(el.childNodes[0].innerHTML == 'Все категории'){
+								el.remove()
+							}
+						})
+					})
+				}
 			} else {
 				Array.from(document.querySelectorAll('.catalog-descr__result-category div')).forEach(el => {
 					if(target.value == el.childNodes[0].innerHTML){

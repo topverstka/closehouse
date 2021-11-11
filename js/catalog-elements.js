@@ -295,7 +295,7 @@ window.addEventListener('click', e => {
 	if(lengthCategory == 0 && lengthColor == 0 && lengthSize == 0){
 		document.querySelector('.catalog-descr__result p').style.display = 'none'
 	} else {
-		document.querySelector('.catalog-descr__result p').style.display = 'block'
+		document.querySelector('.catalog-descr__result p').style.display = 'flex'
 	}
 })
 

@@ -11,6 +11,9 @@ Array.from(allButtonSize).forEach((el, id) => {
     el.addEventListener('click', function(event) {
 		Array.from(allLineSize).some((lineSize, number, allLinesizes) => {
 			if(allLinesizes[id].classList.contains('active')){
+                // allLinesizes[id].addEventListener('mouseleave', function(){
+                //     console.log(123123)
+                // })
 				allLinesizes[id].classList.remove('active')
                 Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
                     allSettingSize[id].style.zIndex = '2'
@@ -20,6 +23,16 @@ Array.from(allButtonSize).forEach((el, id) => {
                     allSettingColor[id].style.pointerEvents = 'auto'
                 });
 			} else {
+                allLinesizes[id].addEventListener('mouseleave', function(){
+                    allLinesizes[id].classList.remove('active')
+                    Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
+                        allSettingSize[id].style.zIndex = '2'
+                    });
+                    Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
+                        allSettingColor[id].style.opacity = '1'
+                        allSettingColor[id].style.pointerEvents = 'auto'
+                    });
+                })
 				allLinesizes[id].classList.add('active')
                 Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
                     allSettingSize[id].style.zIndex = '3'
@@ -29,6 +42,8 @@ Array.from(allButtonSize).forEach((el, id) => {
                     allSettingColor[id].style.pointerEvents = 'none'
                 });
 			}
+
+
 
 			return allLinesizes[id]
 		});
@@ -50,6 +65,16 @@ Array.from(allButtonColor).forEach((el, id) => {
                     allSettingColor[id].style.zIndex = '2'
                 });
 			} else {
+                allLineColor[id].addEventListener('mouseleave', function(){
+                    allLineColor[id].classList.remove('active')
+                    Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
+                        allSettingSize[id].style.opacity = '1'
+                        allSettingSize[id].style.pointerEvents = 'auto'
+                    });
+                    Array.from(allSettingColor).forEach((lineSize, number, allBg) => {
+                        allSettingColor[id].style.zIndex = '2'
+                    });
+                })
 				allLineColor[id].classList.add('active')
                 Array.from(allSettingSize).forEach((lineSize, number, allBg) => {
                     allSettingSize[id].style.opacity = '0.5'

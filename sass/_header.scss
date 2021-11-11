@@ -44,6 +44,16 @@ input.saearch-header{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+
+	button{
+		opacity: 0.5;
+		transition: 0.4s;
+
+		&:hover{
+			transition: 0.4s;
+			opacity: 1;
+		}
+	}
 }
 
 .header__button{
@@ -305,7 +315,7 @@ input.saearch-header:focus::-webkit-input-placeholder {
 }
 
 .header__nav-bg{
-	background-color: #232323;
+	background-color: #111;
 	position: relative;
 }
 	

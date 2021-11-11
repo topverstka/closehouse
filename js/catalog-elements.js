@@ -394,3 +394,15 @@ Array.from(allProductCard).forEach((basketItem, basketItemId, basketItemArray) =
         })
     })
 });
+
+
+window.addEventListener('keyup', function(e){
+	if(e.key === "Escape") {
+		document.querySelector('.filter-form').classList.remove('active')
+		document.querySelector('.list-sort').classList.remove('active')
+		document.querySelector('.list-category').classList.remove('active')
+		document.querySelectorAll('.bg-swiper-container').forEach(el => {
+			el.classList.remove('active')
+		})
+    }
+})

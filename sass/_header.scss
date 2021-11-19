@@ -98,9 +98,9 @@ input.saearch-header{
 	}
 }
 .logo-signed{
-	width: 144px;
+	max-width: 144px !important;
 	position: absolute;
-	bottom: -40px;
+	bottom: -35px;
 	left: 100px;
 	pointer-events: none;
 }

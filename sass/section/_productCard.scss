@@ -330,7 +330,7 @@
     position: absolute;
     z-index: -1;
     bottom: -15px;
-    left: 190px;
+    left: 160px;
     transition: 0.4s;
 
     &.active{
@@ -352,11 +352,11 @@
             border-bottom: 1px solid #fff;
             padding-bottom: 4px;
             margin-bottom: 4px;
-
             font-size: 12px;
         }
-
+        
         th{
+            font-weight: 400;
             margin-right: 15px;
 
             &:last-child{

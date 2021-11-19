@@ -266,6 +266,21 @@ h2 {
 }
 
 .error-titl__subtitle a {
+  width: 273.63px;
+  height: 55px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
   margin-top: 40px;
-  padding: 20px 57px;
+  padding: 8px 16px;
 }

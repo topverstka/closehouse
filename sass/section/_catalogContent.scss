@@ -114,7 +114,7 @@ a.active{
         padding-right: 9px;
         padding-left: 6px;
         transition: 0.8s;
-        background-color: #757575;
+        background-color: #A0A0A0;
         pointer-events: none;
         z-index: 3;
         
@@ -147,7 +147,7 @@ a.active{
                 span{
                     font-size: 12px;
                     color: #fff;
-                    opacity: 0.6;
+                    opacity: 0.8;
                     width: max-content;
                     margin-left: auto;
                     margin-right: auto;
@@ -182,7 +182,7 @@ a.active{
     top: 0;
     opacity: 0;
     left: 115px;
-    background-color: #757575;
+    background-color: #A0A0A0;
 
     padding: 18px 8px;
     max-width: 220px;
@@ -400,7 +400,7 @@ a.active{
         min-width: 220px;
         padding: 18px 15px;
         transition: 0.8s;
-        background-color: #757575;
+        background-color: #A0A0A0;
         pointer-events: none;
         z-index: 3;
         
@@ -556,6 +556,7 @@ a.active{
 
         span{
             color: rgba(255, 255, 255, 1);
+            text-decoration: underline;
         }
     }       
 }
@@ -570,8 +571,8 @@ a.active{
 
 .search-result{
     display: none;
-    margin-bottom: 30px;
-    padding-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 20px;
 
     p{
         font-size: 15px;
@@ -594,7 +595,7 @@ a.active{
     display: flex;
     align-items: center;
     // flex-wrap: wrap;
-    align-items: flex-start;
+    // align-items: flex-start;
     gap: 8px 0;
 
     p{
@@ -607,22 +608,21 @@ a.active{
 
 .catalog-descr__all{
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     gap: 8px;
 }
 
 .catalog-descr__result-category{
-    margin-right: 20px;
     display: flex;
-    margin-right: 20px;
+    // margin-right: 20px;
     flex-wrap: wrap;
-    gap: 8px 0;
+    gap: 8px;
     div{
         display: flex;
         font-size: 15px;
         border: 1px solid #fff;
         padding: 8px 10px;
-        margin-right: 15px;
+        // margin-right: 15px;
         p{
             margin-right: 22px;
         }
@@ -640,15 +640,15 @@ a.active{
 
 .catalog-descr__result-size{
     display: flex;
-    margin-right: 20px;
+    // margin-right: 20px;
     flex-wrap: wrap;
-    gap: 8px 0;
+    gap: 8px;
     div{
         display: flex;
         font-size: 15px;
         border: 1px solid #fff;
         padding: 8px 10px;
-        margin-right: 15px;
+        // margin-right: 15px;
 
         p{
             margin-right: 22px;
@@ -668,13 +668,13 @@ a.active{
 .catalog-descr__result-color{
     display: flex;
     flex-wrap: wrap;
-    gap: 8px 0;
+    gap: 8px;
     div{
         display: flex;
         font-size: 15px;
         border: 1px solid #fff;
         padding: 8px 10px;
-        margin-right: 15px;
+        // margin-right: 15px;
 
         p{
             margin-right: 22px;

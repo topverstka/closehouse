@@ -171,6 +171,10 @@
     top: 183px;
 }
 
+.del-logo {
+    filter: brightness(.5);
+}
+
 .mailrus-content{
     
         // position: relative;
@@ -178,14 +182,18 @@
         input{
             display: none;
 
-            &:checked ~ .radio-container{
+            &:checked ~ .del-logo {
+                filter: brightness(1);
+            }
+
+            &:checked ~ span .radio-container{
                 display: block;
                 span{
                     background-color: #fff;
                 }
             }
 
-            &:not(:checked) ~ .radio-container{
+            &:not(:checked) ~ span .radio-container{
                 opacity: 0.3;
                 display: block;
             }
@@ -239,11 +247,13 @@
     margin-top: 50px;
     color: #fff;
     opacity: 0.3;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .order-alert__text{
     text-align: center;
+    margin: -40px 0 0 0;
+
     h2{
         font-size: 30px;
         margin-bottom: 50px;
@@ -256,7 +266,13 @@
     }
 
     a{
+        width: 250px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #fff;
-        padding: 18px 46px;
+        padding: 8px 16px;
+        margin: 0 auto;
     }
 }

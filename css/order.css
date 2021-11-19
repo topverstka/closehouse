@@ -250,9 +250,9 @@ input.saearch-header::placeholder {
 }
 
 .logo-signed {
-  width: 144px;
+  max-width: 144px !important;
   position: absolute;
-  bottom: -40px;
+  bottom: -35px;
   left: 100px;
   pointer-events: none;
 }
@@ -981,7 +981,7 @@ input.saearch-header:focus::-webkit-input-placeholder {
 }
 
 footer {
-  padding-top: 55px;
+  padding-top: 58px;
   padding-bottom: 35px;
   background-color: #111111;
 }
@@ -1114,6 +1114,7 @@ footer h3 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  line-height: 1.1;
 }
 
 .footer__content-links ul li a::after {
@@ -1418,7 +1419,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 }
 
 .order-form__ordering-input {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .order-form__ordering-input:nth-child(3) {
@@ -1470,11 +1471,11 @@ input:required:valid, textarea:required:valid, button:required:valid {
 .mailrus-logo img {
   display: block;
   margin-right: auto;
-  margin-bottom: 6px;
+  margin-bottom: -5px;
 }
 
 .sdek {
-  margin-top: 37px;
+  margin-top: 25px;
 }
 
 .sdek-logo span {
@@ -1484,7 +1485,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 .sdek-logo img {
   display: block;
   margin-right: auto;
-  margin-bottom: 6px;
+  margin-bottom: -2px;
 }
 
 .order-form__ordering-shipping {
@@ -1730,19 +1731,29 @@ input:required:valid, textarea:required:valid, button:required:valid {
   top: 183px;
 }
 
+.del-logo {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
 .mailrus-content input {
   display: none;
 }
 
-.mailrus-content input:checked ~ .radio-container {
+.mailrus-content input:checked ~ .del-logo {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.mailrus-content input:checked ~ span .radio-container {
   display: block;
 }
 
-.mailrus-content input:checked ~ .radio-container span {
+.mailrus-content input:checked ~ span .radio-container span {
   background-color: #fff;
 }
 
-.mailrus-content input:not(:checked) ~ .radio-container {
+.mailrus-content input:not(:checked) ~ span .radio-container {
   opacity: 0.3;
   display: block;
 }
@@ -1811,11 +1822,12 @@ input:required:valid, textarea:required:valid, button:required:valid {
   margin-top: 50px;
   color: #fff;
   opacity: 0.3;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .order-alert__text {
   text-align: center;
+  margin: -40px 0 0 0;
 }
 
 .order-alert__text h2 {
@@ -1831,6 +1843,21 @@ input:required:valid, textarea:required:valid, button:required:valid {
 }
 
 .order-alert__text a {
+  width: 250px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
-  padding: 18px 46px;
+  padding: 8px 16px;
+  margin: 0 auto;
 }

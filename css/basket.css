@@ -250,9 +250,9 @@ input.saearch-header::placeholder {
 }
 
 .logo-signed {
-  width: 144px;
+  max-width: 144px !important;
   position: absolute;
-  bottom: -40px;
+  bottom: -35px;
   left: 100px;
   pointer-events: none;
 }
@@ -981,7 +981,7 @@ input.saearch-header:focus::-webkit-input-placeholder {
 }
 
 footer {
-  padding-top: 55px;
+  padding-top: 58px;
   padding-bottom: 35px;
   background-color: #111111;
 }
@@ -1114,6 +1114,7 @@ footer h3 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  line-height: 1.1;
 }
 
 .footer__content-links ul li a::after {
@@ -1415,9 +1416,9 @@ h2 {
 .product-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 31.3% 31.3% 31.3%;
-      grid-template-columns: 31.3% 31.3% 31.3%;
-  gap: 30px;
+  -ms-grid-columns: 31.5% 31.5% 31.5%;
+      grid-template-columns: 31.5% 31.5% 31.5%;
+  gap: 50px 30px;
 }
 
 .product-cards__less {
@@ -1427,10 +1428,14 @@ h2 {
 
 .product-card {
   position: relative;
-  margin-bottom: 29px;
+}
+
+.product-card .catalog-swiper-container {
+  height: auto;
 }
 
 .catalog-swiper-container {
+  height: 545px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1585,7 +1590,7 @@ h2 {
 
 .size-list {
   margin-top: 15%;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #A0A0A0;
   max-width: 30px;
   position: absolute;
   z-index: -3;
@@ -1598,10 +1603,11 @@ h2 {
 
 .size-list ul {
   list-style: none;
+  padding: 5px 0;
 }
 
 .size-list ul li button {
-  padding: 7px 7px;
+  padding: 8px;
   color: #fff;
   font-size: 12px;
   cursor: auto;
@@ -1635,8 +1641,22 @@ h2 {
 }
 
 .product-card__button button {
+  width: 250px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 15px;
-  padding: 15px 60px;
+  padding: 8px 16px;
   opacity: 0.6;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
@@ -1690,8 +1710,16 @@ h2 {
   width: 100%;
 }
 
+.product-cards__less .catalog-swiper-container {
+  height: 840px;
+}
+
+.product-cards__less + .load-more {
+  margin-top: 84px;
+}
+
 .product-cards__less .product-card__content-price {
-  height: 90px;
+  height: 100px;
 }
 
 .product-cards__less .product-button {
@@ -1980,7 +2008,7 @@ h2 {
           align-items: center;
   padding: 10px;
   margin-left: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #A0A0A0;
   width: 220px;
   opacity: 0;
   -webkit-transition: 0.8s;
@@ -2067,10 +2095,10 @@ h2 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 48px;
   z-index: 3;
@@ -2089,10 +2117,10 @@ h2 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 6px 10px;
   margin-left: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
-  max-width: 220px;
+  background-color: #A0A0A0;
+  max-width: 240px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -2120,7 +2148,7 @@ h2 {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  gap: 4px 0;
+  gap: 4px;
 }
 
 .line-color ul li {
@@ -2352,7 +2380,22 @@ h2 {
 }
 
 .basket-content__alert a {
+  width: 250px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 15px;
-  padding: 17px 60px;
+  padding: 8px 16px;
+  margin: 0 auto;
   color: #fff;
 }

@@ -13,6 +13,7 @@
 }
 
 .error-titl__subtitle{
+
     h2{
         font-size: 15px;
         color: #fff;
@@ -24,7 +25,13 @@
         margin-bottom: 0;
     }
     a{
+        width: 273.63px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
         margin-top: 40px;
-        padding: 20px 57px;
+        padding: 8px 16px;
     }
 }

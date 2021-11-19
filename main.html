@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+	<meta charset="utf-8">
+	<title>Close House</title>
+	<meta name="description" content="Close House — удобная одежда, в которой легко передвигаться, расслабляться и в то же время быть соблазнительной и привлекательной">
+	<link rel="icon" href="./img/favicon.ico">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/aos.css">
+
+	<!-- Кастомые анимации -->
+	<link rel="stylesheet" href="./css/animation.css">
+	<!-- / Кастомые анимации -->
+	<style>
+		body{
+			overflow-x: hidden;
+		}
+	</style>
+
+    <link rel="stylesheet" href="./css/home.css"> 
+</head> 
+
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="wrap">
+				<!-- Логотип -->
+				<div class="header__logo header__logo--pc">
+					<object type="image/svg+xml" data="./img/logo.svg">
+						<img src="./img/logo.svg" alt="Logo">
+					</object>
+				</div>
+				
+				<!-- Кнопки в шапке -->
+				<div class="header__buttons">
+					<input class="saearch-header" type="text" placeholder="Поиск">
+					<button class="header__button header__button-search" id="btnHeaderSearch">
+						<img src="./img/search.svg" alt="Поиск">
+					</button>
+					<button class="header__button header__button-like">
+						<img src="./img/like.svg" alt="Избранное">
+					</button>
+					<button class="header__button header__button-basket">
+						<img src="./img/basket.svg" alt="Корзина">
+					</button>
+				<!-- Бургер для меню -->
+					<!-- <div class="burger-activator"> -->
+						<input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden">
+						<label for="checkbox4">
+							<div class="hamburger hamburger4">
+								<span class="bar bar1"></span>
+								<span class="bar bar2"></span>
+								<span class="bar bar3"></span>
+								<span class="bar bar4"></span>
+								<span class="bar bar5"></span>
+							</div>
+						</label>
+					<!-- </div> -->
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Всплывающее меню -->
+	<div class="header__nav">
+		<div class="header__nav-bg">
+			<div class="container">
+				<div class="wrap">
+					<!-- Логотип -->
+					<div class="header__logo header__logo--nav">
+						<a class="header__logo-img" href="#">
+							<object type="image/svg+xml" data="./img/logo.svg">
+								<img src="./img/logo.svg" alt="Logo">
+							</object>
+							<object class="logo-signed" type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg">
+								<img src="./img/pages/home/Elegant-clothes.svg" alt="">
+							</object>
+						</a>
+
+						
+					</div>
+
+					<!-- Навигация -->
+					<nav class="nav-burger">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#about">О нас</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#contact">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<!-- Элемент контактов -->
+					<div class="header__contacts">
+						<a href="#">
+							<img src="./img/instagram.svg" alt="instagram">
+						</a>
+
+						<a href="#">Instargam</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Первый экарн -->
+	<div class="first-screen">
+		<!-- Задний фон + пример того как мы вставляем изображения -->
+		<div class="home-swiper swiper">
+			<div class="home-swiper-container swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="swiper-slide__content">
+							<img src="./img/pages/home/firstscreen-slide1.png" alt="Бэграунд" title="Close House">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__content">
+							<img src="./img/pages/home/firstscreen-slide2.png" alt="Бэграунд" title="Close House">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__content">
+							<img src="./img/pages/home/firstscreen-slide3.png" alt="Бэграунд" title="Close House">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Пагинация слайдера -->
+		
+		<div class="swiper-pagination"></div>
+
+				<!-- Стрелка скрола -->
+				<div class="arrow-scroll">
+					<p>Скроль</p>
+					<object type="image/svg+xml" data="./img/pages/home/arrow.svg">
+						<img src="./img/pages/home/arrow.svg" alt="scroll">
+					</object>
+				</div>
+
+		<!-- Основной контент первого экрана -->
+		<div class="first-screen__title">
+			<h1>Close   <span class="first-screen__title-house">
+					<img class="circle-animation" src="./img/pages/home/circle-animation.svg" alt="">
+				H<span class="letter">o</span>use</span> <object type="image/svg+xml" data="./img/pages/home/Elegant-clothes.svg"><img src="./img/pages/home/Elegant-clothes.svg" alt=""></object>
+			</h1>
+			<p>Close House — это наш собственный<br> взгляд на вопрос элегантности сегодня</p>
+		</div>
+
+		<!-- Социальные сети -->
+		<div class="first-screen__social">
+			<a href="#" class="first-screen__social-img">
+				<img src="./img/instagram.svg" alt="instagram">
+			</a>
+			<a href="#">Связаться с нами <img src="./img/pages/home/arrow-top.svg" alt=""></a>
+		</div>
+	</div>
+
+	<!-- Секция навигация по каталогу -->
+	<section class="catalog" id="catalog">
+		<div class="container">
+			<div class="wrap">
+				<!-- Заголовок секции -->
+				<div class="catalog-title">
+					<h2>Навигация <object type="image/svg+xml" data="./img/arrow-big.svg"><img src="./img/arrow-big.svg" alt="arrow"></object><br> <span>по каталогу <object type="image/svg+xml" data="./img/pages/home/Navigation.svg"><img src="./img/pages/home/Navigation.svg" alt=""></object></span></h2>
+				</div>
+
+				<!-- Блоки каталога -->
+
+				<div class="catalog-elemetn">
+					<div class="catalog-elemetn__item">
+						<div class="catalog-elemetn__item-card" data-aos="fade-up">
+							<div class="bg-catalog__home"></div>
+							<button class="btn btn-catalog__home">Подробнее</button>
+							<div class="picture">
+								<img src="./img/pages/home/outerwear.png" alt="">
+							</div>
+							<p>Верхняя одежда</p>
+						</div>
+						<div class="catalog-elemetn__item-card" data-aos="fade-up">
+							<div class="bg-catalog__home"></div>
+							<button class="btn btn-catalog__home">Подробнее</button>
+							<div class="picture">
+								<img src="./img/pages/home/costumes.png" alt="">
+							</div>
+							<p>Костюмы</p>
+						</div>
+					</div>
+					<div class="catalog-elemetn__item">
+						<div class="catalog-elemetn__item-card" data-aos="fade-up">
+							<div class="bg-catalog__home"></div>
+							<button class="btn btn-catalog__home">Подробнее</button>
+							<div class="picture">
+								<img src="./img/pages/home/skirts.png" alt="">
+							</div>
+							<p>Юбки</p>
+						</div>
+						<div class="catalog-elemetn__item-card" data-aos="fade-up">
+							<div class="bg-catalog__home"></div>
+							<button class="btn btn-catalog__home">Подробнее</button>
+							<div class="picture">
+								<img src="./img/pages/home/dresses.png" alt="">
+							</div>
+							<p>Платья</p>
+						</div>
+					</div>
+					<div class="catalog-elemetn__item">
+						<div class="catalog-elemetn__item-card" data-aos="fade-up"> 
+							<div class="bg-catalog__home"></div>
+							<button class="btn btn-catalog__home">Подробнее</button>
+							<div class="picture">
+								<img src="./img/pages/home/sportwear.png" alt="">
+							</div>
+							<p>Спортивная одежда</p>
+						</div>
+						<div class="catalog-elemetn__item-card" data-aos="fade-up">
+							<div class="bg-catalog__home"></div>
+							<button class="btn btn-catalog__home">Подробнее</button>
+							<div class="picture">
+								<img src="./img/pages/home/pants.png" alt="">
+							</div>
+							<p>Брюки</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- перевернутый текст -->
+				<div class="invertet-text invertet-text__position" >
+					<p data-aos="fade-right">Здесь представлены самые популярные<br> разделы текущего сезона. Чтобы увидеть<br>  больше — проследуйте на страницы<br> всего «Каталога»</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="season">
+		<div class="container">
+			<div class="wrap">
+				<div class="season-title"  data-aos="fade-up"> 
+					<h2>ОСЕНЬ — ЗИМА</h2>
+					<div class="season-title__animation">
+						<div class="season-title__animation-content">
+							<p>2021-<br><span>2022</span></p>
+								<img class="circle-animation_season" src="./img/pages/home/circle-season.svg" alt="scroll">
+						</div>
+					</div>
+				</div>
+
+				<div class="season-content">
+					<div class="invertet-text invertet-text__season-position">
+						<p data-aos="fade-down">Autumn — Winter 2021-2022</p>
+					</div>
+
+					<div class="season-content__descr">
+						<div class="season-content__descr-text" data-aos="fade-up">
+							<img src="./img/pages/home/season1.png" alt="фото">
+							<p>Коллекция осень — зима 2021-2022<br> сочетает в себе красоту и уют<span></span></p>
+							<a href="#">Смотреть каталог</a>
+						</div>
+					</div>
+					<div class="season-content__img" data-aos="fade-up">
+						<img src="./img/pages/home/season2.png" alt="фото">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="new">
+		<div class="container">
+			<div class="wrap">
+				<div class="new-title" >
+					<h2  data-aos="fade-up">НОВЫЕ ПОСТУПЛЕНИЯ <object type="image/svg+xml" data="./img/pages/home/arrow-bottom.svg"><img src="./img/pages/home/arrow-bottom.svg" alt=""></object></h2>
+
+					<div class="new-title__desrc">
+						<p>Close House — 2021-2022</p>
+						<p>Говорят, у нас в магазине находится<br> «душа гардероба», которая излучает<br> комфорт и соблазнительную красоту</p>
+					</div>
+				</div>
+
+				<div class="new-product">
+					<div class="new-product__item" data-aos="fade-up" data-aos-duration="500">
+						<div class="product-button">
+							<div class="product-button__contain">
+								<button class="product-button__like">
+								</button>
+								<button class="product-button__size">
+									<img src="./img/size-product.svg" alt="scroll">
+								</button>
+
+								<div class="size-list">
+									<ul>
+										<li>
+											<button>40</button>
+										</li>
+										<li>
+											<button>42</button>
+										</li>
+										<li>
+											<button>44</button>
+										</li>
+										<li>
+											<button>46</button>
+										</li>
+										<li>
+											<button>48</button>
+										</li>
+										<li>
+											<button>50</button>
+										</li>
+										<li>
+											<button>52</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="scale"><div class="scale-bg"></div><button class="btn btn-new__home">Подробнее</button><img src="./img/pages/home/new-product1.png" alt="Новый товар"></div>
+						<div class="new-product__item-price">
+							<p>Спортивный костюм</p>
+							<p>5 200 RUB</p>
+						</div>
+					</div>
+					<div class="new-product__item" data-aos="fade-up" data-aos-duration="600">
+						<div class="product-button">
+							<div class="product-button__contain">
+								<button class="product-button__like">
+								</button>
+								<button class="product-button__size">
+									<img src="./img/size-product.svg" alt="scroll">
+								</button>
+
+								<div class="size-list">
+									<ul>
+										<li>
+											<button>40</button>
+										</li>
+										<li>
+											<button>42</button>
+										</li>
+										<li>
+											<button>44</button>
+										</li>
+										<li>
+											<button>46</button>
+										</li>
+										<li>
+											<button>48</button>
+										</li>
+										<li>
+											<button>50</button>
+										</li>
+										<li>
+											<button>52</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="scale"><div class="scale-bg"></div><button class="btn btn-new__home">Подробнее</button><img src="./img/pages/home/new-product2.png" alt="Новый товар"></div>
+						<div class="new-product__item-price">
+							<p>Жилет женский</p>
+							<p>7 100 RUB</p>
+						</div>
+					</div>
+					<div class="new-product__item" data-aos="fade-up" data-aos-duration="700">
+						<div class="product-button">
+							<div class="product-button__contain">
+								<button class="product-button__like">
+								</button>
+								<button class="product-button__size">
+									<img src="./img/size-product.svg" alt="scroll">
+								</button>
+
+								<div class="size-list">
+									<ul>
+										<li>
+											<button>40</button>
+										</li>
+										<li>
+											<button>42</button>
+										</li>
+										<li>
+											<button>44</button>
+										</li>
+										<li>
+											<button>46</button>
+										</li>
+										<li>
+											<button>48</button>
+										</li>
+										<li>
+											<button>50</button>
+										</li>
+										<li>
+											<button>52</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="scale"> <div class="scale-bg"></div><button class="btn btn-new__home">Подробнее</button><img src="./img/pages/home/new-produc3.png" alt="Новый товар"></div>
+						<div class="new-product__item-price">
+							<p>Кардиган</p>
+							<p>6 500 RUB</p>
+						</div>
+					</div>
+					<div class="new-product__item" data-aos="fade-up" data-aos-duration="800">
+						<div class="product-button">
+							<div class="product-button__contain">
+								<button class="product-button__like">
+								</button>
+								<button class="product-button__size">
+									<img src="./img/size-product.svg" alt="scroll">
+								</button>
+
+								<div class="size-list">
+									<ul>
+										<li>
+											<button>40</button>
+										</li>
+										<li>
+											<button>42</button>
+										</li>
+										<li>
+											<button>44</button>
+										</li>
+										<li>
+											<button>46</button>
+										</li>
+										<li>
+											<button>48</button>
+										</li>
+										<li>
+											<button>50</button>
+										</li>
+										<li>
+											<button>52</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="scale">
+							<div class="scale-bg"></div>
+							<img src="./img/pages/home/new-product4.png" alt="Новый товар">
+							<button class="btn btn-new__home">Подробнее</button>
+						</div>
+						<div class="new-product__item-price">
+							<p>Платье</p>
+							<p>4 800 RUB</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="about" id="about">
+		<div class="container">
+			<div class="wrap">
+				<div class="about-title"  data-aos="fade-up">
+					<h2>О НАС: ЭСТЕТИКА &<br> <span>САМООЩУЩЕНИЕ</span></h2>
+				</div>
+
+				<div class="invertet-text invertet-text__about-position">
+					<p data-aos="fade-right">About Close House</p>
+				</div>
+
+				<div class="about-descr">
+					<p data-aos="fade-up">
+						Наша эстетика — воплощение<br> 
+						женственности и уверенности в своё<br>
+						собственное видение. Это всё то, что<br> 
+						подчёркивает грани Вашей<br> 
+						индивидуальности. То, что всегда<br> 
+						делает Вас особенной и неповторимой.
+					</p>
+					<p data-aos="fade-up">
+						Наша цель в том, чтобы Вы играючи и<br> 
+						метко восхищали окружающий Мир<br> 
+						сегодня и завтра — легко и быстро<br> 
+						подбирая тот образ, который можно<br> 
+						красиво преподать в зависимости от<br> 
+						повода и своего настроения.
+					</p>
+				</div>
+
+				<div class="about-img">
+					<div class="about-img__one" data-aos="fade-right">
+						<picture>
+							<source srcset="./img/pages/home/about-photo1.webp" type="image/webp">
+							<img src="./img/pages/home/about-photo1.png" alt="">
+						</picture>
+					</div>
+
+					<div class="about-img__two" data-aos="fade-up">
+						<picture>
+							<source srcset="./img/pages/home/about-photo2.webp" type="image/webp">
+							<img src="./img/pages/home/about-photo2.png" alt="">
+						</picture>
+						<object class="signed-about" type="image/svg+xml" data="./img/pages/home/about-text.svg">
+							<img src="./img/pages/home/about-text.svg" alt="">
+						</object>
+					</div>
+				</div>
+
+				<div class="about-text" data-aos="fade-up">
+					Здесь и сейчас рождается Ваше новое представление о вечном и ярком.<br> 
+					Женская красота — это индивидуальные фигуры, свои собственные изгибы линий<br> 
+					и сильные личные стороны, которые можно и нужно подчёркивать прекрасными<br> 
+					образами. И мы приглашаем сделать это совместно прямо сейчас.
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="wrap">
+				<div class="contact-title"  data-aos="fade-up">
+					<h2>НАШИ <span></span> КОНТАКТЫ</h2>
+				</div>
+
+				<div class="invertet-text invertet-text__contact-position">
+					<p data-aos="fade-right">Connection</p>
+				</div>
+				
+				<div class="contact-info">
+					<div class="contact-info__working" data-aos="fade-up">
+						<p>График работы:</p>
+						<p>Телефон:</p>
+					</div>
+					<div class="contact-info__phone" data-aos="fade-up">
+						<p>Пн-Сб с 09.00 до 18.00</p>
+						<a href="tel:+78000113267">8 (800) 011-32-67</a>
+					</div>
+				</div>
+
+				<div class="contact-people">
+					<a href="#" class="contact-people__item" data-aos="fade-up" data-aos-duration="500">
+						<img class="inst-img" src="./img/instagram.svg" alt="">
+						<img src="./img/pages/home/contact-people1.png" alt="">
+					</a>
+					<div class="contact-people__item" data-aos="fade-up" data-aos-duration="600">
+						<img class="inst-img" src="./img/instagram.svg" alt="">
+						<img src="./img/pages/home/contact-people2.png" alt="">
+					</div>
+					<a href="#" class="contact-people__item" data-aos="fade-up" data-aos-duration="700">
+						<img class="inst-img" src="./img/instagram.svg" alt="">
+						<img src="./img/pages/home/contact-people3.png" alt="">
+					</a>
+					<a href="#" class="contact-people__item" data-aos="fade-up" data-aos-duration="800">
+						<img class="inst-img" src="./img/instagram.svg" alt="">
+						<img src="./img/pages/home/contact-people4.png" alt="">
+					</a>
+					<a href="#" class="contact-people__item" data-aos="fade-up" data-aos-duration="900">
+						<img class="inst-img" src="./img/instagram.svg" alt="">
+						<img src="./img/pages/home/contact-people5.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Подвал -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrap">
+				<div class="footer__title">
+					<p>Copyright © 2021 “Clouse House”</p>
+				</div>
+
+				<div class="footer__content">
+					<div class="footer__content-links">
+						<nav>
+							<ul>
+								<li>
+									<a href="#">Политика конфиденциальности</a>
+								</li>
+								<li>
+									<a href="#">Согласие на обработку персональных данных</a>
+								</li>
+								<li>
+									<a href="#">Реквизиты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__content-nav">
+						<nav>
+							<ul>
+								<li>
+									<a href="#">Главная</a>
+								</li>
+								<li>
+									<a href="#">О нас</a>
+								</li>
+								<li>
+									<a href="#">Каталог</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<a href="#">
+							<img src="./img/instagram.svg" alt="">
+						</a>
+					</div>
+					<div class="footer__content-shop">
+						<nav>
+							<ul>
+								<li>
+									<a href="#">Доставка & оплата</a>
+								</li>
+								<li>
+									<a href="#">Возврат</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Подключение скриптов -->
+	<script src="./js/swiper-bundle.min.js" defer></script>
+	<script src="./js/aos.js" defer></script>
+
+	<script src="./js/app.js" defer></script>
+	
+</body>
+</html>

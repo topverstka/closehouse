@@ -21,6 +21,11 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -981,9 +986,11 @@ input.saearch-header:focus::-webkit-input-placeholder {
 }
 
 footer {
+  width: 100%;
+  background-color: #111111;
   padding-top: 58px;
   padding-bottom: 35px;
-  background-color: #111111;
+  margin: auto 0 0 0;
 }
 
 footer .wrap2 {
@@ -1789,6 +1796,22 @@ h2 {
 .breadcrumbs-content a:last-child {
   cursor: default;
   pointer-events: none;
+}
+
+.body-basket {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .basket {

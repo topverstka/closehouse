@@ -22,6 +22,11 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -982,9 +987,11 @@ input.saearch-header:focus::-webkit-input-placeholder {
 }
 
 footer {
+  width: 100%;
+  background-color: #111111;
   padding-top: 58px;
   padding-bottom: 35px;
-  background-color: #111111;
+  margin: auto 0 0 0;
 }
 
 footer .wrap2 {

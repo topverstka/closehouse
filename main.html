@@ -21,7 +21,23 @@
 </head> 
 
 
-<body>
+<body class="_lock">
+	<div class="preloader">
+		<div class="preloader__body">
+			<div class="preloader__content">
+				<div class="preloader__item preloader__item-empty"></div>
+				<div class="preloader__item preloader__loader">
+					<span class="preloader__loader-text">
+						<span class="preloader__loader-score">0</span>
+						<span class="preloader__lodaer-percent">%</span>
+					</span>
+					<div class="load-perc-line"></div>
+					<div class="preloader__loader-img"><img src="./img/preloader/round-words.svg" alt="Круглые слова"></div>
+				</div>
+				<div class="preloader__item preloader__signa"><img src="./img/preloader/signa.svg" alt="Подпись"></div>
+			</div>
+		</div>
+	</div>
 	<header class="header">
 		<div class="container">
 			<div class="wrap">
@@ -631,6 +647,44 @@
 	</footer>
 
 	<!-- Подключение скриптов -->
+	<script>
+			let preloader = document.querySelector('.preloader');
+			var images = document.images;
+			var images_total_count = images.length;
+			var images_loaded_count = 0;
+			var score = document.querySelector('.preloader__loader-score')
+			let maxValue = 0
+			let value = 0
+			// var perc_display = document.querySelector('.load-perc-line')
+
+			for ( var i = 0; i < images_total_count; i++){
+				image_clone = new Image();
+				image_clone.onload = image_loaded;
+				image_clone.onerror = image_loaded;
+				image_clone.src = images[i].src;
+			}
+
+			scoreInterval = setInterval(() => {
+				value += 1
+				if (value <= maxValue) {
+					score.innerText = value
+				}
+				else if (value >= 100) {
+					clearInterval(scoreInterval)
+					setTimeout(() => {
+						preloader.classList.add('_hidden')
+						document.querySelector('body').classList.remove('_lock')
+					}, 500)
+				}
+			}, 10)
+			
+			function image_loaded() {
+				images_loaded_count++;
+				let equation = (( (100 / images_total_count) * images_loaded_count) <<0)
+				maxValue = equation
+			}
+	</script>
+
 	<script src="./js/swiper-bundle.min.js" defer></script>
 	<script src="./js/aos.js" defer></script>
 

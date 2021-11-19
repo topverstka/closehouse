@@ -29,10 +29,163 @@ function bodyLock() {
 
 //<------Основные функции---------->
 
+// Прелоадер
+// preloader()
+// function preloader() {
+// 	const preloader = find('.preloader')
+// 	const score = find('.preloader__loader-score')
+// 	let value = 0
+
+// 	scoreIncrease = setInterval(() => {
+// 		if (value == 100) {
+// 			clearInterval(scoreIncrease)
+// 			preloader.classList.add('_hidden')
+// 			body.classList.remove('_lock')
+// 		}
+// 		else {
+// 			value += 1
+// 			score.innerText = value
+// 		}
+// 	}, 10)
+// }
+
+
+// let preloader = document.querySelector('.preloader');
+
+// let preloaderElements = document.querySelectorAll('.preloader svg.current path');
+// let startElem = 0;
+
+// setInterval(() => {
+// 	preloaderElements[startElem].style.fill = 'unset';
+// 	startElem++;
+// 	if(startElem < preloaderElements.length ){
+// 		preloaderElements[startElem].style.fill = '#ffd4a9';
+// 	} else {
+// 		startElem = 0;
+// 	}
+// }, 700);
+
+// document.addEventListener("DOMContentLoaded", () => {
+// 	// document.querySelector('#phone-video-first-stopped').removeAttribute('autoplay');
+// 	// document.querySelector('#phone-video-first-stopped').play
+// 	// document.querySelector('#phone-video-first-stopped').paused
+	
+
+
+
+// 	var images = document.images;
+// 	var images_total_count = images.length;
+// 	var images_loaded_count = 0;
+// 	var perc_display = document.querySelector('.load-perc-line')
+
+// 	for ( var i = 0; i < images_total_count; i++){
+// 		image_clone = new Image();
+// 		image_clone.onload = image_loaded;
+// 		image_clone.onerror = image_loaded;
+// 		image_clone.src = images[i].src;
+// 	}
+	
+// 	function image_loaded() {
+// 		images_loaded_count++;
+
+// 		perc_display.style.width = (( (100 / images_total_count) * images_loaded_count) <<0) + '%';
+
+// 		if(images_loaded_count >= images_total_count){
+// 			window.setTimeout(function () {
+// 				preloader.classList.add('done');
+// 				d.querySelector('body').classList.remove('stop');
+// 				// d.querySelector('.presentation').classList.add('presentation-load');
+// 				// document.querySelector('#phone-video-first-stopped').currentTime = 0;
+// 			}, 700);
+// 		}
+// 	}
+
+	
+
+	
+	
+
+// 	// var elements = document.querySelectorAll(".my-paroller");
+// 	// var animations = [];
+		
+// 	// 	for (var i = 0; i < elements.length; i++) {
+// 	// 		let et = window.innerHeight / 1.5;
+// 	// 		let eh = window.innerHeight + window.innerHeight;
+// 	// 		if (i == 0) {
+// 	// 			et = elements[i].offsetTop + window.innerHeight/1.5 ;
+// 	// 		}
+			
+// 	// 		etpx = "-" + elements[i].offsetHeight * 2 + "px";
+// 	// 		etpxTwo = "-" + window.innerHeight / 4 + "px";
+
+// 	// 		animations[i] = new Motus.Animation({
+// 	// 			$el: elements[i],
+// 	// 			startPoint: [et],
+// 	// 			endPoint: [1500],
+// 	// 			keyframes: {
+// 	// 				25: {
+// 	// 					translateY: {
+// 	// 					  from: 0,
+// 	// 					  to: -150,
+						  
+// 	// 					},
+// 	// 				  },
+// 	// 				50: {
+// 	// 					translateY: {
+// 	// 					  from: -150,
+// 	// 					  to: -750,
+						  
+// 	// 					},
+// 	// 				  },
+// 	// 				 100: {
+// 	// 					translateY: {
+// 	// 					  from: -750,
+// 	// 					  to: -1500,
+// 	// 					  unit: "px"
+// 	// 					},
+// 	// 				 }
+// 	// 			},
+// 	// 		});
+// 	// 		if(window.innerWidth > 992){
+// 	// 			Motus.addAnimation(animations[i]);
+// 	// 		}
+			
+// 	// 	}
+
+	   
+// 	// 	const newAnimation = new Motus.Animation({
+// 	// 		$el: document.querySelector(".my-paroller-two"),
+// 	// 		startPoint: [-100],
+// 	// 		endPoint: [200],
+// 	// 		keyframes: {
+// 	// 			50: {
+// 	// 				translateY: {
+// 	// 					// #element4 has an initial width property of 50px so `from` is equal to '50px'
+// 	// 					to: "0px",
+// 	// 				},
+// 	// 			},
+// 	// 			100: {
+// 	// 				translateY: {
+// 	// 					// `from` is equal to `100px` from the previous keyframe
+// 	// 					to: "-150px",
+// 	// 				},
+// 	// 			},
+// 	// 		},
+// 	// 	});
+// 	// 	if(window.innerWidth > 992){
+// 	// 		Motus.addAnimation(newAnimation);
+// 	// 	}
+
+
+
+
+// });
+
+
+
 // 1) Мобильное меню
 var menuBurger = d.querySelector('#checkbox4');
 checkbox4.addEventListener('click', function(e){
-	console.log(this)
 	// e.preventDefault();
 	bodyLock();
 	if(this.classList.contains('burger-activator--active')){

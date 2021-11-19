@@ -1269,6 +1269,14 @@ footer h3 {
   transition: .3s;
 }
 
+.preloader__loader-score {
+  color: #fff;
+}
+
+.preloader__lodaer-percent {
+  color: #fff;
+}
+
 .preloader__loader-img {
   width: 100%;
   height: 100%;

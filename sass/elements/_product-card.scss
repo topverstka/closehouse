@@ -15,6 +15,13 @@
 
 .product-card{
     position: relative;
+
+    & .header {
+
+        & .wrap {
+            margin-left: 0;
+        }
+    }
     // margin-bottom: 29px;
 
     // &:nth-last-of-type(-n+3) {
@@ -223,11 +230,11 @@
     }
 }
 
-.less-catalog-btn{
-    padding: 19px 71px!important;
-    max-width: 300px;
-    max-height: 55px;
-    width: 100%;
+button.less-catalog-btn{
+    // padding: 19px 71px!important;
+    width: 300px;
+    height: 55px;
+    // width: 100%;
 }
 
 .product-cards__less{

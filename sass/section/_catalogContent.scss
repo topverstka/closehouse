@@ -5,7 +5,7 @@
 
 .catalog{
     padding-top: 0;
-    padding-bottom: 38px;
+    padding-bottom: 56px;
     position: relative;
 }
 
@@ -94,7 +94,7 @@ a.active{
 }
 
 .catalog-descr{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .catalog-content{
@@ -221,7 +221,7 @@ a.active{
 .filter-form__size-button{
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 
     label{
         margin-right: 4px;
@@ -263,7 +263,7 @@ a.active{
 
         &:first-child{
             font-size: 12px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -275,9 +275,9 @@ a.active{
 .filter-form__color-button{
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     flex-wrap: wrap;
-    gap: 3px 0;
+    // gap: 3px 0;
 
     label{
         margin-right: 4px;
@@ -376,7 +376,7 @@ a.active{
         text-align: center;
 
         &:first-child{
-            margin-bottom: 15px;
+            margin-bottom: 8px;
             font-size: 12px;
         }
     }
@@ -464,7 +464,7 @@ a.active{
 .extra-controls{
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 40px;
     position: relative;
     align-items: center;
@@ -496,7 +496,7 @@ a.active{
     width: 11px;
     height: 11px;
     border: 1px solid #fff;
-    background-color: #707070;
+    background-color: #A0A0A0;
 }
 
 .irs-single{
@@ -633,7 +633,7 @@ a.active{
         }
 
         &:last-child{
-            margin-right: 0px;
+            margin-right: 8px;
         }
     }
 }
@@ -660,7 +660,7 @@ a.active{
         }
 
         &:last-child{
-            margin-right: 0px;
+            margin-right: 8px;
         }
     }
 }

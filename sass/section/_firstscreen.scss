@@ -6,6 +6,12 @@
     height: 210px;
     -webkit-transform: rotateZ(7.5deg);
     transform: rotateZ(7.5deg);
+
+    @media (max-width: 1500px) {
+        bottom: -33px!important;
+        width: 205px;
+        height: 205px;
+    }
 }
 
 .first-screen{

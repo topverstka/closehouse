@@ -375,4 +375,14 @@ window.addEventListener('click', e => {
 
 AOS.init();
 
-
+// removeCardSize()
+function removeCardSize() {
+	const cardElems = document.querySelectorAll('.new-product__item')
+	
+	for (card of cardElems) {
+		const sizeList = card.querySelector('.size-list')
+		card.addEventListener('mouseleave', () => {
+			sizeList.classList.remove('activator-list')
+		})
+	}
+}

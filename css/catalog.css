@@ -54,6 +54,10 @@ body._lock {
   overflow: hidden;
 }
 
+.body-main {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }

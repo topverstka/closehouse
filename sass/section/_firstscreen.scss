@@ -21,6 +21,7 @@
     position: relative;
     overflow: hidden;
     color: #fff;
+    
     &::after{
         content: '';
         background: linear-gradient(0deg, #000 15%, rgba(0,0,0,0) 99.9%);

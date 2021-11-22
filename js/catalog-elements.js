@@ -329,27 +329,27 @@ if(lengthCategory <= 0 && lengthColor <= 0 && lengthSize <= 0){
 	document.querySelector('.catalog-descr__result p').style.display = 'none'
 }
 
-Array.from(document.querySelectorAll('.open-modal')).forEach(el => {
-	el.addEventListener('click', function(){
-		document.querySelector('.modal').classList.add('active')
-    	document.querySelector('body').style.overflowY = 'hidden'
-	})
-})
+// Array.from(document.querySelectorAll('.open-modal')).forEach(el => {
+// 	el.addEventListener('click', function(){
+// 		document.querySelector('.modal').classList.add('active')
+//     	document.querySelector('body').style.overflowY = 'hidden'
+// 	})
+// })
 
 
-window.addEventListener('click', e => {
-    if (!e.target.closest('.modal-content') && !e.target.closest('.open-modal')) {
-        document.querySelector('.modal').classList.remove('active')
-		document.querySelector('body').style.overflowY = 'auto'
-    }
-})
+// window.addEventListener('click', e => {
+//     if (!e.target.closest('.modal-content') && !e.target.closest('.open-modal')) {
+//         document.querySelector('.modal').classList.remove('active')
+// 		document.querySelector('body').style.overflowY = 'auto'
+//     }
+// })
 
-window.addEventListener('keyup', function(e){
-	if(e.key === "Escape") {
-        document.querySelector('.modal').classList.remove('active')
-        document.querySelector('body').style.overflowY = 'auto'
-    }
-})
+// window.addEventListener('keyup', function(e){
+// 	if(e.key === "Escape") {
+//         document.querySelector('.modal').classList.remove('active')
+//         document.querySelector('body').style.overflowY = 'auto'
+//     }
+// })
 
 
 // document.querySelectorAll('.extra-controls input').forEach(el => {

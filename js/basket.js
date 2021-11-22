@@ -182,19 +182,19 @@ Array.from(allBasketItem).forEach((basketItem, basketItemId, basketItemArray) =>
     }
 });
 
-// открытие модального окна
-document.querySelector('.open-modal').addEventListener('click', function(){
-    document.querySelector('.modal').classList.add('active')
-    document.querySelector('body').style.overflowY = 'hidden'
-})
+// // открытие модального окна
+// document.querySelector('.open-modal').addEventListener('click', function(){
+//     document.querySelector('.modal').classList.add('active')
+//     document.querySelector('body').style.overflowY = 'hidden'
+// })
 
 
-window.addEventListener('click', e => {
-    if (!e.target.closest('.modal-content') && !e.target.closest('.open-modal')) {
-        document.querySelector('.modal').classList.remove('active')
-        document.querySelector('body').style.overflowY = 'auto'
-    }
-})
+// window.addEventListener('click', e => {
+//     if (!e.target.closest('.modal-content') && !e.target.closest('.open-modal')) {
+//         document.querySelector('.modal').classList.remove('active')
+//         document.querySelector('body').style.overflowY = 'auto'
+//     }
+// })
 
 window.addEventListener('click', e => {
 	const target = e.target
@@ -235,9 +235,9 @@ window.addEventListener('click', e => {
 })
 
 
-window.addEventListener('keyup', function(e){
-	if(e.key === "Escape") {
-        document.querySelector('.modal').classList.remove('active')
-        document.querySelector('body').style.overflowY = 'auto'
-    }
-})
+// window.addEventListener('keyup', function(e){
+// 	if(e.key === "Escape") {
+//         document.querySelector('.modal').classList.remove('active')
+//         document.querySelector('body').style.overflowY = 'auto'
+//     }
+// })

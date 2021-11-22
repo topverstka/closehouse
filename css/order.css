@@ -1757,6 +1757,9 @@ input:required:valid, textarea:required:valid, button:required:valid {
 .del-logo {
   -webkit-filter: brightness(0.5);
           filter: brightness(0.5);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 .mailrus-content input {
@@ -1789,6 +1792,9 @@ input:required:valid, textarea:required:valid, button:required:valid {
   display: block;
   width: 20px;
   height: 20px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 .mailrus-content .radio-container span {
@@ -1797,6 +1803,9 @@ input:required:valid, textarea:required:valid, button:required:valid {
   display: block;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 .mailrus-content {

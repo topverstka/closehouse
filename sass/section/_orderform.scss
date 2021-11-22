@@ -176,6 +176,7 @@
 
 .del-logo {
     filter: brightness(.5);
+    transition: .2s;
 }
 
 .mailrus-content{
@@ -191,6 +192,7 @@
 
             &:checked ~ span .radio-container{
                 display: block;
+
                 span{
                     background-color: #fff;
                 }
@@ -210,12 +212,14 @@
             display: block;
             width: 20px;
             height: 20px;
+            transition: .2s;
 
             span{ 
                 width: 12px;
                 height: 12px;
                 display: block;
                 border-radius: 50%;
+                transition: .2s;
             }
         }
     

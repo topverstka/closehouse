@@ -1582,7 +1582,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 }
 
 .order-form__info-data {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   margin-bottom: 30px;
 }
 
@@ -1719,6 +1719,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
   -o-transition: 0.4s;
   transition: 0.4s;
   font-size: 15px;
+  opacity: .6;
 }
 
 .order-form__info button:hover {
@@ -1728,6 +1729,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
   background: #fff;
   color: #000;
   font-weight: bolder;
+  opacity: 1;
 }
 
 .order-form__basket {

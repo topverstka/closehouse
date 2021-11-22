@@ -2274,7 +2274,6 @@ section.contact {
 
 @media (max-width: 1500px) {
   .circle-animation {
-    bottom: -33px !important;
     width: 205px;
     height: 205px;
   }

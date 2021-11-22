@@ -897,6 +897,7 @@ input.saearch-header:focus::-webkit-input-placeholder {
 }
 
 .hamburger {
+  display: block;
   margin: 0 auto;
   width: 44px;
   height: 8.73px;

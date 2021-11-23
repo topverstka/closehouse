@@ -1536,6 +1536,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 
 .order-form__ordering-title p {
   font-size: 15px;
+  font-weight: 600;
 }
 
 .order-form__ordering-subtitle {
@@ -1560,6 +1561,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 
 .order-form__ordering-subtitle p {
   font-size: 12px;
+  font-weight: 600;
 }
 
 .order-form__ordering-input {

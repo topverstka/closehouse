@@ -1579,6 +1579,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 .order-form__ordering-input div p {
   text-align: start;
   font-size: 12px;
+  opacity: .8;
 }
 
 .order-form__ordering-input div input {

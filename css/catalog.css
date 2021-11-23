@@ -2575,6 +2575,7 @@ a.active {
 }
 
 .catalog-button__setting-category div ul::-webkit-scrollbar {
+  -webkit-appearance: none;
   width: 1px;
   /* ширина для вертикального скролла */
 }
@@ -2583,6 +2584,8 @@ a.active {
   background-color: #fff;
   -webkit-border-radius: 9em;
           border-radius: 9em;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
 }
 
 .catalog-button__setting-category div ul li {

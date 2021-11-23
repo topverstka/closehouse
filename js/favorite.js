@@ -17,12 +17,12 @@
 //     });
 // });
 
-visualizationThree.addEventListener('click', () => {
-	find('.product-cards').style.gridTemplateColumns = '32% 32% 32%'
-})
-visualizationTwo.addEventListener('click', () => {
-	find('.product-cards').style.gridTemplateColumns = '49.5% 49.5%'
-})
+// visualizationThree.addEventListener('click', () => {
+// 	find('.product-cards').style.gridTemplateColumns = '32% 32% 32%'
+// })
+// visualizationTwo.addEventListener('click', () => {
+// 	find('.product-cards').style.gridTemplateColumns = '49.5% 49.5%'
+// })
 
 document.querySelector('.favorite-count span').innerHTML = document.querySelectorAll('.product-card').length
 

@@ -5,8 +5,12 @@
 
 .catalog{
     padding-top: 0;
-    padding-bottom: 38px;
+    padding-bottom: 56px;
     position: relative;
+
+    &-result {
+        padding-bottom: 38px;
+    }
 }
 
 .clear-filter{
@@ -542,14 +546,14 @@ a.active{
     text-align: center;
     p{
         font-size: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 38px;
         color: #fff;
     }
 }
 
 .search-false__descr{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     p{
         font-size: 15px;
         color: rgba(255, 255, 255, 0.6);
@@ -565,8 +569,17 @@ a.active{
     text-align: center;
 
     a{
-        padding: 17px 58px;
+        width: 250px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        padding: 8px 12px;
+        margin: 0 auto;
     }
+
+    
 }
 
 .search-result{
@@ -616,7 +629,7 @@ a.active{
     display: flex;
     // margin-right: 20px;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 8px 15px;
     div{
         display: flex;
         font-size: 15px;
@@ -633,7 +646,7 @@ a.active{
         }
 
         &:last-child{
-            margin-right: 8px;
+            margin-right: 20px;
         }
     }
 }
@@ -642,7 +655,7 @@ a.active{
     display: flex;
     // margin-right: 20px;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 8px 15px;
     div{
         display: flex;
         font-size: 15px;
@@ -660,7 +673,7 @@ a.active{
         }
 
         &:last-child{
-            margin-right: 8px;
+            margin-right: 20px;
         }
     }
 }
@@ -668,7 +681,7 @@ a.active{
 .catalog-descr__result-color{
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 8px 15px;
     div{
         display: flex;
         font-size: 15px;

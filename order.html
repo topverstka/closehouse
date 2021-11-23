@@ -18,6 +18,61 @@
 
 
 <body>
+	<!-- <div class="preloader">
+		<div class="preloader__body">
+			<div class="preloader__content">
+				<div class="preloader__item preloader__item-empty"></div>
+				<div class="preloader__item preloader__loader">
+					<span class="preloader__loader-text">
+						<span class="preloader__loader-score">0</span>
+						<span class="preloader__lodaer-percent">%</span>
+					</span>
+					<div class="load-perc-line"></div>
+					<div class="preloader__loader-img"><img src="./img/preloader/round-words.svg" alt="Круглые слова"></div>
+				</div>
+				<div class="preloader__item preloader__signa"><img src="./img/preloader/signa.svg" alt="Подпись"></div>
+			</div>
+		</div>
+		<script>
+			const preloader = document.querySelector('.preloader');
+			const imgElems = document.querySelectorAll('img')
+			const score = document.querySelector('.preloader__loader-score')
+			let imgLength = imgElems.length
+			let imgLoaded = 0
+			let maxValue = 0
+			let percent = 0
+
+			for (let i = 0; i < imgElems.length; i++) {
+				const img = imgElems[i];
+				img.onload = function() {
+					imgLoaded++
+					maxValue = (100 / imgLength) * imgLoaded
+				}
+			}
+
+			scoreInterval = setInterval(() => {
+				scoreTimeout = setTimeout(() => {
+					imgLoaded++
+					maxValue = (100 / imgLength) * imgLoaded
+				}, 15000)
+
+				if (percent < maxValue && percent < 100) {
+					clearTimeout(scoreTimeout)
+					percent += 1
+					score.innerText = percent
+				}
+				else if (percent >= 100 || maxValue >= 100) {
+					score.innerText = 100
+					clearTimeout(scoreTimeout)
+					clearInterval(scoreInterval)
+					setTimeout(() => {
+						preloader.classList.add('_hidden')
+						document.querySelector('body').classList.remove('_lock')
+					}, 500)
+				}
+			}, 10)
+		</script>
+	</div> -->
 	<!-- Всплывающее меню -->
 	<div class="header__nav">
 		<div class="header__nav-bg">

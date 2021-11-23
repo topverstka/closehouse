@@ -1,4 +1,129 @@
 @charset "UTF-8";
+.preloader {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.preloader._hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader__body {
+  width: 100%;
+  height: 100%;
+}
+
+.preloader__content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.preloader__item-empty {
+  height: 50px;
+}
+
+.preloader__loader {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.preloader__loader-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 45px;
+  font-weight: 300;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.preloader__loader-score {
+  color: #fff;
+}
+
+.preloader__lodaer-percent {
+  color: #fff;
+}
+
+.preloader__loader-img {
+  width: 100%;
+  height: 100%;
+}
+
+.preloader__loader-img img {
+  -webkit-animation: preloader 8s linear infinite;
+          animation: preloader 8s linear infinite;
+}
+
+@-webkit-keyframes preloader {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.load-perc-line {
+  max-width: 200px;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
 @font-face {
   font-family: "Gilroy";
   font-style: normal;

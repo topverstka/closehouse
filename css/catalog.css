@@ -1459,12 +1459,17 @@ footer h3 {
 }
 
 .modal-pay__content {
-  padding: 24px 22px;
-  max-width: 400px;
+  padding: 35px 45px;
+  max-width: 450px;
   background-color: #524F4F;
   text-align: center;
   position: relative;
   width: 100%;
+}
+
+.modal-pay__content .modal__close {
+  top: 23px;
+  right: 17px;
 }
 
 .modal-pay__title {
@@ -1474,7 +1479,7 @@ footer h3 {
 .modal-pay__subtitle {
   font-size: 11px;
   margin-top: 15px;
-  margin-bottom: 45px;
+  margin: 10px 0 45px 0;
   opacity: 0.8;
 }
 
@@ -2389,7 +2394,7 @@ button.less-catalog-btn {
 
 .catalog {
   padding-top: 0;
-  padding-bottom: 56px;
+  padding-bottom: 38px;
   position: relative;
 }
 
@@ -2505,7 +2510,7 @@ a.active {
 }
 
 .catalog-descr {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .catalog-content {

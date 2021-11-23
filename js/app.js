@@ -184,29 +184,31 @@ function bodyLock() {
 
 // 1) Мобильное меню
 var menuBurger = d.querySelector('#checkbox4');
-checkbox4.addEventListener('click', function(e){
-	// e.preventDefault();
-	bodyLock();
-	if(this.classList.contains('burger-activator--active')){
-		this.classList.remove('burger-activator--active');
-		d.querySelector('.header__nav').classList.remove('header__nav--active');
-		find('.header__logo').style.opacity = '1'
-		Array.from(findAll('.header__button')).forEach(el => {
-			el.style.opacity =  '1'
-		})
-		find('header').style.zIndex = '4'
-		find('.saearch-header').classList.remove('open')
-	}else{
-		this.classList.add('burger-activator--active');
-		d.querySelector('.header__nav').classList.add('header__nav--active');
-		find('.header__logo').style.opacity = '0'
-		Array.from(findAll('.header__button')).forEach(el => {
-			el.style.opacity =  '0'
-		})
-		find('header').style.zIndex = '5'
-		find('.saearch-header').classList.remove('open')
-	}
-})
+if (menuBurger) {
+	checkbox4.addEventListener('click', function(e){
+		// e.preventDefault();
+		bodyLock();
+		if(this.classList.contains('burger-activator--active')){
+			this.classList.remove('burger-activator--active');
+			d.querySelector('.header__nav').classList.remove('header__nav--active');
+			find('.header__logo').style.opacity = '1'
+			Array.from(findAll('.header__button')).forEach(el => {
+				el.style.opacity =  '1'
+			})
+			find('header').style.zIndex = '4'
+			find('.saearch-header').classList.remove('open')
+		}else{
+			this.classList.add('burger-activator--active');
+			d.querySelector('.header__nav').classList.add('header__nav--active');
+			find('.header__logo').style.opacity = '0'
+			Array.from(findAll('.header__button')).forEach(el => {
+				el.style.opacity =  '0'
+			})
+			find('header').style.zIndex = '5'
+			find('.saearch-header').classList.remove('open')
+		}
+	})
+}
 
 window.addEventListener('keyup', function(e){
 	if(e.key === "Escape") {
@@ -323,13 +325,17 @@ function findFaq(){
 findFaq();
 
 // Открыть поисковое меню
-btnHeaderSearch.addEventListener('click', () => {
-	if(find('.saearch-header').classList.contains('open')){
-		find('.saearch-header').classList.remove('open')
-	}else {
-		find('.saearch-header').classList.add('open')
-	}
-})
+let btnHeaderSearch = document.querySelector('#btnHeaderSearch')
+if (btnHeaderSearch) {
+	console.log(btnHeaderSearch)
+	btnHeaderSearch.addEventListener('click', () => {
+		if(find('.saearch-header').classList.contains('open')){
+			find('.saearch-header').classList.remove('open')
+		}else {
+			find('.saearch-header').classList.add('open')
+		}
+	})
+}
 
 // Добавить в избранное
 let allFavorite = document.querySelectorAll('.product-button__like')

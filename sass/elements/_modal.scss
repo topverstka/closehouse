@@ -97,12 +97,17 @@
 
 // Модальное окно оплата в 1 клик
 .modal-pay__content{
-    padding: 24px 22px;
-    max-width: 400px;
+    padding: 35px 45px;
+    max-width: 450px;
     background-color: #524F4F;
     text-align: center;
     position: relative;
     width: 100%;
+
+    & .modal__close {
+        top: 23px;
+        right: 17px;
+    }
 }
 
 .modal-pay__title{
@@ -112,7 +117,7 @@
 .modal-pay__subtitle{
     font-size: 11px;
     margin-top: 15px;
-    margin-bottom: 45px;
+    margin: 10px 0 45px 0;
     opacity: 0.8;
 }
 

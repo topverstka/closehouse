@@ -134,17 +134,8 @@ a.active{
 
         ul{
             max-height: 268px;
-            overflow-y: auto;
-
-            // &::-webkit-scrollbar {
-            //     position: relative;
-            //     top: 18px;
-            //     right: 9px;
-            //     width: 10px;
-            //     height: 80%;
-            //     // background: rgba(255, 255, 255, .4);
-            //     // margin: 18px 9px 18px 0;
-            // }
+            overflow-y: scroll;
+            
             &::-webkit-scrollbar {
                 -webkit-appearance: none;
                 width: 1px;
@@ -155,11 +146,11 @@ a.active{
             }
 
             &::-webkit-scrollbar-thumb {
-                // background-color: #fff;
                 border-radius: 4px;
                 background-color: rgba(255, 255, 255, .4);
                 -webkit-box-shadow: 0 0 1px rgba(255,255,255,.4);
             }
+
             list-style: none;
             li{
                 margin-bottom: 10px;

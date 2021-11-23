@@ -2811,7 +2811,7 @@ a.active {
 
 .favorite-button__setting-category div ul {
   max-height: 268px;
-  overflow: auto;
+  overflow: scroll;
   list-style: none;
 }
 

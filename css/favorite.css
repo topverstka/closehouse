@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .preloader {
   position: fixed;
   z-index: 20;
@@ -2810,21 +2809,25 @@ a.active {
 }
 
 .favorite-button__setting-category div ul {
-  max-height: 268px;
+  height: 268px;
   overflow: scroll;
   list-style: none;
 }
 
 .favorite-button__setting-category div ul::-webkit-scrollbar {
+  -webkit-appearance: none;
   width: 1px;
-  /* ширина для вертикального скролла */
-  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.favorite-button__setting-category div ul::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .favorite-button__setting-category div ul::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  -webkit-border-radius: 9em;
-          border-radius: 9em;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
 }
 
 .favorite-button__setting-category div ul li {

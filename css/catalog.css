@@ -2552,7 +2552,7 @@ a.active {
 }
 
 .catalog-button__setting-category div ul {
-  max-height: 268px;
+  height: 268px;
   overflow-y: scroll;
   list-style: none;
 }

@@ -136,34 +136,30 @@ a.active{
             max-height: 268px;
             overflow-y: auto;
 
-            &::-webkit-scrollbar {
-                position: relative;
-                top: 18px;
-                right: 9px;
-                width: 10px;
-                height: 80%;
-                // background: rgba(255, 255, 255, .4);
-                // margin: 18px 9px 18px 0;
-            }
+            // &::-webkit-scrollbar {
+            //     position: relative;
+            //     top: 18px;
+            //     right: 9px;
+            //     width: 10px;
+            //     height: 80%;
+            //     // background: rgba(255, 255, 255, .4);
+            //     // margin: 18px 9px 18px 0;
+            // }
             
             &::-webkit-scrollbar-track {
                 background: rgba(255, 255, 255, .4);
             }
-    
-            &::-webkit-scrollbar-thumb {
-                background-color: #fff;
-            }  
 
             &::-webkit-scrollbar {
                 -webkit-appearance: none;
-                width: 1px; /* ширина для вертикального скролла */
+                width: 1px;
             }
 
             &::-webkit-scrollbar-thumb {
                 background-color: #fff;
-                border-radius: 9em;
-                background: rgba(255, 255, 255, .4);
-                -webkit-box-shadow: 0 0 1px rgba(255,255,255,.4);
+                // border-radius: 9em;
+                // background: rgba(255, 255, 255, .4);
+                // -webkit-box-shadow: 0 0 1px rgba(255,255,255,.4);
             }
             list-style: none;
             li{

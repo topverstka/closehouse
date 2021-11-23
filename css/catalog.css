@@ -3022,7 +3022,7 @@ a.active {
 
 .search-false__title p {
   font-size: 15px;
-  margin-bottom: 38px;
+  margin-bottom: 32px;
   color: #fff;
 }
 
@@ -3034,6 +3034,7 @@ a.active {
 .search-false__descr p {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.6);
+  line-height: 22.5px;
 }
 
 .search-false__descr p span {

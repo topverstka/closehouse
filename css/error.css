@@ -50,7 +50,7 @@ body {
 }
 
 body._lock {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .body-main {

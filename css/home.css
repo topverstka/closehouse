@@ -50,7 +50,7 @@ body {
 }
 
 body._lock {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .body-main {
@@ -2264,7 +2264,7 @@ section.contact {
 
 .circle-animation {
   position: absolute;
-  bottom: -35px !important;
+  bottom: -34px !important;
   left: -49px !important;
   width: 210px;
   height: 210px;
@@ -3033,6 +3033,7 @@ section.new {
 
 .modal {
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -3145,4 +3146,66 @@ section.new {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
       -ms-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal-pay__content {
+  padding: 24px 22px;
+  max-width: 400px;
+  background-color: #524F4F;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.modal-pay__title {
+  font-size: 18px;
+}
+
+.modal-pay__subtitle {
+  font-size: 11px;
+  margin-top: 15px;
+  margin-bottom: 45px;
+  opacity: 0.8;
+}
+
+.modal-pay__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-pay__form label {
+  margin-bottom: 20px;
+}
+
+.modal-pay__form label input {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 100%;
+  margin-top: 3px;
+  font-size: 15px;
+}
+
+.modal-pay__form label span {
+  font-size: 12px;
+  text-align: start;
+  margin-right: auto;
+  display: block;
+  opacity: 0.8;
+}
+
+.modal-pay__form button {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 15px 0;
+  font-size: 15px;
+  margin-bottom: 3px;
 }

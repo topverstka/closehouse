@@ -55,7 +55,7 @@ body{
     -webkit-font-smoothing: antialiased;
 
     &._lock{
-        overflow: hidden;
+        overflow: hidden !important;
     }
 }
     

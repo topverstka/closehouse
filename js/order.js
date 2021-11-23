@@ -37,6 +37,24 @@ document.querySelector('.order-button').addEventListener('click', function(){
     })
 })
 
+if (document.querySelector('.size-list')) { removeCardSize() }
+function removeCardSize() {
+	const cardElems = document.querySelectorAll('.new-product__item, .product-card')
+	
+	for (let i = 0; i < cardElems.length; i++) {
+		const card = cardElems[i];
+		card.addEventListener('mouseleave', () => {
+			const sizeList = card.querySelector('.size-list')
+			const bg = card.querySelector('.bg-swiper-container')
+			sizeList.classList.remove('activator-list')
+
+			if (bg) {
+				bg.classList.remove('active')
+			}
+		})
+	}
+}
+
 // Открыть поисковое меню
 // btnHeaderSearch.addEventListener('click', () => {
 // 	if(document.querySelector('.saearch-header').classList.contains('open')){

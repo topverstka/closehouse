@@ -18,24 +18,6 @@
 
 
 <body>
-	<div class="modal">
-		<div class="modal-content">
-			<p class="modal-content__title">Купить в один клик</p>
-			<p class="modal-content__subtitle">Оставьте свои данные и мы перезвоним Вам в течении 10 минут</p>
-			<form class="modal-content__form">
-				<label>
-					<span>Имя</span>
-					<input type="text">
-				</label>
-				<label>
-					<span>Номер телефона</span>
-					<input type="tel">
-				</label>
-
-				<button class="btn">Отправить</button>
-			</form>
-		</div>
-	</div>
 	<header class="header">
 		<div class="container">
 			<div class="wrap">
@@ -236,7 +218,7 @@
 						</div>
 
 						<div class="product-card__button">
-							<button class="btn open-modal">Купить в один клик</button>
+							<button class="btn" data-modal-open="modal-pay">Купить в один клик</button>
 						</div>
 					</div>
 					<div class="product-card">
@@ -311,7 +293,7 @@
 						</div>
 
 						<div class="product-card__button">
-							<button class="btn open-modal">Купить в один клик</button>
+							<button class="btn" data-modal-open="modal-pay">Купить в один клик</button>
 						</div>
 					</div>
 				</div>
@@ -380,6 +362,28 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Модальные окна -->
+	<div class="modal modal-pay" id="modal-pay">
+		<div class="modal__body">
+			<div class="modal__content modal-pay__content">
+				<p class="modal-pay__title">Купить в один клик</p>
+				<p class="modal-pay__subtitle">Оставьте свои данные и мы перезвоним Вам в течении 10 минут</p>
+				<form class="modal-pay__form">
+					<label>
+						<span>Имя</span>
+						<input type="text">
+					</label>
+					<label>
+						<span>Номер телефона</span>
+						<input type="tel">
+					</label>
+
+					<button class="btn">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
 
 	<!-- Подключение скриптов -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

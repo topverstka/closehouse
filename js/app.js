@@ -374,19 +374,20 @@ window.addEventListener('click', e => {
 
 AOS.init();
 
-removeCardSize()
+if (document.querySelector('.size-list')) { removeCardSize() }
 function removeCardSize() {
-	const cardElems = document.querySelectorAll('.new-product__item')
+	const cardElems = document.querySelectorAll('.new-product__item, .product-card')
 	
 	for (let i = 0; i < cardElems.length; i++) {
 		const card = cardElems[i];
 		card.addEventListener('mouseleave', () => {
 			const sizeList = card.querySelector('.size-list')
+			const bg = card.querySelector('.bg-swiper-container')
 			sizeList.classList.remove('activator-list')
-			console.log(sizeList)
-		})
-		card.addEventListener('mouseenter', () => {
-			console.log('mouseenter')
+
+			if (bg) {
+				bg.classList.remove('active')
+			}
 		})
 	}
 }
@@ -414,11 +415,13 @@ function closeModalWhenClickingOnCross() {
         const modal = modalElems[i];
         const closeThisModal = modal.querySelector('.modal__close')
 
-        closeThisModal.addEventListener('click', () => {
-            modal.classList.remove('_show')
-            bodyLock(false)
-            resetHash()
-        })
+		if (closeThisModal) {
+			closeThisModal.addEventListener('click', () => {
+				modal.classList.remove('_show')
+				bodyLock(false)
+				resetHash()
+			})
+		}
     }
 }
 

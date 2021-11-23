@@ -68,6 +68,24 @@ Array.from(document.querySelectorAll('.product-setting__color label')).forEach(e
     })
 })
 
+if (document.querySelector('.size-list')) { removeCardSize() }
+function removeCardSize() {
+	const cardElems = document.querySelectorAll('.new-product__item, .product-card')
+	
+	for (let i = 0; i < cardElems.length; i++) {
+		const card = cardElems[i];
+		card.addEventListener('mouseleave', () => {
+			const sizeList = card.querySelector('.size-list')
+			const bg = card.querySelector('.bg-swiper-container')
+			sizeList.classList.remove('activator-list')
+
+			if (bg) {
+				bg.classList.remove('active')
+			}
+		})
+	}
+}
+
 // window.addEventListener('keyup', function(e){
 // 	if(e.key === "Escape") {
 //         document.querySelector('.modal').classList.remove('active')

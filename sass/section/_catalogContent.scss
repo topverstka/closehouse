@@ -145,21 +145,20 @@ a.active{
             //     // background: rgba(255, 255, 255, .4);
             //     // margin: 18px 9px 18px 0;
             // }
+            &::-webkit-scrollbar {
+                -webkit-appearance: none;
+                width: 1px;
+            }
             
             &::-webkit-scrollbar-track {
                 background: rgba(255, 255, 255, .4);
             }
 
-            &::-webkit-scrollbar {
-                -webkit-appearance: none;
-                width: 1px;
-            }
-
             &::-webkit-scrollbar-thumb {
-                background-color: #fff;
-                // border-radius: 9em;
-                // background: rgba(255, 255, 255, .4);
-                // -webkit-box-shadow: 0 0 1px rgba(255,255,255,.4);
+                // background-color: #fff;
+                border-radius: 4px;
+                background-color: rgba(255, 255, 255, .4);
+                -webkit-box-shadow: 0 0 1px rgba(255,255,255,.4);
             }
             list-style: none;
             li{

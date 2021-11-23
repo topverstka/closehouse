@@ -2577,7 +2577,6 @@ a.active {
 .catalog-button__setting-category div ul::-webkit-scrollbar {
   width: 1px;
   /* ширина для вертикального скролла */
-  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .catalog-button__setting-category div ul::-webkit-scrollbar-thumb {

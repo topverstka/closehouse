@@ -171,7 +171,6 @@ body {
   color: #FFFFFF;
   overflow-x: hidden;
   background-color: #111111;
-  -webkit-font-smoothing: antialiased;
 }
 
 body._lock {

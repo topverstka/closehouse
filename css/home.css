@@ -1286,6 +1286,7 @@ footer h3 {
   display: -ms-flexbox;
   display: flex;
   font-size: 45px;
+  font-weight: 300;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;

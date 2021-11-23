@@ -2540,6 +2540,7 @@ a.active {
   background-color: #A0A0A0;
   pointer-events: none;
   z-index: 3;
+  margin-right: 9px;
 }
 
 .catalog-button__setting-category div.active {
@@ -2553,8 +2554,24 @@ a.active {
 
 .catalog-button__setting-category div ul {
   max-height: 268px;
-  overflow: auto;
+  overflow-y: auto;
   list-style: none;
+}
+
+.catalog-button__setting-category div ul::-webkit-scrollbar {
+  position: relative;
+  top: 18px;
+  right: 9px;
+  width: 10px;
+  height: 80%;
+}
+
+.catalog-button__setting-category div ul::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.catalog-button__setting-category div ul::-webkit-scrollbar-thumb {
+  background-color: #fff;
 }
 
 .catalog-button__setting-category div ul::-webkit-scrollbar {

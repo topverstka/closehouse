@@ -108,12 +108,14 @@ a.active{
 .catalog-button__setting-category{
     position: relative;
 
-    div{
+    div {
         position: absolute;
         opacity: 0;
         top: 0;
         left: 125px;
         min-width: 160px;
+        // max-height: 268px;
+        // overflow-y: auto;
         padding: 18px 22px;
         padding-right: 9px;
         padding-left: 6px;
@@ -121,6 +123,7 @@ a.active{
         background-color: #A0A0A0;
         pointer-events: none;
         z-index: 3;
+        margin-right: 9px;      
         
         &.active{
             opacity: 1;
@@ -131,7 +134,25 @@ a.active{
 
         ul{
             max-height: 268px;
-            overflow: auto;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                position: relative;
+                top: 18px;
+                right: 9px;
+                width: 10px;
+                height: 80%;
+                // background: rgba(255, 255, 255, .4);
+                // margin: 18px 9px 18px 0;
+            }
+            
+            &::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, .4);
+            }
+    
+            &::-webkit-scrollbar-thumb {
+                background-color: #fff;
+            }  
 
             &::-webkit-scrollbar {
                 width: 1px; /* ширина для вертикального скролла */

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Close House</title>
 	<meta name="description" content="Close House — удобная одежда, в которой легко передвигаться, расслабляться и в то же время быть соблазнительной и привлекательной">
-	<link rel="icon" href="./img/favicon.ico">
+	<link rel="icon" href="./favicon.ico">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/aos.css">
 
@@ -672,41 +672,43 @@
 
 	<!-- Подключение скриптов -->
 	<script>
-			let preloader = document.querySelector('.preloader');
-			var images = document.images;
-			var images_total_count = images.length;
-			var images_loaded_count = 0;
-			var score = document.querySelector('.preloader__loader-score')
-			let maxValue = 0
-			let value = 0
-			// var perc_display = document.querySelector('.load-perc-line')
+		const preloader = document.querySelector('.preloader');
+		const imgElems = document.querySelectorAll('img')
+		const score = document.querySelector('.preloader__loader-score')
+		let imgLength = imgElems.length
+		let imgLoaded = 0
+		let maxValue = 0
+		let percent = 0
 
-			for ( var i = 0; i < images_total_count; i++){
-				image_clone = new Image();
-				image_clone.onload = image_loaded;
-				image_clone.onerror = image_loaded;
-				image_clone.src = images[i].src;
+		for (let i = 0; i < imgElems.length; i++) {
+			const img = imgElems[i];
+			img.onload = function() {
+				imgLoaded++
+				maxValue = (100 / imgLength) * imgLoaded
 			}
+		}
 
-			scoreInterval = setInterval(() => {
-				value += 1
-				if (value <= maxValue) {
-					score.innerText = value
-				}
-				else if (value >= 100) {
-					clearInterval(scoreInterval)
-					setTimeout(() => {
-						preloader.classList.add('_hidden')
-						document.querySelector('body').classList.remove('_lock')
-					}, 500)
-				}
-			}, 10)
-			
-			function image_loaded() {
-				images_loaded_count++;
-				let equation = (( (100 / images_total_count) * images_loaded_count) <<0)
-				maxValue = equation
+		scoreInterval = setInterval(() => {
+			scoreTimeout = setTimeout(() => {
+				imgLoaded++
+				maxValue = (100 / imgLength) * imgLoaded
+			}, 10000)
+
+			if (percent < maxValue && percent < 100) {
+				clearTimeout(scoreTimeout)
+				percent += 1
+				score.innerText = percent
 			}
+			else if (percent >= 100 || maxValue >= 100) {
+				score.innerText = 100
+				clearTimeout(scoreTimeout)
+				clearInterval(scoreInterval)
+				setTimeout(() => {
+					preloader.classList.add('_hidden')
+					document.querySelector('body').classList.remove('_lock')
+				}, 500)
+			}
+		}, 10)
 	</script>
 
 	<script src="./js/swiper-bundle.min.js" defer></script>

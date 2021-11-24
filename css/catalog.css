@@ -2557,22 +2557,6 @@ a.active {
   list-style: none;
 }
 
-.catalog-button__setting-category div ul::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 1px;
-}
-
-.catalog-button__setting-category div ul::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.4);
-}
-
-.catalog-button__setting-category div ul::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.4);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
-}
-
 .catalog-button__setting-category div ul li {
   margin-bottom: 10px;
 }
@@ -2604,6 +2588,22 @@ a.active {
 
 .catalog-button__setting-category div ul li label input:checked ~ span {
   opacity: 1;
+}
+
+.catalog-button__setting-category div ul::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+.catalog-button__setting-category div ul::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.catalog-button__setting-category div ul::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
 .catalog-button__setting-filter {

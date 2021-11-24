@@ -2818,20 +2818,20 @@ section.contact {
      object-fit: cover;
 }
 
-.product-button {
+.new .product-button {
   position: absolute;
   top: 24px;
   left: 28px;
   z-index: 1;
 }
 
-.product-button button {
+.new .product-button button {
   background-color: inherit;
   border: none;
   cursor: pointer;
 }
 
-.product-button button img {
+.new .product-button button img {
   width: 18px;
 }
 

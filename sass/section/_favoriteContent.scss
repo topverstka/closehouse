@@ -158,6 +158,10 @@ a.active{
                 background-color: rgba(255,255,255, 1);
                 -webkit-box-shadow: 0 0 1px rgba(255,255,255, 1);
             }
+
+            &::-webkit-scrollbar-button {
+
+            }
             
             li{
                 margin-bottom: 10px;
@@ -601,6 +605,12 @@ a.active{
 }
 
 .favorite-less{
+
+    & .product-card__button button {
+        width: 300px;
+        height: 55px;
+    }
+
     .product-card__content-price{
         height: 90px;
     }

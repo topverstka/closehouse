@@ -2038,6 +2038,7 @@ h2 {
 button.less-catalog-btn {
   width: 300px;
   height: 55px;
+  font-size: 18px;
 }
 
 .product-cards__less .catalog-swiper-container {

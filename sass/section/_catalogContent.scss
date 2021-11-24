@@ -139,7 +139,7 @@ a.active{
             
             &::-webkit-scrollbar {
                 -webkit-appearance: none;
-                width: 7px;
+                width: 1px;
             }
             
             &::-webkit-scrollbar-track {
@@ -150,8 +150,8 @@ a.active{
                 border-radius: 4px;
                 // background-color: rgba(255, 255, 255, .4);
                 // -webkit-box-shadow: 0 0 1px rgba(255,255,255,.4);
-                background-color: rgba(0,0,0,.5);
-                -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+                background-color: rgba(255,255,255, 1);
+                -webkit-box-shadow: 0 0 1px rgba(255,255,255, 1);
             }
 
             li{

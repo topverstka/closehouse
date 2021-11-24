@@ -609,10 +609,11 @@ a.active{
     & .product-card__button button {
         width: 300px;
         height: 55px;
+        font-size: 18px;
     }
 
     .product-card__content-price{
-        height: 90px;
+        height: 100px;
     }
 
     .product-button{
@@ -654,8 +655,8 @@ a.active{
 
 .favorite-sper-content{
     .product-button{
-        top: 4.9%!important;
-        left: 9.7%!important;
+        // top: 4.9%!important;
+        // left: 9.7%!important;
 
         .product-button__like{
             margin-bottom: 12px;

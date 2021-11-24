@@ -3333,10 +3333,11 @@ a.active {
 .favorite-less .product-card__button button {
   width: 300px;
   height: 55px;
+  font-size: 18px;
 }
 
 .favorite-less .product-card__content-price {
-  height: 90px;
+  height: 100px;
 }
 
 .favorite-less .product-button {
@@ -3365,11 +3366,6 @@ a.active {
 
 .favorite-sper-content .size-list.activator-list {
   top: 55px;
-}
-
-.favorite-sper-content .product-button {
-  top: 4.9% !important;
-  left: 9.7% !important;
 }
 
 .favorite-sper-content .product-button .product-button__like {

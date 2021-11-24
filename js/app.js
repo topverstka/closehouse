@@ -327,7 +327,6 @@ findFaq();
 // Открыть поисковое меню
 let btnHeaderSearch = document.querySelector('#btnHeaderSearch')
 if (btnHeaderSearch) {
-	console.log(btnHeaderSearch)
 	btnHeaderSearch.addEventListener('click', () => {
 		if(find('.saearch-header').classList.contains('open')){
 			find('.saearch-header').classList.remove('open')

@@ -2559,7 +2559,7 @@ a.active {
 
 .catalog-button__setting-category div ul::-webkit-scrollbar {
   -webkit-appearance: none;
-  width: 2px;
+  width: 3px;
 }
 
 .catalog-button__setting-category div ul::-webkit-scrollbar-track {

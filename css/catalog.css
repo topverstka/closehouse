@@ -2559,6 +2559,7 @@ a.active {
 
 .catalog-button__setting-category div ul::-webkit-scrollbar {
   -webkit-appearance: none;
+          appearance: none;
   width: 3px;
 }
 

@@ -138,7 +138,8 @@ a.active{
             list-style: none;
             
             &::-webkit-scrollbar {
-                -webkit-appearance: none;
+                // -webkit-appearance: none;
+                appearance: none;
                 width: 3px;
             }
             
@@ -148,8 +149,6 @@ a.active{
             
             &::-webkit-scrollbar-thumb {
                 border-radius: 4px;
-                // background-color: rgba(255, 255, 255, .4);
-                // -webkit-box-shadow: 0 0 1px rgba(255,255,255,.4);
                 background-color: rgba(255,255,255, 1);
                 -webkit-box-shadow: 0 0 1px rgba(255,255,255, 1);
             }

@@ -141,33 +141,24 @@ a.active{
         ul{
             height: 268px;
             overflow: scroll;
-
-            // &::-webkit-scrollbar {
-            //     width: 1px; /* ширина для вертикального скролла */
-            //     background-color: rgba(255, 255, 255, 0.4);
-            // }
-
-            // &::-webkit-scrollbar-thumb {
-            //     background-color: #fff;
-            //     border-radius: 9em;
-            // }
+            list-style: none;
             
             &::-webkit-scrollbar {
-                -webkit-appearance: none;
-                width: 1px;
+                // -webkit-appearance: none;
+                appearance: none;
+                width: 3px;
             }
             
             &::-webkit-scrollbar-track {
                 background: rgba(255, 255, 255, .4);
             }
-
+            
             &::-webkit-scrollbar-thumb {
                 border-radius: 4px;
-                background-color: rgba(255, 255, 255, .4);
-                -webkit-box-shadow: 0 0 1px rgba(255,255,255,.4);
+                background-color: rgba(255,255,255, 1);
+                -webkit-box-shadow: 0 0 1px rgba(255,255,255, 1);
             }
             
-            list-style: none;
             li{
                 margin-bottom: 10px;
 

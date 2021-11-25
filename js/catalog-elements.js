@@ -140,9 +140,9 @@ find('.clear-filter').addEventListener('click', () => {
 	document.querySelector('.irs-handle.to').style.left="94.6078%"
 	document.querySelector('.irs-bar').setAttribute('style', 'width:100%; left:0%;')
 
-	document.querySelector('.catalog-descr__result-category').innerHTML = ''
-	document.querySelector('.catalog-descr__result-size').innerHTML = ''
-	document.querySelector('.catalog-descr__result-color').innerHTML = ''
+	document.querySelector('.catalog-descr__all').innerHTML = ''
+	document.querySelector('.catalog-descr__all').innerHTML = ''
+	document.querySelector('.catalog-descr__all').innerHTML = ''
 
 	Array.from(checkedColor).forEach(el => {
 		el.checked = false;
@@ -179,13 +179,14 @@ window.addEventListener('click', e => {
 		let textCategoryCheck = document.createElement('p');
 
 		categoryCheck.setAttribute('class', 'categoryItem')
+		categoryCheck.classList.add('catalog__item')
 		imgCategoryCheck.setAttribute('src', './img/delete.svg')
 
 		if (target.value != undefined) {
 			textCategoryCheck.innerHTML = target.value
 
 			if (target.checked) {
-				document.querySelector('.catalog-descr__result-category').append(categoryCheck)
+				document.querySelector('.catalog-descr__all').append(categoryCheck)
 				categoryCheck.append(textCategoryCheck)
 				categoryCheck.append(imgCategoryCheck)
 
@@ -194,7 +195,7 @@ window.addEventListener('click', e => {
 						
 						if (el.value != 'Все категории') {
 							el.checked = false
-							Array.from(document.querySelectorAll('.catalog-descr__result-category div')).forEach(el => {
+							Array.from(document.querySelectorAll('.catalog-descr__all div')).forEach(el => {
 								
 								if (el.childNodes[0].innerHTML != 'Все категории') {
 									el.remove()
@@ -208,7 +209,7 @@ window.addEventListener('click', e => {
 						if (el.value == 'Все категории') {
 							el.checked = false
 						}
-						Array.from(document.querySelectorAll('.catalog-descr__result-category div')).forEach(el => {
+						Array.from(document.querySelectorAll('.catalog-descr__all div')).forEach(el => {
 							if(el.childNodes[0].innerHTML == 'Все категории'){
 								el.remove()
 							}
@@ -216,7 +217,7 @@ window.addEventListener('click', e => {
 					})
 				}
 			} else {
-				Array.from(document.querySelectorAll('.catalog-descr__result-category div')).forEach(el => {
+				Array.from(document.querySelectorAll('.catalog-descr__all div')).forEach(el => {
 					if(target.value == el.childNodes[0].innerHTML){
 						el.remove()
 					}
@@ -228,18 +229,19 @@ window.addEventListener('click', e => {
 	if(target.closest('.filter-form__size')){
 		let categoryCheck = document.createElement('div');
 		categoryCheck.setAttribute('class', 'sizeItem')
+		categoryCheck.classList.add('catalog__item')
 		let imgCategoryCheck = document.createElement('img');
 		imgCategoryCheck.setAttribute('src', './img/delete.svg')
 		let textCategoryCheck = document.createElement('p');
 		if(target.value != undefined){
 			textCategoryCheck.innerHTML = target.value
 			if(target.checked){
-				document.querySelector('.catalog-descr__result-size').append(categoryCheck)
+				document.querySelector('.catalog-descr__all').append(categoryCheck)
 				categoryCheck.append(textCategoryCheck)
 				categoryCheck.append(imgCategoryCheck)
 				
 			} else {
-				Array.from(document.querySelectorAll('.catalog-descr__result-size div')).forEach(el => {
+				Array.from(document.querySelectorAll('.catalog-descr__all div')).forEach(el => {
 					if(target.value == el.childNodes[0].innerHTML){
 						el.remove()
 					}
@@ -251,18 +253,19 @@ window.addEventListener('click', e => {
 	if(target.closest('.filter-form__color')){
 		let categoryCheck = document.createElement('div');
 		categoryCheck.setAttribute('class', 'colorItem')
+		categoryCheck.classList.add('catalog__item')
 		let imgCategoryCheck = document.createElement('img');
 		imgCategoryCheck.setAttribute('src', './img/delete.svg')
 		let textCategoryCheck = document.createElement('p');
 		if(target.value != undefined){
 			textCategoryCheck.innerHTML = target.value
 			if(target.checked){
-				document.querySelector('.catalog-descr__result-color').append(categoryCheck)
+				document.querySelector('.catalog-descr__all').append(categoryCheck)
 				categoryCheck.append(textCategoryCheck)
 				categoryCheck.append(imgCategoryCheck)
 				
 			} else {
-				Array.from(document.querySelectorAll('.catalog-descr__result-color div')).forEach(el => {
+				Array.from(document.querySelectorAll('.catalog-descr__all div')).forEach(el => {
 					if(target.value == el.childNodes[0].innerHTML){
 						el.remove()
 					}
@@ -272,54 +275,54 @@ window.addEventListener('click', e => {
 		}
 	}
 
-	if(target.closest('.catalog-descr__result-category')){
+	if(target.closest('.catalog-descr__all')){
 		if(target.tagName != 'IMG') return;
 
-		Array.from(document.querySelectorAll('.categoryItem')).forEach((categoryItem, categoryItemId) => {
+		Array.from(document.querySelectorAll('.catalog__item')).forEach((categoryItem, categoryItemId) => {
 			Array.from(document.querySelectorAll('.list-category ul li label input')).forEach((input, inputId) => {
-				if(input.value == target.closest('.categoryItem').innerText){
+				if(input.value == target.closest('.catalog__item').innerText){
 					input.checked = false
 				}
 			})
 		})
 		
-		let removeElement = target.closest('.categoryItem');
+		let removeElement = target.closest('.catalog__item');
 		removeElement.remove();
 	}
 
-	if(target.closest('.catalog-descr__result-size')){
-		if(target.tagName != 'IMG') return;
+	// if(target.closest('.catalog-descr__all')){
+	// 	if(target.tagName != 'IMG') return;
 
-		Array.from(document.querySelectorAll('.sizeItem')).forEach(categoryItem => {
-			Array.from(document.querySelectorAll('.filter-form__size-button label input')).forEach(input => {
-				if(input.value == target.closest('.sizeItem').innerText){
-					input.checked = false
-				}
-			})
-		})
+	// 	Array.from(document.querySelectorAll('.sizeItem')).forEach(categoryItem => {
+	// 		Array.from(document.querySelectorAll('.filter-form__size-button label input')).forEach(input => {
+	// 			if(input.value == target.closest('.sizeItem').innerText){
+	// 				input.checked = false
+	// 			}
+	// 		})
+	// 	})
 
-		let removeElement = target.closest('.sizeItem');
-		removeElement.remove();
-	}
+	// 	let removeElement = target.closest('.sizeItem');
+	// 	removeElement.remove();
+	// }
 
-	if(target.closest('.catalog-descr__result-color')){
-		if(target.tagName != 'IMG') return;
+	// if(target.closest('.catalog-descr__all')){
+	// 	if(target.tagName != 'IMG') return;
 
-		Array.from(document.querySelectorAll('.colorItem')).forEach(categoryItem => {
-			Array.from(document.querySelectorAll('.filter-form__color-button label input')).forEach(input => {
-				if(input.value == target.closest('.colorItem').innerText){
-					input.checked = false
-				}
-			})
-		})
+	// 	Array.from(document.querySelectorAll('.colorItem')).forEach(categoryItem => {
+	// 		Array.from(document.querySelectorAll('.filter-form__color-button label input')).forEach(input => {
+	// 			if(input.value == target.closest('.colorItem').innerText){
+	// 				input.checked = false
+	// 			}
+	// 		})
+	// 	})
 
-		let removeElement = target.closest('.colorItem');
-		removeElement.remove();
-	}
+	// 	let removeElement = target.closest('.colorItem');
+	// 	removeElement.remove();
+	// }
 
-	let lengthCategory = document.querySelectorAll('.catalog-descr__result-category div').length;
-	let lengthColor = document.querySelectorAll('.catalog-descr__result-size div').length;
-	let lengthSize = document.querySelectorAll('.catalog-descr__result-color div').length;
+	let lengthCategory = document.querySelectorAll('.catalog-descr__all div').length;
+	let lengthColor = document.querySelectorAll('.catalog-descr__all div').length;
+	let lengthSize = document.querySelectorAll('.catalog-descr__all div').length;
 
 	if(lengthCategory == 0 && lengthColor == 0 && lengthSize == 0){
 		document.querySelector('.catalog-descr__result p').style.display = 'none'
@@ -328,47 +331,14 @@ window.addEventListener('click', e => {
 	}
 })
 
-let lengthCategory = document.querySelectorAll('.catalog-descr__result-category div').length;
-let lengthColor = document.querySelectorAll('.catalog-descr__result-size div').length;
-let lengthSize = document.querySelectorAll('.catalog-descr__result-color div').length;
+let lengthCategory = document.querySelectorAll('.catalog-descr__all div').length;
+let lengthColor = document.querySelectorAll('.catalog-descr__all div').length;
+let lengthSize = document.querySelectorAll('.catalog-descr__all div').length;
 
 if(lengthCategory <= 0 && lengthColor <= 0 && lengthSize <= 0){
 	document.querySelector('.catalog-descr__result p').style.display = 'none'
 }
 
-// Array.from(document.querySelectorAll('.open-modal')).forEach(el => {
-// 	el.addEventListener('click', function(){
-// 		document.querySelector('.modal').classList.add('active')
-//     	document.querySelector('body').style.overflowY = 'hidden'
-// 	})
-// })
-
-
-// window.addEventListener('click', e => {
-//     if (!e.target.closest('.modal-content') && !e.target.closest('.open-modal')) {
-//         document.querySelector('.modal').classList.remove('active')
-// 		document.querySelector('body').style.overflowY = 'auto'
-//     }
-// })
-
-// window.addEventListener('keyup', function(e){
-// 	if(e.key === "Escape") {
-//         document.querySelector('.modal').classList.remove('active')
-//         document.querySelector('body').style.overflowY = 'auto'
-//     }
-// })
-
-
-// document.querySelectorAll('.extra-controls input').forEach(el => {
-// 	el.setAttribute('type', 'number')
-// })
-
-
-// document.querySelector('.js-input-to').setAttribute('min', 0)
-// document.querySelector('.js-input-to').setAttribute('max', 12600)
-
-// document.querySelector('.js-input-from').setAttribute('min', 0)
-// document.querySelector('.js-input-from').setAttribute('max', 12600)
 // Устанавливаем минимальное значение
 document.querySelector('.irs-handle.from').addEventListener('mouseup', ()=> {
 	document.querySelector('.js-input-to').setAttribute('min', document.querySelector('.js-input-from').value)

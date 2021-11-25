@@ -2708,6 +2708,7 @@ a.active {
 
 .filter-form__size-button label span {
   font-size: 12px;
+  line-height: 1.1;
   color: #fff;
   cursor: pointer;
   width: 22px;
@@ -2753,10 +2754,7 @@ a.active {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-}
-
-.filter-form__color-button label {
-  margin-right: 4px;
+  gap: 4px;
 }
 
 .filter-form__color-button label:last-child {
@@ -2767,19 +2765,34 @@ a.active {
   display: none;
 }
 
-.filter-form__color-button label input:checked ~ .color-container {
-  border: 1px solid #fff;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
-  padding: 6px;
-  display: block;
-}
-
-.filter-form__color-button label input:not(:checked) ~ .color-container {
+.filter-form__color-button label input ~ .color-container {
+  position: relative;
   padding: 7px;
   -webkit-border-radius: 100%;
           border-radius: 100%;
   display: block;
+}
+
+.filter-form__color-button label input ~ .color-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: none;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.filter-form__color-button label input:checked ~ .color-container::before {
+  border: 1px solid #fff;
 }
 
 .filter-form__color-button label .color-container span {
@@ -3125,109 +3138,38 @@ a.active {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 8px;
-}
-
-.catalog-descr__result-category {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   gap: 8px 15px;
 }
 
-.catalog-descr__result-category div {
+.catalog-descr__all div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 15px;
   border: 1px solid #fff;
   padding: 8px 10px;
 }
 
-.catalog-descr__result-category div p {
+.catalog-descr__all div p {
   margin-right: 22px;
 }
 
-.catalog-descr__result-category div img {
+.catalog-descr__all div img {
   width: 9px;
+  height: 9px;
   cursor: pointer;
 }
 
-.catalog-descr__result-category div:last-child {
+.catalog-descr__all div:last-child {
   margin-right: 20px;
-}
-
-.catalog-descr__result-size {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  gap: 8px 15px;
-}
-
-.catalog-descr__result-size div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 15px;
-  border: 1px solid #fff;
-  padding: 8px 10px;
-}
-
-.catalog-descr__result-size div p {
-  margin-right: 22px;
-}
-
-.catalog-descr__result-size div img {
-  width: 9px;
-  cursor: pointer;
-}
-
-.catalog-descr__result-size div:last-child {
-  margin-right: 20px;
-}
-
-.catalog-descr__result-color {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  gap: 8px 15px;
-}
-
-.catalog-descr__result-color div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 15px;
-  border: 1px solid #fff;
-  padding: 8px 10px;
-}
-
-.catalog-descr__result-color div p {
-  margin-right: 22px;
-}
-
-.catalog-descr__result-color div img {
-  width: 9px;
-  cursor: pointer;
-}
-
-.catalog-descr__result-color div:last-child {
-  margin-right: 0px;
 }
 
 .bg-swiper-container {

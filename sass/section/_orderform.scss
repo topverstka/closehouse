@@ -153,11 +153,11 @@
     opacity: 1;
 
     &:hover{
-        // transition: 0.4s;
-        // background: #fff;
-        // color: #000;
+        background: #111;
+        color: #fff;
         // font-weight: bolder;
         // opacity: 1;
+        // transition: 0.4s;
     }
 }
 
@@ -209,6 +209,7 @@
 
 
         .radio-container{
+            position: relative;
             padding: 3px;
             border: 1px solid #fff;
             border-radius: 50%;
@@ -218,8 +219,12 @@
             transition: .2s;
 
             span{ 
-                width: 12px;
-                height: 12px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 11px;
+                height: 11px;
                 display: block;
                 border-radius: 50%;
                 transition: .2s;

@@ -1851,6 +1851,11 @@ input:required:valid, textarea:required:valid, button:required:valid {
   opacity: 1;
 }
 
+.order-form__info button:hover {
+  background: #111;
+  color: #fff;
+}
+
 .order-form__basket {
   display: -ms-grid;
   display: grid;
@@ -1904,6 +1909,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 }
 
 .mailrus-content .radio-container {
+  position: relative;
   padding: 3px;
   border: 1px solid #fff;
   -webkit-border-radius: 50%;
@@ -1917,8 +1923,14 @@ input:required:valid, textarea:required:valid, button:required:valid {
 }
 
 .mailrus-content .radio-container span {
-  width: 12px;
-  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 11px;
+  height: 11px;
   display: block;
   -webkit-border-radius: 50%;
           border-radius: 50%;

@@ -279,13 +279,13 @@ window.addEventListener('click', e => {
 		if(target.tagName != 'IMG') return;
 
 		Array.from(document.querySelectorAll('.catalog__item')).forEach((categoryItem, categoryItemId) => {
-			Array.from(document.querySelectorAll('.list-category ul li label input')).forEach((input, inputId) => {
+			Array.from(document.querySelectorAll('.catalog__category label input')).forEach((input, inputId) => {
 				if(input.value == target.closest('.catalog__item').innerText){
 					input.checked = false
 				}
 			})
 		})
-		
+
 		let removeElement = target.closest('.catalog__item');
 		removeElement.remove();
 	}

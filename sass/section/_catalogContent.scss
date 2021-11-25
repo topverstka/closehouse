@@ -622,7 +622,7 @@ a.active{
 
 .catalog-descr__result{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     // flex-wrap: wrap;
     // align-items: flex-start;
     gap: 8px 0;
@@ -637,6 +637,7 @@ a.active{
 
 .catalog-descr__all{
     display: flex;
+    align-items: flex-start;
     // flex-direction: column;
     gap: 8px;
 }

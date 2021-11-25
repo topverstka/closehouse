@@ -175,22 +175,28 @@ window.addEventListener('click', e => {
 
 	if(target.closest('.list-category')){
 		let categoryCheck = document.createElement('div');
-		categoryCheck.setAttribute('class', 'categoryItem')
 		let imgCategoryCheck = document.createElement('img');
-		imgCategoryCheck.setAttribute('src', './img/delete.svg')
 		let textCategoryCheck = document.createElement('p');
-		if(target.value != undefined){
+
+		categoryCheck.setAttribute('class', 'categoryItem')
+		imgCategoryCheck.setAttribute('src', './img/delete.svg')
+
+		if (target.value != undefined) {
 			textCategoryCheck.innerHTML = target.value
-			if(target.checked){
+
+			if (target.checked) {
 				document.querySelector('.catalog-descr__result-category').append(categoryCheck)
 				categoryCheck.append(textCategoryCheck)
 				categoryCheck.append(imgCategoryCheck)
-				if(target.value == 'Все категории'){
+
+				if (target.value == 'Все категории') {
 					document.querySelectorAll('.list-category ul li label input').forEach(el => {
-						if(el.value != 'Все категории'){
+						
+						if (el.value != 'Все категории') {
 							el.checked = false
 							Array.from(document.querySelectorAll('.catalog-descr__result-category div')).forEach(el => {
-								if(el.childNodes[0].innerHTML != 'Все категории'){
+								
+								if (el.childNodes[0].innerHTML != 'Все категории') {
 									el.remove()
 								}
 							})
@@ -198,7 +204,8 @@ window.addEventListener('click', e => {
 					})
 				} else {
 					document.querySelectorAll('.list-category ul li label input').forEach(el => {
-						if(el.value == 'Все категории'){
+						
+						if (el.value == 'Все категории') {
 							el.checked = false
 						}
 						Array.from(document.querySelectorAll('.catalog-descr__result-category div')).forEach(el => {

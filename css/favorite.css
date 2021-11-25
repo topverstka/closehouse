@@ -87,8 +87,8 @@
 }
 
 .preloader__loader-img img {
-  -webkit-animation: preloader 8s linear infinite;
-          animation: preloader 8s linear infinite;
+  -webkit-animation: preloader 18s linear infinite;
+          animation: preloader 18s linear infinite;
 }
 
 @-webkit-keyframes preloader {
@@ -2818,7 +2818,7 @@ a.active {
 .favorite-button__setting-category div ul::-webkit-scrollbar {
   -webkit-appearance: none;
           appearance: none;
-  width: 3px;
+  width: 1px;
 }
 
 .favorite-button__setting-category div ul::-webkit-scrollbar-track {

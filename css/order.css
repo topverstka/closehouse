@@ -87,8 +87,8 @@
 }
 
 .preloader__loader-img img {
-  -webkit-animation: preloader 8s linear infinite;
-          animation: preloader 8s linear infinite;
+  -webkit-animation: preloader 18s linear infinite;
+          animation: preloader 18s linear infinite;
 }
 
 @-webkit-keyframes preloader {
@@ -1845,16 +1845,9 @@ input:required:valid, textarea:required:valid, button:required:valid {
   -o-transition: 0.4s;
   transition: 0.4s;
   font-size: 15px;
-  opacity: .6;
-}
-
-.order-form__info button:hover {
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  font-weight: 600;
   background: #fff;
   color: #000;
-  font-weight: bolder;
   opacity: 1;
 }
 

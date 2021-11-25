@@ -87,8 +87,8 @@
 }
 
 .preloader__loader-img img {
-  -webkit-animation: preloader 8s linear infinite;
-          animation: preloader 8s linear infinite;
+  -webkit-animation: preloader 18s linear infinite;
+          animation: preloader 18s linear infinite;
 }
 
 @-webkit-keyframes preloader {

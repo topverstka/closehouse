@@ -147,14 +147,17 @@
     padding: 14px 0;
     transition: 0.4s;
     font-size: 15px;
-    opacity: .6;
+    font-weight: 600;
+    background: #fff;
+    color: #000;
+    opacity: 1;
 
     &:hover{
-        transition: 0.4s;
-        background: #fff;
-        color: #000;
-        font-weight: bolder;
-        opacity: 1;
+        // transition: 0.4s;
+        // background: #fff;
+        // color: #000;
+        // font-weight: bolder;
+        // opacity: 1;
     }
 }
 
@@ -284,3 +287,9 @@
         margin: 0 auto;
     }
 }
+
+// .order-button {
+//     color: #000;
+//     opacity: 1 !important;
+//     background: #fff;
+// }

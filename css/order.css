@@ -1708,7 +1708,7 @@ input:required:valid, textarea:required:valid, button:required:valid {
 }
 
 .order-form__info-data {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #fff;
   margin-bottom: 30px;
 }
 
@@ -1851,11 +1851,6 @@ input:required:valid, textarea:required:valid, button:required:valid {
   opacity: 1;
 }
 
-.order-form__info button:hover {
-  background: #111;
-  color: #fff;
-}
-
 .order-form__basket {
   display: -ms-grid;
   display: grid;
@@ -1896,40 +1891,24 @@ input:required:valid, textarea:required:valid, button:required:valid {
 }
 
 .mailrus-content input:checked ~ span .radio-container {
-  display: block;
-}
-
-.mailrus-content input:checked ~ span .radio-container span {
-  background-color: #fff;
-}
-
-.mailrus-content input:not(:checked) ~ span .radio-container {
-  opacity: 0.3;
-  display: block;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 1px white;
+          box-shadow: 0 0 0 1px white;
 }
 
 .mailrus-content .radio-container {
-  padding: 3px;
-  border: 1px solid #fff;
+  width: 18px;
+  height: 18px;
+  display: block;
+  background: none;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
-}
-
-.mailrus-content .radio-container span {
-  width: 12px;
-  height: 12px;
-  display: block;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
+  border: 3px solid #111111;
+  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 .mailrus-content {

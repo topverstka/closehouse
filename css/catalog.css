@@ -2878,11 +2878,11 @@ a.active {
   position: relative;
 }
 
-.catalog-button__setting-sort div {
+.catalog-button__setting-sort .list-sort {
   position: absolute;
   opacity: 0;
   top: 0;
-  left: 120px;
+  left: 111px;
   min-width: 220px;
   padding: 18px 15px;
   -webkit-transition: 0.8s;
@@ -2893,7 +2893,7 @@ a.active {
   z-index: 3;
 }
 
-.catalog-button__setting-sort div.active {
+.catalog-button__setting-sort .list-sort.active {
   opacity: 1;
   -webkit-transition: 0.8s;
   -o-transition: 0.8s;
@@ -2902,15 +2902,19 @@ a.active {
   z-index: 2;
 }
 
-.catalog-button__setting-sort div ul {
+.catalog-button__setting-sort .list-sort ul {
   list-style: none;
 }
 
-.catalog-button__setting-sort div ul li:last-child {
+.catalog-button__setting-sort .list-sort ul li:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+
+.catalog-button__setting-sort .list-sort ul li:last-child {
   margin-bottom: 0px;
 }
 
-.catalog-button__setting-sort div ul li span {
+.catalog-button__setting-sort .list-sort ul li span {
   font-size: 12px;
   color: #fff;
   opacity: 0.6;
@@ -2921,15 +2925,19 @@ a.active {
   cursor: pointer;
 }
 
-.catalog-button__setting-sort div ul li label {
+.catalog-button__setting-sort .list-sort ul li label {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.catalog-button__setting-sort div ul li label input {
+.catalog-button__setting-sort .list-sort ul li label input {
   display: none;
 }
 
-.catalog-button__setting-sort div ul li label input:checked ~ span {
+.catalog-button__setting-sort .list-sort ul li label input:checked ~ span {
   opacity: 1;
 }
 
@@ -3062,7 +3070,7 @@ a.active {
 
 .search-false__descr p span {
   color: white;
-  text-decoration: underline;
+  border-bottom: 1px solid #fff;
 }
 
 .search-false__button {

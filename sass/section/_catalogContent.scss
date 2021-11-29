@@ -426,11 +426,11 @@ a.active{
 .catalog-button__setting-sort{
     position: relative;
 
-    div{
+    .list-sort {
         position: absolute;
         opacity: 0;
         top: 0;
-        left: 120px;
+        left: 111px;
         min-width: 220px;
         padding: 18px 15px;
         transition: 0.8s;
@@ -451,6 +451,10 @@ a.active{
             li{
                 // margin-bottom: 13px;
 
+                &:not(:last-child) {
+                    margin: 0 0 10px 0;
+                }
+
                 &:last-child{
                     margin-bottom: 0px;
                 }
@@ -465,6 +469,7 @@ a.active{
 
                 label{
                     position: relative;
+                    display: flex;
 
                     input{
                         display: none;
@@ -592,7 +597,8 @@ a.active{
 
         span{
             color: rgba(255, 255, 255, 1);
-            text-decoration: underline;
+            // text-decoration: underline;
+            border-bottom: 1px solid #fff;
         }
     }       
 }

@@ -1,3 +1,17 @@
+// Добавление стилей для safari
+// let isSafari = /safari/.test(navigator.userAgent.toLowerCase());
+let isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+if (isSafari) {
+	console.log('ok')
+	const spanElems = document.querySelectorAll('.catalog__category label span')
+	for (let i = 0; i < spanElems.length; i++) {
+		const span = spanElems[i];
+		span.style.paddingTop = '5px'
+	}
+}
+
+
 var swiper = new Swiper('.catalog-swiper-container', {
 	loop: true,
 	navigation: {
